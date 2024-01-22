@@ -144,6 +144,166 @@ const MasterCompatative = () => {
 
                 </div>
 
+                <div className="CoursePageStatus">
+                    {data.filter((item) => item.id >= 126 && item.id <= 128).map(
+                        (item, index) => {
+                            return (
+                                <div>
+                                    <div className="CoursePageStats__stat-container">
+                                        <h1>{item.name}</h1>
+                                        <p>{item.text}</p>
+                                    </div>
+                                </div>
+                            )
+                        }
+                    )}
+
+
+                </div>
+
+                <div className="CompaniesNetwork__main">
+                    <h2>
+                        <span>Crack Reputed Coding Contests</span>
+                    </h2>
+                    <img className="CompaniesNetwork__companies-img" src="\masterimage\MCP-company-new.webp" alt="Companies Network Image" />
+                </div>
+
+                <div className="CoursesPage__container-batchDetails">
+                    <div id="CoursePageBatchDetails__section_main_container_id" className="CoursePageBatchDetails__section_main_container">
+                        <div id="CoursePageBatchDetails__section_container_id" className="CoursePageBatchDetails__section_container">
+                            <h4 className="CoursePageBatchDetails__heading"> SELECT BATCH </h4>
+                            <div className="CoursePageBatchDetails__section">
+                                <div className="CoursePageBatchDetails__batch_text_section">
+                                    <div className="CoursePageBatchComponent__date_container">
+                                        <div className="CoursePageBatchComponent_radio_buttons CoursePageBatchComponent_radio_buttons_selected">
+                                            <label for="1stmay" className="CoursePageBatchComponent_radio_label CoursePageBatchComponent_radio_label_top_no">
+                                                <input className="CoursePageBatchComponent__radio_input" type="radio" value="1stmay" id="1stmay" name="courseEnrollment" />
+                                                <span className="CoursePageBatchComponent__radio_text_container">
+                                                    <h5 className="CoursePageBatchComponent__radio_batch_start_date">1st May</h5>
+                                                    <p className="CoursePageBatchComponent__reg_end_date_selected">Enrolment Started</p>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div className="CoursePageBatchComponent_radio_buttons CoursePageBatchComponent_radio_buttons_not-selected">
+                                            <label className="CoursePageBatchComponent_radio_label CoursePageBatchComponent_radio_label_top_no">
+                                                <input className="CoursePageBatchComponent__radio_input" type="radio" value="15thmay" id="15thmay" name="courseEnrollment" />
+                                                <span className="CoursePageBatchComponent__radio_text_container">
+                                                    <h5 className="CoursePageBatchComponent__radio_batch_start_date">15th May</h5>
+                                                    <p className="CoursePageBatchComponent__reg_end_date_not-selected">Enrolment Started</p>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="CoursePageBatchDetails__enrollNow_container">
+                                    <div className="CoursePageBatchDetails__actual_priceamount_no_discount">₹ 25000</div>
+                                    <div className="CoursePageBatchDetails__cta_container">
+                                        <div className="CoursePageBatchDetails__enroll_now_button_box">
+                                            <button className="CoursePageBatchDetails__enroll_now_button">Enroll Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="CoursePageTestmonials">
+                    <h5>This Might Be You!</h5>
+                    <div className="CoursePageTestmonials-main">
+                        {data.filter((item) => item.id >= 129 && item.id <= 131).map(
+                            (item, index) => {
+                                return (
+                                    <div key={index}>
+                                        <div className="CoursePageTestimonials__testimonial-card" style={{ width: "100%", display: "inline-block" }}>
+                                            <div className="CoursePageTestimonials__testimonial-name-contanier">
+                                                <img src={item.image} alt="Name Decoration Image" loading="lazy" />
+                                                <h3>{item.name}</h3>
+                                            </div>
+                                            <div className="CoursePageTestimonials__testimonial-review">
+                                                <p>{item.text}</p>
+                                            </div>
+                                            <div className="CoursePageTestimonials__testimonial-details">
+                                                <div className="CoursePageTestimonials__student-img-container">
+                                                    <img src={item.imagetwo} alt="Bottom Decoration Image" className="CoursePageTestimonials__student-img" loading="lazy" />
+                                                </div>
+                                                <img src={item.imagethree} alt="Bottom Decoration Image" className="CoursePageTestimonials__testimonial-bottom-img" loading="lazy" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                )
+                            }
+                        )}
+
+                    </div>
+
+                </div>
+
+                <div className="CoursePage-Learning">
+                    <h5>By The End Of This Course, You Will Be Able To</h5>
+                    <div className="CoursePage-Learning-container">
+                        <img loading="lazy" src="\masterimage\Vecto2.webp" alt="Learnig image" />
+                        <div className="CoursePage-Learning-container-cards">
+                            {data.filter((item) => item.id === 132).map(
+                                (item, index) => {
+                                    return (
+                                        <div key={index}>
+                                            <div className="CoursePageLearnings__details-list-item CoursePageLearnings__details-list-item-0">
+                                                <img loading="lazy" src={item.image} alt="List Number image" />
+                                                <div className="CoursePageLearnings__detail">{item.text}</div>
+                                            </div>
+
+                                        </div>
+                                    )
+                                }
+                            )}
+                            {data.filter((item) => item.id === 133).map(
+                                (item, index) => {
+                                    return (
+                                        <div key={index}>
+                                            <div className="CoursePageLearnings__details-list-item CoursePageLearnings__details-list-item-1">
+                                                <img loading="lazy" src={item.image} alt="List Number image" />
+                                                <div className="CoursePageLearnings__detail">{item.text}</div>
+                                            </div>
+
+                                        </div>
+                                    )
+                                }
+                            )}
+                            {data.filter((item) => item.id === 134).map(
+                                (item, index) => {
+                                    return (
+                                        <div key={index}>
+                                            <div className="CoursePageLearnings__details-list-item CoursePageLearnings__details-list-item-2">
+                                                <img loading="lazy" src={item.image} alt="List Number image" />
+                                                <div className="CoursePageLearnings__detail">{item.text}</div>
+                                            </div>
+
+                                        </div>
+                                    )
+                                }
+                            )}
+                            {data.filter((item) => item.id === 135).map(
+                                (item, index) => {
+                                    return (
+                                        <div key={index}>
+                                            <div className="CoursePageLearnings__details-list-item CoursePageLearnings__details-list-item-3">
+                                                <img loading="lazy" src={item.image} alt="List Number image" />
+                                                <div className="CoursePageLearnings__detail">{item.text}</div>
+                                            </div>
+
+                                        </div>
+                                    )
+                                }
+                            )}
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
         </>
     )

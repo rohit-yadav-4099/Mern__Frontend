@@ -364,3 +364,408 @@
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 } */
+
+.CoursePageStatus{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    margin: 2rem auto;
+    max-width: 1147px;
+    margin-bottom: 3rem;
+    justify-content: space-around;
+}
+
+.CoursePageStats__stat-container {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3rem 0rem;
+    height: 100%;
+}
+
+.CoursePageStats__stat-container h1 {
+    text-align: center;
+    color: #00a6eb;
+    font: normal normal 700 2.75rem/4rem Inter;
+}
+
+.CoursePageStats__stat-container p {
+    text-align: center;
+    font: normal normal 500 1.1rem/2rem Inter;
+    color: #322e2e;
+}
+
+.CompaniesNetwork__main {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 1147px;
+}
+
+.CompaniesNetwork__main h2 {
+    font-size: 22px;
+    letter-spacing: 0px;
+    opacity: 1;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.CompaniesNetwork__main h2 span {
+    font: normal normal 500 1.75rem/2rem Inter;
+}
+
+.CompaniesNetwork__companies-img {
+    width: 100%;
+}
+
+.CoursesPage__container-batchDetails {
+    scroll-margin-top: 150px;
+}
+
+.CoursePageBatchDetails__section_main_container {
+    width: 100%;
+    border-top: 0.5px solid #c2c2c2;
+    border-bottom: 0.5px solid #c2c2c2;
+    box-sizing: content-box;
+    padding: 3rem 0;
+    box-sizing: border-box;
+}
+
+.CoursePageBatchDetails__section_container {
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 5px 0 0;
+}
+
+.CoursePageBatchDetails__batch_text_section, .CoursePageBatchDetails__section_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CoursePageBatchDetails__heading {
+    margin-left: 10px;
+    width: 9rem;
+    /* font-size: 1.1rem; */
+    font: normal normal 400 1.1rem/1.5rem Inter;
+}
+
+.CoursePageBatchDetails__section {
+    width: 74%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.CoursePageBatchDetails__batch_text_section, .CoursePageBatchDetails__section_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CoursePageBatchComponent__date_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.CoursePageBatchComponent_radio_buttons {
+    background: #fff 0 0 no-repeat padding-box;
+    border-radius: 5px;
+    padding: 0.25rem;
+    margin: 0.25rem 1.1rem;
+    width: 11.5rem;
+    height: 4.5rem;
+    position: relative;
+}
+
+.CoursePageBatchComponent_radio_buttons_selected {
+    color: #fff;
+    background: #00a6eb 0 0 no-repeat padding-box;
+    box-shadow: 0 0 10px rgba(37,37,37,.1607843137254902);
+    border: 1px solid #00a3e6;
+    border-radius: 5px;
+}
+
+.CoursePageBatchComponent_radio_label {
+    display: flex;
+    cursor: pointer;
+}
+
+.CoursePageBatchComponent__radio_input {
+    opacity: 0;
+}
+
+input[type=radio] {
+    display: inline!important;
+    width: 18px!important;
+    height: 18px!important;
+    position: relative;
+    top: 10px;
+}
+
+.CoursePageBatchComponent__radio_text_container {
+    width: 100%;
+    padding-top: 5px;
+}
+span {
+    display: inline-block;
+    letter-spacing: 1.3px;
+    font-weight: 400;
+}
+
+.CoursePageBatchComponent__radio_batch_start_date {
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.CoursePageBatchComponent__reg_end_date_selected {
+    font: normal normal 400 0.9rem/2rem Inter;
+    letter-spacing: 0;
+    color: #fff;
+}
+
+.CoursePageBatchComponent__reg_end_date_not-selected {
+    font: normal normal 400 0.9rem/2rem Inter;
+    letter-spacing: 0;
+    color: #031e4d;
+}
+
+.CoursePageBatchDetails__enrollNow_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.CoursePageBatchDetails__actual_priceamount_no_discount {
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font: normal normal 600 1.75rem/3rem Inter;
+    letter-spacing: 0;
+    color: #08a2eb;
+}
+
+.CoursePageBatchDetails__cta_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.CoursePageBatchDetails__enroll_now_button {
+    border: none;
+    min-width: 130px;
+    padding: 10px;
+    color: #fffaf0;
+    font-size: 16px;
+    cursor: pointer;
+    background: transparent linear-gradient(79deg,#3194ee,#1477d2) 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px rgba(0,0,0,.1607843137254902);
+    border-radius: 3px;
+}
+
+.CoursePageTestmonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1147px;
+    margin: 1rem auto;
+    box-sizing: border-box;
+    margin-top: 3rem;
+}
+
+.CoursePageTestmonials h5{
+    width: 100%;
+    text-align: center;
+    color: #151414;
+    font: normal normal 500 1.75rem/2rem Inter;
+    margin-bottom: 1.5rem;
+}
+
+.CoursePageTestmonials-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.CoursePageTestimonials__testimonial-card {
+    height: 400px;
+    padding: 1rem;
+}
+
+.CoursePageTestimonials__testimonial-card .CoursePageTestimonials__testimonial-name-contanier {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.CoursePageTestimonials__testimonial-card .CoursePageTestimonials__testimonial-name-contanier img {
+    width: 20%;
+}
+
+.CoursePageTestimonials__testimonial-card .CoursePageTestimonials__testimonial-name-contanier h3 {
+    width: 70%;
+    color: #000;
+    font: normal normal 600 1.2rem/2rem Inter;
+}
+
+.CoursePageTestimonials__testimonial-card .CoursePageTestimonials__testimonial-review {
+    height: 170px;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 0rem 1rem;
+    margin: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 160px;
+}
+
+.CoursePageTestimonials__testimonial-card .CoursePageTestimonials__testimonial-review p {
+    text-align: left;
+    /* font: normal normal normal 0.75rem/1.5rem Inter; */
+    letter-spacing: 0px;
+    color: #5f5b5b;
+}
+
+.CoursePageTestimonials__testimonial-card .CoursePageTestimonials__testimonial-details {
+    height: 150px;
+    width: 100%;
+    position: relative;
+}
+
+.CoursePageTestimonials__testimonial-card .CoursePageTestimonials__testimonial-details .CoursePageTestimonials__student-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CoursePageTestimonials__testimonial-card .CoursePageTestimonials__testimonial-details .CoursePageTestimonials__student-img-container .CoursePageTestimonials__student-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.CoursePageTestimonials__testimonial-card .CoursePageTestimonials__testimonial-bottom-img {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+}
+
+.CoursePage-Learning{
+    background: #fff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 8px rgba(168,164,164,.1607843137);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 1rem;
+    box-sizing: border-box;
+    min-height: 22rem;
+    max-width: 1147px;
+    margin: 3rem auto;
+    margin-bottom: 0rem;
+    border-top: 0.5px solid #c2c2c2;
+    border-bottom: 0.5px solid #c2c2c2;
+}
+
+.CoursePage-Learning h5{
+    color: #3f3c3c;
+    font: normal normal 500 1.75rem/3rem Inter;
+    margin-bottom: 3rem;
+    display: block;
+}
+
+.CoursePage-Learning .CoursePage-Learning-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    font: normal normal 700 1rem/1.5rem Inter;
+}
+
+.CoursePage-Learning .CoursePage-Learning-container img{
+    width: 16%;
+    height: 100%;
+    margin-right: 2rem;
+}
+
+.CoursePage-Learning-container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    color: #151414;
+}
+
+.CoursePageLearnings__details-list-item-0 {
+    height: 90px;
+    width: 330px;
+    margin: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border-bottom: 4px solid #df3897;
+    border-right: 4px solid #df3897;
+}
+
+.CoursePageLearnings__details-list-item-1{
+    height: 90px;
+    width: 330px;
+    margin: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border-bottom: 4px solid #0398d3;
+    border-right: 4px solid #0398d3;
+}
+
+.CoursePageLearnings__details-list-item-2{
+    height: 90px;
+    width: 330px;
+    margin: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border-bottom: 4px solid #7914a3;
+    border-right: 4px solid #7914a3;
+}
+
+.CoursePageLearnings__details-list-item-3{
+    height: 90px;
+    width: 330px;
+    margin: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border-bottom: 4px solid #eb9a00;
+    border-right: 4px solid #eb9a00;
+}

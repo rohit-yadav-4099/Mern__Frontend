@@ -6,6 +6,12 @@ const MasterCompatative = () => {
     const [data, setData] = useState([])
     console.log(data)
 
+    const [selectedOption, setselectedOption] = useState("1st May")
+    const handleOptionChange = (event) => {
+        setselectedOption(event.target.value)
+
+    }
+
     useEffect(() => {
         async function fetchapi() {
             const videoData = await fetch("https://mern-szic.onrender.com/api/getData")
@@ -97,7 +103,7 @@ const MasterCompatative = () => {
 
                 </div>
 
-                <div className="Competitive_programing-container">
+                {/* <div className="Competitive_programing-container">
                     <h2><span>Master Competitive Programming With Us</span></h2>
                     <div className="course-features-container">
                         <div className="course-features-container-image">
@@ -110,8 +116,7 @@ const MasterCompatative = () => {
                                         return (
                                             <div key={index}>
                                                 <div className="course-features-list-container">
-                                                    {/* <div className="course-features-list-container-image"> */}
-                                                    {/* <img src={item.image} alt="image"/> */}
+                                                    
                                                     <ul>
                                                         <li>
                                                             <div className="course-features-list-container-item">
@@ -129,7 +134,7 @@ const MasterCompatative = () => {
                                                         </li>
                                                     </ul>
 
-                                                    {/* </div> */}
+                                                  
 
                                                 </div>
 
@@ -142,6 +147,110 @@ const MasterCompatative = () => {
 
                     </div>
 
+                </div> */}
+
+                <div id="CourseFeatures__main-section" className="CourseFeatures">
+                    <h2>
+                        <span>Master Competitive Programming With Us</span>
+                    </h2>
+                    <div className="CourseFeatures_container">
+                        <div className="CourseFeatures_bg-img-container">
+                            <picture className="CoursePageMasthead__picture">
+                                <source srcset="\masterimage\Vector.svg 1x" type="image/webp" />
+                                <img src="\masterimage\Vector.svg" />
+                            </picture>
+                        </div>
+                        <ul>
+                            <li>
+                                <div className="CourseFeatures_list-item-even">
+                                    <div className="CourseFeatures_img-container">
+                                        <img loading="lazy" src="\masterimage\Icons_Personalised+Program.webp" alt="Personalised Program" />
+                                    </div>
+                                    <div className="CourseFeatures_details-container">
+                                        <h5>Personalised Program</h5>
+                                        <p>Master your skills from where you are, with India's only personalised program </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="CourseFeatures_list-item-odd">
+                                    <div className="CourseFeatures_img-container">
+                                        <img loading="lazy" src="\masterimage\Icons_Expert+Mentors.webp" alt="Expert Mentors" />
+                                    </div>
+                                    <div className="CourseFeatures_details-container">
+                                        <h5>Expert Mentors</h5>
+                                        <p>Get career guidance, mentorship, time management strategies from industry experts</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="CourseFeatures_list-item-even">
+                                    <div className="CourseFeatures_img-container">
+                                        <img loading="lazy" src="\masterimage\Icons_Quick+Doubt+Support.webp" alt="Quick Doubt Support" />
+                                    </div>
+                                    <div className="CourseFeatures_details-container">
+                                        <h5>Quick Doubt Support</h5>
+                                        <p>Get your doubts cleared by coding experts and have a smooth learning</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="CourseFeatures_list-item-odd">
+                                    <div className="CourseFeatures_img-container">
+                                        <img loading="lazy" src="\masterimage\Icons_Get+certificate-01.webp" alt="Get Certified" />
+                                    </div>
+                                    <div className="CourseFeatures_details-container">
+                                        <h5>Get Certified</h5>
+                                        <p>Get recognized on course completion with highly reputed PrepBytes certificates</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="CourseFeatures_list-item-even">
+                                    <div className="CourseFeatures_img-container">
+                                        <img loading="lazy" src="\masterimage\Icons_250+Coding+Questions.webp" alt="250+ Coding Questions" />
+                                    </div>
+                                    <div className="CourseFeatures_details-container">
+                                        <h5>250+ Coding Questions</h5>
+                                        <p>Best way to master a language is by coding in the language</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="CourseFeatures_list-item-odd">
+                                    <div className="CourseFeatures_img-container">
+                                        <img loading="lazy" src="\masterimage\Icons_20+Live+Coding+Sessions.webp" alt="20+ Live Coding Sessions " />
+                                    </div>
+                                    <div className="CourseFeatures_details-container">
+                                        <h5>20+ Live Coding Sessions </h5>
+                                        <p>Code live and get mentorship with the top-rated coders of the country.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="CourseFeatures_list-item-even">
+                                    <div className="CourseFeatures_img-container">
+                                        <img loading="lazy" src="\masterimage\Icons_80+Hours+of+Videos.webp" alt="50+ Hours of Videos" />
+                                    </div>
+                                    <div className="CourseFeatures_details-container">
+                                        <h5>50+ Hours of Videos</h5>
+                                        <p>Recorded video lectures by experts to help you understand the concepts easily</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="CourseFeatures_list-item-odd">
+                                    <div className="CourseFeatures_img-container">
+                                        <img loading="lazy" src="\masterimage\Icons_80+Tech-Apti+MCQ+Tests.webp" alt="40+ Coding quizes" />
+                                    </div>
+                                    <div className="CourseFeatures_details-container">
+                                        <h5>40+ Coding quizes</h5>
+                                        <p>Small quizzes after every topic to give you a quick check on your understandings</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div className="CoursePageStatus">
@@ -168,6 +277,36 @@ const MasterCompatative = () => {
                     <img className="CompaniesNetwork__companies-img" src="\masterimage\MCP-company-new.webp" alt="Companies Network Image" />
                 </div>
 
+                <div className="CourseSyllabus-main">
+                    <h5 className="CourseSyllabus__main-heading"><span>Curriculum</span></h5>
+                    <div className="CourseSyllabus-container">
+                        <div className="CourseSyllabus-container-subject">
+                            <div className="CourseSyllabus__syllabus-subject-not-selected ">
+                                <img className="CourseSyllabus__syllabus-subjects-img" src="https://prepbytes-uat-images.s3.ap-south-1.amazonaws.com/13.webp" alt="Subject Image" />
+                                <div className="CourseSyllabus__syllabus-subjects-text" style={{ color: "#00a6ec" }}>Language Fundamentals (Choose any one of C/C++/Java/Python)</div>
+                            </div>
+                            <div className="CourseSyllabus__syllabus-subject-not-selected ">
+                                <img className="CourseSyllabus__syllabus-subjects-img" src="\masterimage\Icon2.webp" alt="Subject Image" />
+                                <div className="CourseSyllabus__syllabus-subjects-text">Data Structures and Algorithms</div>
+                            </div>
+                            <div className="CourseSyllabus__syllabus-subject-not-selected CourseSyllabus__syllabus-subject-last-item">
+                                <img className="CourseSyllabus__syllabus-subjects-img" src="\masterimage\Icon3.webp" alt="Subject Image" />
+                                <div className="CourseSyllabus__syllabus-subjects-text">Competitive Maths</div>
+                            </div>
+                            <div className="CourseSyllabus__syllabus-image">
+                                <img className="CourseSyllabus__syllabus-img" alt="Syllabus image" src="\masterimage\Curriculum-Image.webp"></img>
+                            </div>
+
+                        </div>
+                        <div className="CourseSyllabus-container-right">
+                            <ul class="CoursePage-scrollbar CourseSyllabus__category-list" style={{ height: "402px" }}><li class="subtopic-list-item">C/C++/Java/Python Overview</li><li class="subtopic-list-item">Logic Building</li><li class="subtopic-list-item">Data Types</li><li class="subtopic-list-item">Loops and Conditions</li><li class="subtopic-list-item">Pattern Programming</li><li class="subtopic-list-item">Operators and Expressions</li><li class="subtopic-list-item">Input/Output</li><li class="subtopic-list-item">Functions</li><li class="subtopic-list-item">Functions and OOPs(Python)</li><li class="subtopic-list-item">Pointers(C/C++)</li><li class="subtopic-list-item">Arrays</li><li class="subtopic-list-item">Structures</li><li class="subtopic-list-item">Character Arrays and Strings</li><li class="subtopic-list-item">Recursion</li><li class="subtopic-list-item">Bit Manipulation</li><li class="subtopic-list-item">STLs(C++)</li><li class="subtopic-list-item">Collections (Java)</li><li class="last-subtopic">Set, List, Tuples, Dictionary(Python)</li></ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
                 <div className="CoursesPage__container-batchDetails">
                     <div id="CoursePageBatchDetails__section_main_container_id" className="CoursePageBatchDetails__section_main_container">
                         <div id="CoursePageBatchDetails__section_container_id" className="CoursePageBatchDetails__section_container">
@@ -176,8 +315,14 @@ const MasterCompatative = () => {
                                 <div className="CoursePageBatchDetails__batch_text_section">
                                     <div className="CoursePageBatchComponent__date_container">
                                         <div className="CoursePageBatchComponent_radio_buttons CoursePageBatchComponent_radio_buttons_selected">
-                                            <label for="1stmay" className="CoursePageBatchComponent_radio_label CoursePageBatchComponent_radio_label_top_no">
-                                                <input className="CoursePageBatchComponent__radio_input" type="radio" value="1stmay" id="1stmay" name="courseEnrollment" />
+                                            <label for="1stMay" className="CoursePageBatchComponent_radio_label CoursePageBatchComponent_radio_label_top_no">
+                                                <input className="CoursePageBatchComponent__radio_input"
+                                                    type="radio"
+                                                    id='1stMay'
+                                                    value="1st May"
+                                                    name='selectBatch'
+                                                    checked={selectedOption === "1st May"}
+                                                    onChange={handleOptionChange} />
                                                 <span className="CoursePageBatchComponent__radio_text_container">
                                                     <h5 className="CoursePageBatchComponent__radio_batch_start_date">1st May</h5>
                                                     <p className="CoursePageBatchComponent__reg_end_date_selected">Enrolment Started</p>
@@ -185,8 +330,14 @@ const MasterCompatative = () => {
                                             </label>
                                         </div>
                                         <div className="CoursePageBatchComponent_radio_buttons CoursePageBatchComponent_radio_buttons_not-selected">
-                                            <label className="CoursePageBatchComponent_radio_label CoursePageBatchComponent_radio_label_top_no">
-                                                <input className="CoursePageBatchComponent__radio_input" type="radio" value="15thmay" id="15thmay" name="courseEnrollment" />
+                                            <label className="CoursePageBatchComponent_radio_label CoursePageBatchComponent_radio_label_top_no" for="15thMay">
+                                                <input className="CoursePageBatchComponent__radio_input"
+                                                    type="radio"
+                                                    id='15thMay'
+                                                    value="15th May"
+                                                    name='selectBatch'
+                                                    checked={selectedOption === "15th May"}
+                                                    onChange={handleOptionChange} />
                                                 <span className="CoursePageBatchComponent__radio_text_container">
                                                     <h5 className="CoursePageBatchComponent__radio_batch_start_date">15th May</h5>
                                                     <p className="CoursePageBatchComponent__reg_end_date_not-selected">Enrolment Started</p>

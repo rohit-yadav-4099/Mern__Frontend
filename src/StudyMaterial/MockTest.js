@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import './MockTest.css';
+import { useDispatch } from 'react-redux';
+import { addtocourse } from '../Redux/Slice';
 
 const MockTest = () => {
     const [data, setData] = useState([])
     console.log(data)
+    const dispatch = useDispatch()
 
     useEffect(() => {
         async function fetchapi() {
@@ -40,6 +43,18 @@ const MockTest = () => {
                             <div className='featured-mock-test-cards'>
                             {data.filter((item) => item.id >=7 && item.id <= 18).map(
                                 (item,index) => {
+                                    const {
+                                        id= item.id,
+                                        name = item.name,
+                                        image= item.image,
+                                        date= item.date,
+                                        dateheading=item.dateheading,
+                                        participants=item.participants,
+                                        participantsheading=item.participantsheading,
+                                        duration=item.duration,
+                                        durationheading=item.durationheading
+
+                                    } = item;
                                     return(
                                         <div key={index}>
                                             <div className='mockCards'>
@@ -74,7 +89,12 @@ const MockTest = () => {
                                                     </div>
                                                 </div>
                                                 <div className='cardbuy'>
-                                                    <button className='cardbuybtn'>Buy Now</button>
+                                                    <button className='cardbuybtn'
+                                                    onClick={() => 
+                                                        dispatch(addtocourse({id, name,image, date, dateheading, participants, participantsheading, duration, durationheading}))}
+                                                    >
+                                                        Buy Now
+                                                        </button>
                                                 </div>
                                             </div>
                                         </div>

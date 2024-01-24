@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import MyCourse from "./Slice"
+import AddMyCourse from "./Slice"
 export default configureStore({
   reducer  : {
-    Course: MyCourse,
+    Course: AddMyCourse,
   },
 });

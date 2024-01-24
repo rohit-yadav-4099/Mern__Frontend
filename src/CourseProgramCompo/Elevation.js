@@ -8,6 +8,15 @@ const ElevationAcademy = () => {
     const [showtwo, setShowtwo] = useState(false)
     const [showthree, setShowthree] = useState(false)
     const [showfour, setShowfour] = useState(false)
+    const [showfive, setShowfive] = useState(false)
+    const [showsix, setShowsix] = useState(false)
+    const [showsevan, setShowsevan] = useState(false)
+    const [showeight, setShoweight] = useState(false)
+    const [shownine, setShownine] = useState(false)
+    const [showten, setShowten] = useState(false)
+    const [showoneone, setShowoneone] = useState(false)
+    const [showonetwo, setShowonetwo] = useState(false)
+    const [showonethree, setShowonethree] = useState(true)
 
     useEffect(() => {
         async function fetchapi() {
@@ -224,12 +233,46 @@ const ElevationAcademy = () => {
                                     </div>
                                     <p className="IncomeSharingSyllabus__course-top-main--text">Frontend Development Basics</p>
                                 </div>
-                                <p className="IncomeSharingSyllabus__course-top--icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" />
+                                <p className="IncomeSharingSyllabus__course-top--icon" onClick={() => setShowfive(!showfive)}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" style={{ color: "rgb(247, 128, 119)" }}>
+                                        <path fill="currentColor" d="M14,7H9V2A1,1,0,0,0,7,2V7H2A1,1,0,0,0,2,9H7v5a1,1,0,0,0,2,0V9h5a1,1,0,0,0,0-2Z"></path>
+                                    </svg>
                                 </p>
                             </div>
                         </div>
                     </div>
+                    {
+                        showfive ?
+
+                            <div className="IncomeSharingSyllabusContent__course-content" style={{ borderLeft: "rgb(247, 128, 119)" }}>
+                                <div className="IncomeSharingSyllabus__course-content " >
+                                    <div className="IncomeSharingSyllabus__topic-main--container">
+                                        <p className="IncomeSharingSyllabus__topic-main--container--heading">Frontend Development Basics - HTML, CSS AND Github</p>
+                                        <ul className="IncomeSharingSyllabus__topic-main--container-list">
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">How websites work</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">Web Development Overview - Advantages</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">HTML Introduction</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">Structure of Webpage</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">HTML Tags</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">Texts, Images, Videos</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">Lists, Forms, Tables</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">Links, Anchor tags</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">HTML Divs</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">Github</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">CSS Introduction</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">Inline vs Internal vs External styling</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">CSS Display</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">CSS Font Styling, background, margin, padding</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">Styling Lists, Tables, Forms</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">FontAwesome</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">Transitionals, Transformations, Animations</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">Styling button</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">Tool tip, Box Sizing, Flex, Grid</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item">Projects</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> : null}
                 </div>
                 <div className="IncomeSharingSyllabus">
                     <div className="IncomeSharingSyllabus__box" style={{ backgroundColor: "rgb(101, 187, 229)" }}>
@@ -244,12 +287,35 @@ const ElevationAcademy = () => {
                                     </div>
                                     <p className="IncomeSharingSyllabus__course-top-main--text">Javascript Fundamentals &amp; Problem Solving</p>
                                 </div>
-                                <p className="IncomeSharingSyllabus__course-top--icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" />
+                                <p className="IncomeSharingSyllabus__course-top--icon" onClick={() => setShowsix(!showsix)}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" style={{ color: "rgb(101, 187, 229)" }}>
+                                        <path fill="currentColor" d="M14,7H9V2A1,1,0,0,0,7,2V7H2A1,1,0,0,0,2,9H7v5a1,1,0,0,0,2,0V9h5a1,1,0,0,0,0-2Z"></path>
+                                    </svg>
                                 </p>
                             </div>
                         </div>
                     </div>
+                    {
+                        showsix ?
+                            <div className="IncomeSharingSyllabusContent__course-content" style={{ maxHeight: "372px" }}>
+                                <div className="IncomeSharingSyllabus__course-content" style={{borderLeftColor:"rgb(101, 187, 229)"}}>
+                                    <div className="IncomeSharingSyllabus__topic-main--container">
+                                        <p className="IncomeSharingSyllabus__topic-main--container--heading">Javascript Fundamentals &amp; Problem Solving</p>
+                                        <ul className="IncomeSharingSyllabus__topic-main--container-list">
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Introduction to JavaScript</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Variables, scoping, Data type</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Logic Building</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Strings and Numbers</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Operators and loops</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Functions</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Arrays and Objects</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Data Structures - Stack, Queues, Maps, Sets</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Searching and Sorting Algorithms</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Problem Solving</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> : null}
                 </div>
                 <div className="IncomeSharingSyllabus">
                     <div className="IncomeSharingSyllabus__box" style={{ backgroundColor: "rgb(101, 187, 229)" }}>
@@ -264,12 +330,36 @@ const ElevationAcademy = () => {
                                     </div>
                                     <p className="IncomeSharingSyllabus__course-top-main--text">Building Websites using JS</p>
                                 </div>
-                                <p className="IncomeSharingSyllabus__course-top--icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" />
+                                <p className="IncomeSharingSyllabus__course-top--icon" onClick={() => setShowsevan(!showsevan)}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" style={{ color: "rgb(101, 187, 229)" }}>
+                                        <path fill="currentColor" d="M14,7H9V2A1,1,0,0,0,7,2V7H2A1,1,0,0,0,2,9H7v5a1,1,0,0,0,2,0V9h5a1,1,0,0,0,0-2Z"></path>
+                                    </svg>
                                 </p>
                             </div>
                         </div>
                     </div>
+                    {
+                        showsevan ?
+
+                            <div className="IncomeSharingSyllabusContent__course-content" style={{ maxHeight: "300px" }}>
+                                <div className="IncomeSharingSyllabus__course-content" style={{borderLeftColor:"rgb(101, 187, 229)"}}>
+                                    <div className="IncomeSharingSyllabus__topic-main--container">
+                                        <p className="IncomeSharingSyllabus__topic-main--container--heading">Building Websites using JS</p>
+                                        <ul className="IncomeSharingSyllabus__topic-main--container-list">
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Understanding and working with DOM</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Modifying Website Elements with JS</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Developer tools in Browsers</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Prototypes</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Closures</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Browser Local Storage</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Jquery, Ajax</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Promises</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>ES5 vs ES6 vs ES7</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(101, 187, 229)" }}>Eventloop in Javascript</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> : null}
                 </div>
                 <div className="IncomeSharingSyllabus">
                     <div className="IncomeSharingSyllabus__box" style={{ backgroundColor: "rgb(247, 182, 67)" }}>
@@ -284,12 +374,46 @@ const ElevationAcademy = () => {
                                     </div>
                                     <p className="IncomeSharingSyllabus__course-top-main--text">React</p>
                                 </div>
-                                <p className="IncomeSharingSyllabus__course-top--icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" />
+                                <p className="IncomeSharingSyllabus__course-top--icon" onClick={() => setShoweight(!showeight)}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" style={{ color: "rgb(247, 182, 67)" }}>
+                                        <path fill="currentColor" d="M14,7H9V2A1,1,0,0,0,7,2V7H2A1,1,0,0,0,2,9H7v5a1,1,0,0,0,2,0V9h5a1,1,0,0,0,0-2Z"></path>
+                                    </svg>
                                 </p>
                             </div>
                         </div>
                     </div>
+                    {
+                        showeight ?
+
+                            <div className="IncomeSharingSyllabusContent__course-content" style={{ maxHeight: "514px" }}>
+                                <div className="IncomeSharingSyllabus__course-content" style={{borderLeftColor:"rgb(247, 182, 67)"}}>
+                                    <div className="IncomeSharingSyllabus__topic-main--container">
+                                        <p className="IncomeSharingSyllabus__topic-main--container--heading">React</p>
+                                        <ul className="IncomeSharingSyllabus__topic-main--container-list">
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>React Intro</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Node installation</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Create an app using create-react-app</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Understanding basics of react app</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Understanding JSX</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Understanding virtual DOMS , Single page apps</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>React Lifecycle</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>States, class components vs functional components</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Event handling, props</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Building forms in React</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Routes</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Conditional Rendering</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Pure Components</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>High order components</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Controlled vs Uncontrolled components</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>React Hooks</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Redux</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Babel, Webpack</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Axios, Creating a mock server</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>SASS overview</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> : null}
                 </div>
                 <div className="IncomeSharingSyllabus">
                     <div className="IncomeSharingSyllabus__box" style={{ backgroundColor: "rgb(247, 128, 119)" }}>
@@ -304,12 +428,36 @@ const ElevationAcademy = () => {
                                     </div>
                                     <p className="IncomeSharingSyllabus__course-top-main--text">NodeJS</p>
                                 </div>
-                                <p className="IncomeSharingSyllabus__course-top--icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" />
+                                <p className="IncomeSharingSyllabus__course-top--icon" onClick={() => setShownine(!shownine)}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" style={{ color: "rgb(247, 128, 119)" }}>
+                                        <path fill="currentColor" d="M14,7H9V2A1,1,0,0,0,7,2V7H2A1,1,0,0,0,2,9H7v5a1,1,0,0,0,2,0V9h5a1,1,0,0,0,0-2Z"></path>
+                                    </svg>
                                 </p>
                             </div>
                         </div>
                     </div>
+                    {
+                        shownine ?
+
+                            <div className="IncomeSharingSyllabusContent__course-content" style={{ maxHeight: "300px" }}>
+                                <div className="IncomeSharingSyllabus__course-content">
+                                    <div className="IncomeSharingSyllabus__topic-main--container">
+                                        <p className="IncomeSharingSyllabus__topic-main--container--heading">NodeJS</p>
+                                        <ul className="IncomeSharingSyllabus__topic-main--container-list">
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 128, 119)" }}>Creating a Simple Server</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 128, 119)" }}>Response types  - HTML, JSON</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 128, 119)" }}>Routing</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 128, 119)" }}>Express Introduction</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 128, 119)" }}>Intergrate Frontend and Backend</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 128, 119)" }}>Express Params and Query String</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 128, 119)" }}>Express Middleware</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 128, 119)" }}>API Authentication</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 128, 119)" }}>JWT Token, Passport.js</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 128, 119)" }}>Socket Programming</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> : null}
                 </div>
                 <div className="IncomeSharingSyllabus">
                     <div className="IncomeSharingSyllabus__box" style={{ backgroundColor: "rgb(101, 187, 229)" }}>
@@ -324,12 +472,33 @@ const ElevationAcademy = () => {
                                     </div>
                                     <p className="IncomeSharingSyllabus__course-top-main--text">Database</p>
                                 </div>
-                                <p className="IncomeSharingSyllabus__course-top--icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" />
+                                <p className="IncomeSharingSyllabus__course-top--icon" onClick={() => setShowten(!showten)}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" style={{ color: "rgb(101, 187, 229)" }}>
+                                        <path fill="currentColor" d="M14,7H9V2A1,1,0,0,0,7,2V7H2A1,1,0,0,0,2,9H7v5a1,1,0,0,0,2,0V9h5a1,1,0,0,0,0-2Z"></path>
+                                    </svg>
                                 </p>
                             </div>
                         </div>
                     </div>
+                    {
+                        showten ?
+
+                            <div className="IncomeSharingSyllabusContent__course-content" style={{ maxHeight: "300px" }}>
+                                <div className="IncomeSharingSyllabus__course-content" style={{borderLeftColor:"rgb(101, 187, 229)"}}>
+                                    <div className="IncomeSharingSyllabus__topic-main--container">
+                                        <p className="IncomeSharingSyllabus__topic-main--container--heading">Database</p>
+                                        <ul className="IncomeSharingSyllabus__topic-main--container-list">
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: " rgb(101, 187, 229)" }}>SQL vs NOSQL</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: " rgb(101, 187, 229)" }}>MongoDB/ DynamoDB overview</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: " rgb(101, 187, 229)" }}>Installing MongoDB</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: " rgb(101, 187, 229)" }}>Connecting and Inserting Data</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: " rgb(101, 187, 229)" }}>Deleting and updating Data</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: " rgb(101, 187, 229)" }}>Understanding CRUD operations</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: " rgb(101, 187, 229)" }}>Understanding Firebase</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> : null}
                 </div>
                 <div className="IncomeSharingSyllabus">
                     <div className="IncomeSharingSyllabus__box" style={{ backgroundColor: "rgb(247, 182, 67)" }}>
@@ -344,12 +513,29 @@ const ElevationAcademy = () => {
                                     </div>
                                     <p className="IncomeSharingSyllabus__course-top-main--text">Code Review & Development</p>
                                 </div>
-                                <p className="IncomeSharingSyllabus__course-top--icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" />
+                                <p className="IncomeSharingSyllabus__course-top--icon" onClick={() => setShowoneone(!showoneone)}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" style={{ color: "rgb(247, 182, 67)" }}>
+                                        <path fill="currentColor" d="M14,7H9V2A1,1,0,0,0,7,2V7H2A1,1,0,0,0,2,9H7v5a1,1,0,0,0,2,0V9h5a1,1,0,0,0,0-2Z"></path>
+                                    </svg>
                                 </p>
                             </div>
                         </div>
                     </div>
+                    {
+                        showoneone ?
+
+                            <div className="IncomeSharingSyllabusContent__course-content" style={{ maxHeight: "229px" }}>
+                                <div className="IncomeSharingSyllabus__course-content" style={{borderLeftColor:"rgb(247, 182, 67)"}}>
+                                    <div className="IncomeSharingSyllabus__topic-main--container">
+                                        <p className="IncomeSharingSyllabus__topic-main--container--heading">Code Review &amp; Deployment</p>
+                                        <ul className="IncomeSharingSyllabus__topic-main--container-list">
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Deploy using Netlify and Github</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Get code review by Software Developers</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Deploy all the projects</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> : null}
                 </div>
                 <div className="IncomeSharingSyllabus">
                     <div className="IncomeSharingSyllabus__box" style={{ backgroundColor: "rgb(247, 182, 67)" }}>
@@ -364,12 +550,34 @@ const ElevationAcademy = () => {
                                     </div>
                                     <p className="IncomeSharingSyllabus__course-top-main--text">Interview Preparation & Major Project</p>
                                 </div>
-                                <p className="IncomeSharingSyllabus__course-top--icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" />
+                                <p className="IncomeSharingSyllabus__course-top--icon" onClick={() => setShowonetwo(!showonetwo)}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" style={{ color: "rgb(247, 182, 67)" }}>
+                                        <path fill="currentColor" d="M14,7H9V2A1,1,0,0,0,7,2V7H2A1,1,0,0,0,2,9H7v5a1,1,0,0,0,2,0V9h5a1,1,0,0,0,0-2Z"></path>
+                                    </svg>
                                 </p>
                             </div>
                         </div>
                     </div>
+                    {
+                        showonetwo ?
+
+                            <div className="IncomeSharingSyllabusContent__course-content" style={{ maxHeight: "300px" }}>
+                                <div className="IncomeSharingSyllabus__course-content" style={{borderLeftColor:"rgb(247, 182, 67)"}}>
+                                    <div className="IncomeSharingSyllabus__topic-main--container">
+                                        <p className="IncomeSharingSyllabus__topic-main--container--heading">Interview Preparation &amp; Major Projects</p>
+                                        <ul className="IncomeSharingSyllabus__topic-main--container-list">
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>HTML Blog Page</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>ToDo App</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Reminder Clock App</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>React Blog Web App</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Portfolio Building</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Ecommerce Web App(Major Project)</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Online Assessement Platform(Major Project)</li>
+                                            <li className="IncomeSharingSyllabus__topic-main--container-list--item" style={{ borderColor: "rgb(247, 182, 67)" }}>Resume Building</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> : null}
                 </div>
 
                 <div className="IncomeSharingSyllabus">
@@ -385,12 +593,26 @@ const ElevationAcademy = () => {
                                     </div>
                                     <p className="IncomeSharingSyllabus__course-top-main--text">Interview Opportunities</p>
                                 </div>
-                                <p className="IncomeSharingSyllabus__course-top--icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" />
+                                <p className="IncomeSharingSyllabus__course-top--icon" onClick={() => setShowonethree(showonethree)}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" style={{ color: "rgb(101, 187, 229)" }}>
+                                        <path fill="currentColor" d="M14,7H9V2A1,1,0,0,0,7,2V7H2A1,1,0,0,0,2,9H7v5a1,1,0,0,0,2,0V9h5a1,1,0,0,0,0-2Z"></path>
+                                    </svg>
                                 </p>
                             </div>
                         </div>
                     </div>
+                    {
+                        showonethree ?
+
+                            <div className="IncomeSharingSyllabusContent__course-content" style={{ maxHeight: "0px" }}>
+                                <div className="IncomeSharingSyllabus__course-content" style={{borderLeftColor:"rgb(101, 187, 229)"}}>
+                                    <div className="IncomeSharingSyllabus__topic-main--container">
+                                        <p className="IncomeSharingSyllabus__topic-main--container--heading">Interviews Opportunities with companies</p>
+                                        <ul className="IncomeSharingSyllabus__topic-main--container-list">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> : null}
                 </div>
 
             </div>
@@ -428,7 +650,7 @@ const ElevationAcademy = () => {
                         (item, index) => {
                             return (
                                 <div key={index}>
-                                    <div className="slick-slide slick-active slick-current">
+                                    <div className="slick-active slick-current">
                                         <div>
                                             <div tabindex="-1" style={{ width: "100%", display: "inline-block" }}>
                                                 <div className="Student__testimonials-placed-people-container-card">
@@ -446,6 +668,7 @@ const ElevationAcademy = () => {
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             )
                         }

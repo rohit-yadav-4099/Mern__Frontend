@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import '../CSScompo/Header.css';
+import { useAuth0 } from '@auth0/auth0-react';
 
 const Header = () => {
 
     const [isOpen, setIsOpen] = useState(false)
     const auth = localStorage.getItem("token");
     const Navi = useNavigate();
+    const {isAuthenticated, user} = useAuth0()
 
     const haldleOpenCloseMEnu = () => {
         setIsOpen(!isOpen)
@@ -22,11 +24,12 @@ const Header = () => {
             <div className='w-10/12 h-[75px] flex mx-auto justify-between items-center'>
                 <div>
                     {/* logo */}
+                    <NavLink to="/">
                     <img src='\image\logoPrepBytes.svg' alt='logo'
                         className='h-[75px]'
-                    />
+                    /></NavLink>
                 </div>
-                <div className='w-7/12 flex-col items-end top-1 visible md:flex tabheader'>
+                <div className='w-7/14 flex-col items-end top-1 visible md:flex tabheader'>
                     {auth ? null :
                         (
                             <div className='space-x-4 mr-8'>

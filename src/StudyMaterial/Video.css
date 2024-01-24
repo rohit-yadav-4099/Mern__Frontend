@@ -112,6 +112,14 @@
 .YTicon{
     margin-left: 2vh;
     margin-top: 4vh;
+    display: flex;
+}
+
+.VideoRepositoryMain__main-content--cards-card-bottom--text {
+    color: #858585;
+    font-size: 12px;
+    margin-left: 7px;
+    margin-top: 5px;
 }
 
 @media screen and (min-width: 300px) and (max-width: 600px){

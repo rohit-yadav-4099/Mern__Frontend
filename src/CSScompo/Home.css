@@ -672,7 +672,7 @@
 .PrepMentors__main--container-card {
     flex: 0 0 20em;
     margin: 50px 30px;
-    width: 40vh;
+    width: 45vh;
     background-color: #fff;
     position: relative;
     border-radius: 10px;
@@ -890,16 +890,16 @@
 
 .Community__main-container-card--heading {
     color: #424242;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    padding: 20px 52px 5px;
+    padding: 20px 30px 5px;
     text-align: center;
 }
 
 .Community__main-container-card--subheading {
     color: #858585;
     font-size: 16px;
-    padding: 10px 50px;
+    padding: 10px 30px;
     text-align: center;
 }
 

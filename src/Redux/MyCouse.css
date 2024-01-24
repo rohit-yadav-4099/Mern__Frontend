@@ -1,0 +1,59 @@
+/* body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+} */
+
+.MyDashboard{
+    display: flex;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.sidebar{
+    width: 15%;
+    /* border: 2px solid; */
+    height: 89vh;
+    position: relative;
+    /* box-shadow: 5px 7px 6px rgba(0,0,0,.05); */
+    border-right-color: rgba(0,0,0,.05);
+    background-color: white;
+}
+
+.Mycourse{
+    width: 85%;
+    background-color: #f0f3f4;
+}
+
+/* .footer_box{
+    display: none;
+} */
+
+.mycourse-heading{
+    margin: 30px 20vh auto 10vh;
+    border-bottom: 1px solid rgb(168, 166, 166);
+    color: #00a5ec;
+    font-weight: 400;
+
+}
+
+/* .mycourse-heading::after{
+    transition: all .3s cubic-bezier(1,0,0,1);
+    will-change: transform,box-shadow,opacity;
+    position: absolute;
+    content: "";
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 3px 3px 0 0;
+    background: #00a5ec;
+    box-shadow: 0 4px 10px 3px rgba(#00a5ec,.15);
+    opacity: 0;
+    transform: scaleX(0);
+    opacity: 1;
+    transform: scale(1);
+
+} */
+
+

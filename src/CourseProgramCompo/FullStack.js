@@ -6,6 +6,7 @@ const FullStack = () => {
 
   const [data, setData] = useState([])
   console.log(data)
+
   const [show, setShow] = useState(false)
   const [showtwo, setShowtwo] = useState(false)
   const [showthree, setShowthree] = useState(false)
@@ -18,6 +19,11 @@ const FullStack = () => {
   const [showten, setShowten] = useState(false)
   const [showoneone, setShowoneone] = useState(false)
   const [showonetwo, setShowonetwo] = useState(false)
+
+  const [selectedOption, setselectedOption] = useState("1st May")
+  const handleOptionChange = (event) => {
+    setselectedOption(event.target.value)
+  }
 
   useEffect(() => {
     async function fetchapi() {
@@ -71,8 +77,14 @@ const FullStack = () => {
           <div className="BatchDetails__batch_text_section">
             <div className="BatchComponent__date_container">
               <div className="BatchComponent_radio_buttons BatchComponent_radio_buttons_shadow">
-                <label className="BatchComponent_radio_label BatchComponent_radio_label_top_no">
-                  <input className="BatchComponent__radio_input" type="radio" checked />
+                <label for="1stMay" className="BatchComponent_radio_label BatchComponent_radio_label_top_no">
+                  <input className="BatchComponent__radio_input"
+                    type="radio"
+                    id='1stMay'
+                    value="1st May"
+                    name='selectBatch'
+                    checked={selectedOption === "1st May"}
+                    onChange={handleOptionChange} />
                   <span className="BatchComponent__radio_text_container">
                     <h5 className="BatchComponent__radio_batch_start_date">1st May</h5>
                     <p className="BatchComponent__reg_end_date">
@@ -82,8 +94,14 @@ const FullStack = () => {
                 </label>
               </div>
               <div className="BatchComponent_radio_buttons ">
-                <label className="BatchComponent_radio_label BatchComponent_radio_label_top_no">
-                  <input className="BatchComponent__radio_input" type="radio" />
+                <label className="BatchComponent_radio_label BatchComponent_radio_label_top_no" for="15thMay">
+                  <input className="BatchComponent__radio_input"
+                    type="radio"
+                    id='15thMay'
+                    value="15th May"
+                    name='selectBatch'
+                    checked={selectedOption === "15th May"}
+                    onChange={handleOptionChange} />
                   <span className="BatchComponent__radio_text_container">
                     <h5 className="BatchComponent__radio_batch_start_date">15th May</h5>
                     <p className="BatchComponent__reg_end_date">

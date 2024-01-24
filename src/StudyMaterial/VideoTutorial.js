@@ -43,6 +43,7 @@ const VideoTutorial = () => {
                                             </div>
                                             <div className="YTicon">
                                                 <img src="\VideoImage\YTicon.svg" />
+                                                <p class="VideoRepositoryMain__main-content--cards-card-bottom--text">21 Videos</p>
                                             </div>
                                         </div>
                                     </div>

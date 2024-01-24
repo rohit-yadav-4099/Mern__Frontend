@@ -11,7 +11,7 @@
 }
 
 .sidebar{
-    width: 15%;
+    width: 16.5%;
     /* border: 2px solid; */
     height: 89vh;
     position: relative;
@@ -21,7 +21,7 @@
 }
 
 .Mycourse{
-    width: 85%;
+    width: 83.5%;
     background-color: #f0f3f4;
 }
 
@@ -35,6 +35,58 @@
     color: #00a5ec;
     font-weight: 400;
 
+}
+
+.Profile_nav_selected {
+    box-sizing: border-box;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ecf9ff;
+    color: #5393ec;
+    border-right: 3px solid #5393ec;
+    padding-left: 5px;
+    transition: width .8s ease;
+}
+
+.Profile_nav-list-icon {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+span {
+    display: inline-block;
+    letter-spacing: 1.3px;
+    font-weight: 400;
+}
+
+.MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.Profile_nav-list-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.MuiSvgIcon-root {
+    font-size: 1.2rem!important;
+}
+
+.Profile_nav-list-detail {
+    margin-left: 70px;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .5s linear;
+    transition-delay: .3s;
 }
 
 /* .mycourse-heading::after{

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './MockTest.css';
 import { useDispatch } from 'react-redux';
 import { addtocourse } from '../Redux/Slice';
+import { loadStripe } from '@stripe/stripe-js';
 
 const MockTest = () => {
     const [data, setData] = useState([])
@@ -17,6 +18,30 @@ const MockTest = () => {
         }
         fetchapi()
     })
+
+    
+    const handleBuy = async () => {
+        const stripe = await loadStripe("pk_test_51OQ699SDqC8mEPn5Q8XJZPCPbWDs3QdmS0iRgQP6uGNG3AHBgIIRiBrDhW6gB1QHC3C9GnJdLF7jW4sgEDA8zTJH00W163lIIE");
+        const body = {
+            products: data,
+        };
+        const headers = {
+            "Content-Type": "application/json",
+        };
+        const response = await fetch("http://localhost:3030/api/create-checkout-session",
+            {
+                method: "POST",
+                headers: headers,
+                body: JSON.stringify(body),
+            });
+        const session = await response.json();
+        const result = stripe.redirectToCheckout({
+            sessionId: session.id,
+        });
+        if (result.error) {
+            console.log(result.error);
+        }
+    };
     return (
         <div>
             <div>
@@ -90,9 +115,10 @@ const MockTest = () => {
                                                 </div>
                                                 <div className='cardbuy'>
                                                     <button className='cardbuybtn'
-                                                    onClick={() => 
-                                                        dispatch(addtocourse({id, name,image, date, dateheading, participants, participantsheading, duration, durationheading}))}
-                                                    >
+                                                    onClick={handleBuy}
+                                                    // {() => 
+                                                    //     dispatch(addtocourse({id, name,image, date, dateheading, participants, participantsheading, duration, durationheading}))}
+                                                        >
                                                         Buy Now
                                                         </button>
                                                 </div>
@@ -117,6 +143,11 @@ const MockTest = () => {
                             <div className='practice-mock-Testlist-container-topicwise'>
                                 {data.filter((item) => item.id >= 19 && item.id <= 27).map(
                                     (item,index) => {
+                                        const {
+                                            id= item.id,
+                                            name = item.name,
+                                            image= item.image,
+                                        } = item;
                                         return(
                                             <div key={index}>
                                                 <div className='topic-wise-card'>
@@ -125,7 +156,9 @@ const MockTest = () => {
                                                     </div>
                                                     <p className='topic-wise-card-name'>{item.name}</p>
                                                     <div className='topic-wise-card-btn'>
-                                                        <button className='topic-wise-card-buybtn'>Buy Now</button>
+                                                        <button className='topic-wise-card-buybtn'
+                                                         onClick={() => 
+                                                            dispatch(addtocourse({id, name,image}))}>Buy Now</button>
 
                                                     </div>
 
@@ -145,6 +178,10 @@ const MockTest = () => {
                             <div className='practicemock-testlist-container-card-company'>
                                 {data.filter((item) => item.id >= 28 && item.id <= 37).map(
                                     (item,index) => {
+                                        const {
+                                            id= item.id,
+                                            image= item.image,
+                                        }= item;
                                         return(
                                             <div key={index}>
                                                 <div className='practicemock-testlist-company-card'>
@@ -153,7 +190,9 @@ const MockTest = () => {
 
                                                     </div>
                                                     <div className='practicemock-testlist-company-card-btn'>
-                                                        <button className='practicemock-testlist-company-card-buybtn'>Buy Now</button>
+                                                        <button className='practicemock-testlist-company-card-buybtn'
+                                                        onClick={() => 
+                                                            dispatch(addtocourse({id,image}))}>Buy Now</button>
 
                                                     </div>
 

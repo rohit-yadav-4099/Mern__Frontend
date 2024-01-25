@@ -9,10 +9,17 @@ const Header = () => {
     const auth = localStorage.getItem("token");
     const Navi = useNavigate();
     const {isAuthenticated, user} = useAuth0()
+    const [isLoggedIn, setLoggedIn] = useState(false);
+    const [email, setEmail] = useState(' ')
 
     const haldleOpenCloseMEnu = () => {
         setIsOpen(!isOpen)
     }
+
+    const handleLogin = (userEmail) => {
+        setLoggedIn(true);
+        setEmail(userEmail);
+      };
 
     const logoutfunc = () => {
         localStorage.clear();

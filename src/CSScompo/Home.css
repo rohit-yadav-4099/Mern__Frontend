@@ -1308,53 +1308,53 @@
         color: #3e4041;
     }
 
-    .Home-jurney-main-right-box{
+    .Home-jurney-main-right-box {
         justify-content: center;
     }
 
-    .Home-jurney-main-right-box-right-bottom{
+    .Home-jurney-main-right-box-right-bottom {
         background-size: 180px;
     }
 
-    .know-detail-main{
+    .know-detail-main {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .know-detail-main-top{
+    .know-detail-main-top {
         flex-direction: column;
     }
 
-    .know-detail-main-top-left{
+    .know-detail-main-top-left {
         width: 100%;
     }
 
-    .know-detail-main-top-left-box-text{
+    .know-detail-main-top-left-box-text {
         font-size: 25px;
     }
 
-    .know-detail-main-top-left-box-subtext{
+    .know-detail-main-top-left-box-subtext {
         font-size: 15px;
     }
 
-    .know-detail-main-top-right{
+    .know-detail-main-top-right {
         padding: 0;
     }
 
-    .know-detail-main-top-right-heading{
+    .know-detail-main-top-right-heading {
         font-size: 24px;
     }
 
-    .know-detail-main-top-right-container{
+    .know-detail-main-top-right-container {
         width: 80%;
         margin: auto;
     }
 
-    .know-detail-main-top-right-container-box{
+    .know-detail-main-top-right-container-box {
         text-align: center;
     }
 
-    .know-detail-main-top-right-container-box-text{
+    .know-detail-main-top-right-container-box-text {
         font-family: 18px;
         margin-top: 40px;
         margin: 20px 0;
@@ -1362,31 +1362,124 @@
         color: #858585;
     }
 
-    .know-detail-main-top-right-container-box{
+    .know-detail-main-top-right-container-box {
         text-align: center;
     }
 
-    .know-detail-main-bottom-container{
+    .know-detail-main-bottom-container {
         justify-content: center;
     }
 
-    .know-detail-main-bottom-container-card{
+    .know-detail-main-bottom-container-card {
         padding: 10px;
         margin: 10px;
         max-width: 120px;
     }
 
-    .know-detail-main-bottom-container-card-image-img{
+    .know-detail-main-bottom-container-card-image-img {
         width: 60%;
         height: 60px;
     }
 
-    .know-detail-main-bottom-container-card-name{
+    .know-detail-main-bottom-container-card-name {
         font-size: 21px;
     }
 
-    .know-detail-main-bottom-container-card-text{
+    .know-detail-main-bottom-container-card-text {
         font-size: 11px;
+    }
+
+    .CBMBanner-main {
+        min-width: 300px;
+        min-height: 45vh;
+        margin: 80px 20px 15px;
+    }
+
+    .CBMBanner_info-cont {
+        width: unset;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .CBMBanner_info-title {
+        font-size: 20px;
+    }
+
+    .CBMBanner_info-text {
+        font-size: 14px;
+    }
+
+    .CBMBanner_cta.MuiTouchRipple-root {
+        margin-top: 0;
+    }
+
+    .Community-main {
+        padding-bottom: 0;
+    }
+
+    .Community__main--heading {
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 25px;
+    }
+
+    .Community__main--subheading {
+        width: 90%;
+        margin-bottom: 80px;
+    }
+
+    .Community-main-container{
+        display: block;
+        margin-bottom: 5vh;
+
+        margin-left: 7vh;
+    }
+
+    .Community__main-container-card {
+        flex: 0 0 22em;
+        max-width: 300px;
+        /* margin-left: 20px; */
+    }
+
+    .Community__main-container-card--heading {
+        font-size: 18px;
+    }
+
+    .Community__main-container-card-button {
+        bottom: 18px;
+    }
+
+    .GetCallback-main{
+        padding: 50px 0;
+    }
+
+    .GetCallback-main-container{
+        flex-direction: column;
+    margin: 20px;
+    align-items: center;
+    }
+
+    .GetCallback-main-container-left{
+        width: 100%;
+    }
+
+    .GetCallBack__main-container-left--subheading{
+        width: 90%;
+    }
+
+    .GetCallBack__main-container-left-image{
+        margin-top: 20px;
+    }
+
+    .getCallBack-main-container-right{
+        width: 100%;
+    }
+
+    .Popular-blog-Main-blog{
+        display: block;
+        /* justify-content: center; */
+        margin-left: 7vh;
     }
 
 }

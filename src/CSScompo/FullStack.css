@@ -315,7 +315,7 @@ span {
 }
 
 .StackProgram__main__right--heading {
-    color: rgba(10,45,71,.9294117647058824);
+    color: rgba(10, 45, 71, .9294117647058824);
     font-size: 30px;
     margin-top: 50px;
     margin-bottom: 120px;
@@ -323,7 +323,7 @@ span {
 }
 
 .StackProgram__main__right--box {
-    font-family: Poppins,sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 500;
     width: 70%;
     margin: 0 auto;
@@ -347,12 +347,13 @@ span {
 }
 
 .StackProgram__main__right--box-one--text-container--text {
-    color: rgba(72,55,55,.9294117647058824);
+    color: rgba(72, 55, 55, .9294117647058824);
     margin-right: 21px;
 }
 
-.StackCompanies-main{
-    background-color: #f7f9fb;;
+.StackCompanies-main {
+    background-color: #f7f9fb;
+    ;
     max-width: 1280px;
     margin: 0 auto;
     min-height: 75vh;
@@ -363,31 +364,31 @@ span {
     text-align: center;
     padding-top: 70px;
     margin-bottom: 70px;
-    color: rgba(10,45,71,.9294117647058824);
+    color: rgba(10, 45, 71, .9294117647058824);
     font-size: 30px;
 }
 
-.StackCompanies-main-container{
+.StackCompanies-main-container {
     display: flex;
     gap: 100px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.StackCompanies-main-container-card{
+.StackCompanies-main-container-card {
     flex: 0 0 21em;
     margin: 30px auto;
     padding: 15px 30px;
     background-color: #fff;
     position: relative;
-    background: transparent -webkit-gradient(linear,left top,left bottom,from(#d0dee9),to(#fff)) 0 0 no-repeat padding-box;
-    background: transparent linear-gradient(180deg,#d0dee9,#fff) 0 0 no-repeat padding-box;
-    box-shadow: 0 10px 30px rgba(208,222,233,.41568627450980394);
+    background: transparent -webkit-gradient(linear, left top, left bottom, from(#d0dee9), to(#fff)) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #d0dee9, #fff) 0 0 no-repeat padding-box;
+    box-shadow: 0 10px 30px rgba(208, 222, 233, .41568627450980394);
     border-radius: 10px;
 }
 
 .StackCompanies__main--container-card--heading {
-    color: rgba(10,45,71,.9294117647058824);
+    color: rgba(10, 45, 71, .9294117647058824);
     font-size: 18px;
     font-weight: 500;
     text-align: center;
@@ -396,14 +397,14 @@ span {
 }
 
 .StackCompanies__main--container-card--text {
-    color: rgba(106,127,134,.9294117647058824);
+    color: rgba(106, 127, 134, .9294117647058824);
     font-size: 18px;
     font-weight: 400;
     text-align: center;
     margin-bottom: 50px;
 }
 
-.StackCompanies__main--container-card-companies{
+.StackCompanies__main--container-card-companies {
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -415,27 +416,28 @@ span {
     position: relative;
 }
 
-.StackCompanies__main--container-card-companies-top{
+.StackCompanies__main--container-card-companies-top {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     position: relative;
 }
 
-.StackCompanies__main--container-card-companies-middle{
+.StackCompanies__main--container-card-companies-middle {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
 }
 
-.StackCompanies__main--container-card-companies-top, .StackCompanies__main--container-card-companies-middle{
+.StackCompanies__main--container-card-companies-top,
+.StackCompanies__main--container-card-companies-middle {
     display: flex;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
 }
 
-.StackCompanies__main--container-card-companies-bottom{
+.StackCompanies__main--container-card-companies-bottom {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -446,22 +448,22 @@ span {
     margin: 5px 0;
 }
 
-.Statistics{
+.Statistics {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.Statistics-main{
+.Statistics-main {
     padding: 80px 0;
     display: flex;
 }
 
-.Statistics-main-left{
+.Statistics-main-left {
     width: 60%;
 }
 
 .Statistics__main-left-container--heading {
-    color: rgba(10,45,71,.9294117647058824);
+    color: rgba(10, 45, 71, .9294117647058824);
     font-weight: 500;
     font-size: 24px;
     text-align: center;
@@ -474,7 +476,7 @@ span {
     margin-top: 11px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-color: rgba(244,163,76,.9294117647058824);
+    background-color: rgba(244, 163, 76, .9294117647058824);
     position: absolute;
     height: 3px;
     width: 28px;
@@ -483,7 +485,7 @@ span {
     margin-left: -5px;
 }
 
-.Statistics__main-left-container-block{
+.Statistics__main-left-container-block {
     display: flex;
     /* justify-content: space-around; */
 }
@@ -498,29 +500,29 @@ span {
     height: 60px;
 }
 
-.Statistics__main-left-container--block-container-block-box{
+.Statistics__main-left-container--block-container-block-box {
     width: 60vh;
 }
 
 .Statistics__main-left-container--block-container-block-box-heading {
-    color: rgba(10,45,71,.9294117647058824);
+    color: rgba(10, 45, 71, .9294117647058824);
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
 .Statistics__main-left-container--block-container-block-box-text {
-    color: rgba(106,127,134,.9294117647058824);
+    color: rgba(106, 127, 134, .9294117647058824);
     width: 200px;
     text-align: center;
 }
 
-.Statistics__main-right-container{
+.Statistics__main-right-container {
     width: 60%;
 }
 
 .Statistics__main-right-container--heading {
-    color: rgba(10,45,71,.9294117647058824);
+    color: rgba(10, 45, 71, .9294117647058824);
     font-weight: 500;
     font-size: 24px;
     text-align: center;
@@ -533,7 +535,7 @@ span {
     margin-top: 11px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-color: rgba(244,163,76,.9294117647058824);
+    background-color: rgba(244, 163, 76, .9294117647058824);
     position: absolute;
     height: 3px;
     width: 28px;
@@ -554,15 +556,15 @@ span {
 .Statistics__main-right-container--source {
     margin-top: 30px;
     text-align: center;
-    color: rgba(10,45,71,.9294117647058824);
+    color: rgba(10, 45, 71, .9294117647058824);
 }
 
-.StackMentors{
-    background: transparent linear-gradient(89deg,rgba(45,111,162,.8862745098039215),rgba(2,9,14,.9294117647058824)) 0 0 no-repeat padding-box;
+.StackMentors {
+    background: transparent linear-gradient(89deg, rgba(45, 111, 162, .8862745098039215), rgba(2, 9, 14, .9294117647058824)) 0 0 no-repeat padding-box;
     min-height: 85vh;
 }
 
-.StackMentors-main{
+.StackMentors-main {
     padding-top: 30px;
     padding-bottom: 30px;
     max-width: 1280px;
@@ -576,7 +578,7 @@ span {
     margin: 70px 0 120px;
 }
 
-.StackMentors-main-container{
+.StackMentors-main-container {
     display: flex;
     justify-content: space-around;
 }
@@ -591,7 +593,7 @@ span {
     background-color: #fff;
     position: relative;
     border-radius: 10px;
-    border-bottom: 10px solid rgba(244,163,76,.9294117647058824);
+    border-bottom: 10px solid rgba(244, 163, 76, .9294117647058824);
 }
 
 .StackMentors__main--container-card-image {
@@ -605,7 +607,7 @@ span {
 }
 
 .StackMentors__main--container-card--heading {
-    color: rgba(10,45,71,.9294117647058824);
+    color: rgba(10, 45, 71, .9294117647058824);
     font-size: 20px;
     font-weight: 500;
     text-align: center;
@@ -614,13 +616,13 @@ span {
 }
 
 .StackMentors__main--container-card--text {
-    color: rgba(106,127,134,.9294117647058824);
+    color: rgba(106, 127, 134, .9294117647058824);
     text-align: center;
     font-size: 16px;
     margin-bottom: 50px;
 }
 
-.StackSyllabus-main{
+.StackSyllabus-main {
     padding: 30px 10px 40px;
     background: #f7f9fb;
 }
@@ -638,13 +640,13 @@ span {
 }
 
 .StackSyllabus__main-top-container--heading {
-    color: rgba(10,45,71,.9294117647058824);
+    color: rgba(10, 45, 71, .9294117647058824);
     font-size: 30px;
 }
 
 .StackSyllabus__main-top-container--right-button {
     background: transparent;
-    box-shadow: 0 3px 6px rgba(95,141,196,.2);
+    box-shadow: 0 3px 6px rgba(95, 141, 196, .2);
     border-radius: 5px;
     color: #ff219f;
     border: 1px solid #ff219f;
@@ -657,7 +659,7 @@ span {
 
 .StackSyllabus__main-top--text {
     width: 60%;
-    color: rgba(106,127,134,.9294117647058824);
+    color: rgba(106, 127, 134, .9294117647058824);
 }
 
 .StackSyllabus {
@@ -674,7 +676,8 @@ span {
     flex-direction: column;
 }
 
-.StackSyllabus__course-top, .StackSyllabus__course-top-main {
+.StackSyllabus__course-top,
+.StackSyllabus__course-top-main {
     color: #fff;
     position: relative;
     border-top-left-radius: 5px;
@@ -682,7 +685,7 @@ span {
 }
 
 .StackSyllabus__course-top {
-    background: transparent linear-gradient(89deg,rgba(45,111,162,.8862745098039215),rgba(2,9,14,.9294117647058824)) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(89deg, rgba(45, 111, 162, .8862745098039215), rgba(2, 9, 14, .9294117647058824)) 0 0 no-repeat padding-box;
     padding: 23px 20px 20px;
 }
 
@@ -711,9 +714,9 @@ span {
 
 .StackSyllabus__course-top-main--done {
     font-size: 16px;
-    color: rgba(244,163,76,.9294117647058824);
+    color: rgba(244, 163, 76, .9294117647058824);
     border-radius: 14px;
-    border: 1px solid rgba(244,163,76,.3);
+    border: 1px solid rgba(244, 163, 76, .3);
     font-size: 14px;
     font-weight: 600;
     text-align: center;
@@ -734,7 +737,7 @@ span {
     color: #72839c;
     padding: 16px 40px;
     font-size: 16px;
-    box-shadow: 0 3px 6px rgba(75,140,232,.10196078431372549);
+    box-shadow: 0 3px 6px rgba(75, 140, 232, .10196078431372549);
     letter-spacing: .16px;
     flex-wrap: wrap;
 }
@@ -752,11 +755,11 @@ span {
 
 .StackSyllabus__course-bottom--button {
     padding: 11px 34px 10px;
-    color: rgba(10,45,71,.9294117647058824);
+    color: rgba(10, 45, 71, .9294117647058824);
     letter-spacing: .16px;
     border-radius: 5px;
     font-size: 16px;
-    box-shadow: 0 0 3px rgba(0,0,0,.1607843137254902);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .1607843137254902);
     border: none;
     cursor: pointer;
 }
@@ -808,7 +811,7 @@ span {
     margin-right: 0.7rem;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PHBhdGggZD0iTTEzLjI1IDEwTDYuMTA5IDIuNThhLjY5Ny42OTcgMCAwMTAtLjk3OS42OC42OCAwIDAxLjk2OSAwbDcuODMgNy45MDhhLjY5Ny42OTcgMCAwMTAgLjk3OWwtNy44MyA3LjkwOGMtLjI2OC4yNzEtLjcwMS4yNy0uOTY5IDBzLS4yNjgtLjcwNyAwLS45NzlMMTMuMjUgMTB6Ii8+PC9zdmc+);
     background-size: cover;
-    background-color: rgba(244,163,76,.9294117647058824);
+    background-color: rgba(244, 163, 76, .9294117647058824);
     -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PHBhdGggZD0iTTEzLjI1IDEwTDYuMTA5IDIuNThhLjY5Ny42OTcgMCAwMTAtLjk3OS42OC42OCAwIDAxLjk2OSAwbDcuODMgNy45MDhhLjY5Ny42OTcgMCAwMTAgLjk3OWwtNy44MyA3LjkwOGMtLjI2OC4yNzEtLjcwMS4yNy0uOTY5IDBzLS4yNjgtLjcwNyAwLS45NzlMMTMuMjUgMTB6Ii8+PC9zdmc+);
     -webkit-mask-size: cover;
     mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PHBhdGggZD0iTTEzLjI1IDEwTDYuMTA5IDIuNThhLjY5Ny42OTcgMCAwMTAtLjk3OS42OC42OCAwIDAxLjk2OSAwbDcuODMgNy45MDhhLjY5Ny42OTcgMCAwMTAgLjk3OWwtNy44MyA3LjkwOGMtLjI2OC4yNzEtLjcwMS4yNy0uOTY5IDBzLS4yNjgtLjcwNyAwLS45NzlMMTMuMjUgMTB6Ii8+PC9zdmc+);
@@ -857,10 +860,10 @@ span {
     padding: 15px 20px;
     background-color: #fff;
     position: relative;
-    background: transparent -webkit-gradient(linear,left top,left bottom,from(#d0dee9),to(#fff)) 0 0 no-repeat padding-box;
-    background: transparent linear-gradient(180deg,#d0dee9,#fff) 0 0 no-repeat padding-box;
-    -webkit-box-shadow: 0 10px 30px rgba(208,222,233,.41568627450980394);
-    box-shadow: 0 10px 30px rgba(208,222,233,.41568627450980394);
+    background: transparent -webkit-gradient(linear, left top, left bottom, from(#d0dee9), to(#fff)) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #d0dee9, #fff) 0 0 no-repeat padding-box;
+    -webkit-box-shadow: 0 10px 30px rgba(208, 222, 233, .41568627450980394);
+    box-shadow: 0 10px 30px rgba(208, 222, 233, .41568627450980394);
     border-radius: 10px;
     -ms-flex: 0 0 20em;
     flex: 0 0 20em;
@@ -877,7 +880,7 @@ span {
 }
 
 .StackSyllabus__main--container-card--heading {
-    color: rgba(10,45,71,.9294117647058824);
+    color: rgba(10, 45, 71, .9294117647058824);
     font-size: 18px;
     font-weight: 500;
     text-align: center;
@@ -886,30 +889,30 @@ span {
 }
 
 .StackSyllabus__main--container-card--text {
-    color: rgba(106,127,134,.9294117647058824);
+    color: rgba(106, 127, 134, .9294117647058824);
     text-align: center;
     margin-bottom: 30px;
 }
 
-.StackIntern-main{
+.StackIntern-main {
     display: flex;
 }
 
-.StackIntern-main-left{
+.StackIntern-main-left {
     width: 50%;
     padding: 10px 50px;
 }
 
 .StackIntern__main__left--heading {
-    color: rgba(10,45,71,.9294117647058824);
+    color: rgba(10, 45, 71, .9294117647058824);
     font-size: 30px;
     margin-top: 50px;
     margin-bottom: 80px;
     text-align: center;
 }
 
-.StackIntern-main-left-container{
-    font-family: Poppins,sans-serif;
+.StackIntern-main-left-container {
+    font-family: Poppins, sans-serif;
     font-weight: 500;
 }
 
@@ -930,18 +933,18 @@ span {
 }
 
 .StackIntern__main__left--box-two--text-container--text {
-    color: rgba(72,55,55,.9294117647058824);
+    color: rgba(72, 55, 55, .9294117647058824);
     margin-right: 25px;
 }
 
 .StackIntern__main__right {
     width: 50%;
     padding: 10px 50px 50px;
-    background: rgba(244,163,76,.9294117647058824);
+    background: rgba(244, 163, 76, .9294117647058824);
 }
 
 .StackIntern__main__right--heading {
-    color: rgba(10,45,71,.9294117647058824);
+    color: rgba(10, 45, 71, .9294117647058824);
     font-size: 24px;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -949,7 +952,7 @@ span {
 }
 
 .StackIntern__main__right--text {
-    color: hsla(0,0%,100%,.9294117647058824);
+    color: hsla(0, 0%, 100%, .9294117647058824);
     text-align: center;
 }
 
@@ -966,17 +969,17 @@ span {
 }
 
 .StackFees {
-    background: transparent linear-gradient(89deg,rgba(45,111,162,.8862745098039215),rgba(2,9,14,.9294117647058824)) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(89deg, rgba(45, 111, 162, .8862745098039215), rgba(2, 9, 14, .9294117647058824)) 0 0 no-repeat padding-box;
 }
 
-.StackFees-main{
+.StackFees-main {
     max-width: 1290px;
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 80px;
 }
 
-.StackFees-main-container{
+.StackFees-main-container {
     background: #fff;
     border-radius: 10px;
     padding: 60px 40px;
@@ -1071,7 +1074,7 @@ span {
 
 .StackFees__main-fees__right-content--heading {
     text-align: center;
-    color: rgba(10,45,71,.9294117647058824);
+    color: rgba(10, 45, 71, .9294117647058824);
     font-size: 24px;
     margin-bottom: 30px;
 }
@@ -1102,7 +1105,7 @@ span {
 }
 
 .MuiInputLabel-animated {
-    transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms, transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
 }
 
 .MuiInputLabel-formControl {
@@ -1149,7 +1152,7 @@ span {
     position: relative;
 }
 
-label + .MuiInput-formControl {
+label+.MuiInput-formControl {
     margin-top: 16px;
 }
 
@@ -1216,7 +1219,7 @@ MuiInputBase-input {
 
 .StackFees__main-fees__right-content--main--bottom-button {
     background: transparent;
-    box-shadow: 0 3px 6px rgba(95,141,196,.2);
+    box-shadow: 0 3px 6px rgba(95, 141, 196, .2);
     border-radius: 5px;
     color: #ff219f;
     border: 1px solid #ff219f;
@@ -1227,7 +1230,7 @@ MuiInputBase-input {
     font-size: 18px;
 }
 
-.StudentTest{
+.StudentTest {
     max-width: 1251px;
     margin: 125px auto 100px;
 }
@@ -1259,13 +1262,13 @@ MuiInputBase-input {
     line-height: 1.235;
 }
 
-.StudentTest-container{
+.StudentTest-container {
     display: flex;
     width: 100%;
     position: relative;
 }
 
-.slick-track{
+.slick-track {
     width: 1640px;
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
@@ -1277,7 +1280,8 @@ MuiInputBase-input {
     margin-right: auto;
 }
 
-.slick-track:after, .slick-track:before {
+.slick-track:after,
+.slick-track:before {
     display: table;
     content: "";
 }
@@ -1297,7 +1301,7 @@ MuiInputBase-input {
 
 .Student__testimonials-placed-people-container-card {
     background: #fff 0 0 no-repeat padding-box;
-    box-shadow: 0 16px 32px rgba(0,0,0,.0784313725490196);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, .0784313725490196);
     padding: 30px;
     flex: 0 0 70%;
     margin: 10px;
@@ -1319,7 +1323,7 @@ MuiInputBase-input {
 }
 
 .Student__testimonials-placed-people-container-card-top-name {
-    color: rgba(10,45,71,.9294117647058824);
+    color: rgba(10, 45, 71, .9294117647058824);
     font-size: 18px;
 }
 
@@ -1338,7 +1342,7 @@ MuiInputBase-input {
 
 .Student__testimonials-placed-people-container-card-bottom-text {
     font-size: 15px;
-    color: rgba(106,127,134,.9294117647058824);
+    color: rgba(106, 127, 134, .9294117647058824);
     margin-top: 20px;
 }
 
@@ -1353,7 +1357,7 @@ MuiInputBase-input {
 }
 
 .StackGetInTouch {
-    background: transparent linear-gradient(90deg,rgba(45,111,162,.9294117647058824),rgba(23,56,81,.9294117647058824)) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(90deg, rgba(45, 111, 162, .9294117647058824), rgba(23, 56, 81, .9294117647058824)) 0 0 no-repeat padding-box;
     padding: 30px;
     display: flex;
     justify-content: space-around;
@@ -1383,13 +1387,13 @@ MuiInputBase-input {
 }
 
 .StackFaq__heading {
-    color: rgba(10,45,71,.9294117647058824);
+    color: rgba(10, 45, 71, .9294117647058824);
     font-size: 30px;
     text-align: center;
     margin-bottom: 40px;
 }
 
-.StackFaq-wraper{
+.StackFaq-wraper {
     max-width: 980px;
     padding: 0 20px;
     margin: 0 auto 80px;
@@ -1408,11 +1412,12 @@ MuiInputBase-input {
     color: #707070;
     margin-bottom: 10px;
     background: #fff 0 0 no-repeat padding-box;
-    box-shadow: 2px 2px 6px rgba(196,220,249,.6);
+    box-shadow: 2px 2px 6px rgba(196, 220, 249, .6);
     border-radius: 5px;
 }
 
-.panel__body, .panel__header {
+.panel__body,
+.panel__header {
     padding: 1rem;
 }
 
@@ -1441,7 +1446,8 @@ span {
     border-left: var(--panel-border);
 }
 
-.panel__body, .panel__header {
+.panel__body,
+.panel__header {
     padding: 1rem;
 }
 
@@ -1452,8 +1458,630 @@ span {
 .panel__body>:first-child {
     margin-top: 0;
 }
+
 .panel__body>:last-child {
     margin-bottom: 0;
     font-size: 16px;
     color: #707070;
+}
+
+
+/* *******************************************************
+******************************************
+***************************************** */
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+
+    .StackHeader-main {
+        flex-direction: column;
+        padding: 0;
+    }
+
+
+    .StackHeader-main__left {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .StackHeader-main__left--top {
+        width: 208px;
+        height: 84px;
+    }
+
+    .StackHeader-main__left--top img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .StackHeader-main__left--heading {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .StackHeader-main__left--text {
+        margin-bottom: 25px;
+    }
+
+    .StackHeader-main__left-buttons {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .StackHeader-main__left-buttons--button.StackHeader-main__left-buttons-secondary {
+        width: 90%;
+        margin-top: 10px;
+        max-width: 298px;
+    }
+
+    .StackHeader-main__left-buttons--button-syllabus {
+        padding: 14px 35px 13px;
+    }
+
+    .StackHeader_main__right {
+        margin-bottom: 50px;
+        align-self: center;
+        background-color: #fff;
+        width: 100%;
+    }
+
+    .BatchDetails__section_main_container {
+        padding: 15px 0;
+    }
+
+    .BatchDetails__section_container {
+        flex-wrap: wrap;
+    }
+
+    .BatchDetails__heading {
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .BatchComponent_radio_buttons {
+        margin: 10px !important;
+    }
+
+    .BatchDetails__enrollNow_container {
+        width: 50%;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .BatchDetails__cta_container {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        padding: 10px 10px 10px 0;
+        box-sizing: border-box;
+        background-color: #fff;
+        z-index: 30;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1607843137254902);
+    }
+
+    .BatchDetails__enroll_now_button_box {
+        width: 100%;
+    }
+
+    .BatchDetails__enroll_now_button {
+        width: 90% !important;
+        font-weight: 600;
+        padding: 15px 10px;
+    }
+
+    .BatchDetails__try_free {
+        width: 100%;
+    }
+
+    .BatchDetails__try_free_button {
+        width: 100%;
+        height: 47px;
+    }
+
+    .BatchDetails__enroll_now_button {
+        width: 90% !important;
+        font-weight: 600;
+        padding: 15px 10px;
+    }
+
+    .StackTools {
+        flex-direction: column;
+    }
+
+    .StackTools__left {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
+
+    .StackTools__left--heading {
+        margin-top: 30px;
+    }
+
+    .StackTools__right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fullstackProgram-main {
+        flex-direction: column;
+    }
+
+    .fullstackProgram-main-left {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .fullstackProgram-main-right {
+        width: 100%;
+        padding: 0 0 80px;
+    }
+
+    .StackProgram__main__right--heading {
+        margin-bottom: 50px;
+    }
+
+    .StackProgram__main__right--box {
+        width: 95%;
+    }
+
+    .StackProgram__main__right--box-one {
+        justify-content: space-evenly;
+    }
+
+    .StackProgram__main__right--box-one--text-container {
+        width: 60%;
+        text-align: center;
+    }
+
+    .StackCompanies-main-container {
+        display: block;
+    }
+
+    .Statistics-main {
+        flex-direction: column;
+        gap: 40px;
+        /* align-self: center; */
+        margin-left: 3rem;
+    }
+
+    .Statistics__main-left-container-block {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .StackMentors-main-container {
+        flex-direction: column;
+        margin-right: 2.5rem;
+    }
+
+    .StackSyllabus__main-top-container {
+        flex-direction: column;
+    }
+
+    .StackSyllabus__main-top-container--heading {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .StackSyllabus__main-top--text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .StackSyllabus__course-top-main {
+        padding: 0;
+    }
+
+    .StackSyllabus__course-top-main--text {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .StackSyllabus__course-top-main--done {
+        font-size: 12px;
+    }
+
+    .StackSyllabus__course-top--text {
+        padding: 0;
+        width: 100%;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .StackSyllabus__course-bottom {
+        font-size: 12px;
+        padding: 15px 20px;
+    }
+
+    .StackSyllabus__course-bottom--chapter {
+        margin-left: 0;
+    }
+
+    .StackSyllabus__course-bottom--chapter span {
+        font-size: 16px;
+    }
+
+    .StackSyllabus__course-bottom--button {
+        margin-bottom: 8px;
+        font-size: 14px;
+        background: #fff;
+    }
+
+    .StackSyllabus__course-content {
+        padding: 10px 5px;
+    }
+
+    .list {
+        display: block;
+        padding-left: 20px;
+        padding-right: 80px;
+    }
+
+    .StackSyllabus__course-content {
+        padding: 10px 5px;
+    }
+
+    .StackIntern-main {
+        flex-direction: column;
+    }
+
+    .StackIntern-main-left {
+        width: 100%;
+        padding: 0 0 80px;
+    }
+
+    .StackIntern__main__left--heading {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .StackIntern__main__left--box-two {
+        justify-content: space-evenly;
+    }
+
+    .StackIntern__main__left--box-two--icon-container {
+        margin-left: 15px;
+    }
+
+    .StackIntern__main__right {
+        width: 100%;
+        padding: 0 0 50px;
+    }
+
+    .StackFees {
+        padding: 0 20px;
+    }
+
+    .StackFees-main-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .StackFees__main-fees__left {
+        width: 100%;
+    }
+
+    .StackFees__main-fees__left:before {
+        height: 2px;
+        width: 100%;
+        top: 98%;
+    }
+
+    .StackFees__main-fees__left-content {
+        padding: 40px 20px;
+    }
+
+    .StackFees__main-fees__left-content--top {
+        flex-direction: column;
+    }
+
+    .StackFees__main-fees__left-content--top-duration {
+        margin-bottom: 40px;
+    }
+
+    .StackFees__main-fees__right {
+        width: 100%;
+    }
+
+    .StudentTest-container {
+        flex-direction: column;
+    }
+
+}
+
+
+/* ***********************   Tab View ******************** */
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+
+    .StackHeader-main {
+        flex-direction: column;
+        padding: 0;
+    }
+
+
+    .StackHeader-main__left {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .StackHeader-main__left--top {
+        width: 208px;
+        height: 84px;
+    }
+
+    .StackHeader-main__left--top img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .StackHeader-main__left--heading {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .StackHeader-main__left--text {
+        margin-bottom: 25px;
+    }
+
+    .StackHeader-main__left-buttons {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .StackHeader-main__left-buttons--button.StackHeader-main__left-buttons-secondary {
+        width: 90%;
+        margin-top: 10px;
+        max-width: 298px;
+    }
+
+    .StackHeader-main__left-buttons--button-syllabus {
+        padding: 14px 35px 13px;
+    }
+
+    .StackHeader_main__right {
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: #fff;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .BatchDetails__section_container {
+        padding: 25px 0;
+        border: 0.5px solid #c2c2c2;
+    background: #f7f7f7 0 0 no-repeat padding-box;
+        
+    }
+
+    .BatchDetails__heading {
+        min-width: 150px;
+    }
+
+    .BatchDetails__section {
+        flex-wrap: nowrap;
+        align-items: center;
+        padding-right: 25px;
+        margin-right: 10px;
+        
+    }
+
+    .BatchComponent_radio_buttons {
+        margin: 10px !important;
+    }
+
+    .StackTools {
+        flex-direction: column;
+    }
+
+    .StackTools__left {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
+
+    .StackTools__left--heading {
+        margin-top: 30px;
+    }
+
+    .StackTools__right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fullstackProgram-main {
+        flex-direction: column;
+    }
+
+    .fullstackProgram-main-left {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .fullstackProgram-main-right {
+        width: 100%;
+        padding: 0 0 80px;
+    }
+
+    .StackProgram__main__right--heading {
+        margin-bottom: 50px;
+    }
+
+    .StackProgram__main__right--box {
+        width: 95%;
+    }
+
+    .StackProgram__main__right--box-one {
+        justify-content: space-evenly;
+    }
+
+    .StackProgram__main__right--box-one--text-container {
+        width: 60%;
+        text-align: center;
+    }
+
+    .StackCompanies-main-container {
+        /* display: block; */
+        flex-direction: column;
+    }
+
+    
+
+    .Statistics__main-left-container-block {
+        flex-direction: column;
+        gap: 40px;
+        margin-left: 3rem;
+    }
+
+    .Statistics__main-right-container{
+        margin-right: 2rem;
+    }
+
+    .StackMentors-main-container {
+        flex-direction: column;
+        margin-right: 10rem;
+    }
+
+    .StackSyllabus__main-top-container {
+        flex-direction: column;
+    }
+
+    .StackSyllabus__main-top-container--heading {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .StackSyllabus__main-top--text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .StackSyllabus__course-top-main {
+        padding: 0;
+    }
+
+    .StackSyllabus__course-top-main--text {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .StackSyllabus__course-top-main--done {
+        font-size: 12px;
+    }
+
+    .StackSyllabus__course-top--text {
+        padding: 0;
+        width: 100%;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .StackSyllabus__course-bottom {
+        font-size: 12px;
+        padding: 15px 20px;
+    }
+
+    .StackSyllabus__course-bottom--chapter {
+        margin-left: 0;
+    }
+
+    .StackSyllabus__course-bottom--chapter span {
+        font-size: 16px;
+    }
+
+    .StackSyllabus__course-bottom--button {
+        margin-bottom: 8px;
+        font-size: 14px;
+        background: #fff;
+    }
+
+    .StackSyllabus__course-content {
+        padding: 10px 5px;
+    }
+
+    .list {
+        display: block;
+        padding-left: 20px;
+        padding-right: 80px;
+    }
+
+    .StackSyllabus__course-content {
+        padding: 10px 5px;
+    }
+
+    .StackIntern-main {
+        flex-direction: column;
+    }
+
+    .StackIntern-main-left {
+        width: 100%;
+        padding: 0 0 80px;
+    }
+
+    .StackIntern__main__left--heading {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .StackIntern__main__left--box-two {
+        justify-content: space-evenly;
+    }
+
+    .StackIntern__main__left--box-two--icon-container {
+        margin-left: 15px;
+    }
+
+    .StackIntern__main__right {
+        width: 100%;
+        padding: 0 0 50px;
+    }
+
+    .StackFees {
+        padding: 0 20px;
+    }
+
+    .StackFees-main-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .StackFees__main-fees__left {
+        width: 100%;
+    }
+
+    .StackFees__main-fees__left:before {
+        height: 2px;
+        width: 100%;
+        top: 98%;
+    }
+
+    .StackFees__main-fees__left-content {
+        padding: 40px 20px;
+    }
+
+    .StackFees__main-fees__left-content--top {
+        flex-direction: column;
+    }
+
+    .StackFees__main-fees__left-content--top-duration {
+        margin-bottom: 40px;
+    }
+
+    .StackFees__main-fees__right {
+        width: 100%;
+    }
+
+    .StudentTest-container {
+        flex-direction: column;
+    }
+
 }

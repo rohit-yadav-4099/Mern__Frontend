@@ -102,8 +102,8 @@ span {
 
 .IncomeSharingHeader-main__left-buttons--button-knowmore {
     background: transparent;
-    -webkit-box-shadow: 0 3px 6px rgba(95,141,196,.2);
-    box-shadow: 0 3px 6px rgba(95,141,196,.2);
+    -webkit-box-shadow: 0 3px 6px rgba(95, 141, 196, .2);
+    box-shadow: 0 3px 6px rgba(95, 141, 196, .2);
     border-radius: 5px;
     color: #00a5ec;
     border: 1px solid #00a5ec;
@@ -153,7 +153,7 @@ span {
     font-weight: 600;
 }
 
-.NewBatch-main-right{
+.NewBatch-main-right {
     width: 65%;
     display: flex;
     justify-content: center;
@@ -180,7 +180,7 @@ span {
 }
 
 .NewBatch__main_right_point_img {
-    background: transparent linear-gradient(67deg,#00a5ec,#99e0ff) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(67deg, #00a5ec, #99e0ff) 0 0 no-repeat padding-box;
     border-radius: 50%;
 }
 
@@ -213,13 +213,13 @@ span {
     content: "";
     width: 98%;
     height: 2px;
-    background: transparent linear-gradient(90deg,#00a5ec,#99e0ff) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #00a5ec, #99e0ff) 0 0 no-repeat padding-box;
     position: absolute;
     top: 28px;
     left: 29%;
 }
 
-.IncomeSharing-Journey-container{
+.IncomeSharing-Journey-container {
     max-width: 1440px;
     margin: 80px auto 25px;
     padding: 40px 10%;
@@ -227,7 +227,7 @@ span {
     /* background-image: url((unknown)); */
 }
 
-.IncomeSharing-Journey-container-heading{
+.IncomeSharing-Journey-container-heading {
     margin-bottom: 40px;
 }
 
@@ -238,7 +238,7 @@ span {
     color: #424242;
 }
 
-.IncomeSharing-Journey-container-list{
+.IncomeSharing-Journey-container-list {
     display: flex;
 }
 
@@ -246,6 +246,7 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 40%;
 }
 
 .IncomeSharingJourney_item_title_container {
@@ -278,7 +279,7 @@ span {
 .IncomeSharingJourney_title_number {
     width: 45px;
     height: 40px;
-    box-shadow: 0 0 20px rgba(0,0,0,.1607843137254902);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1607843137254902);
     border-radius: 10px;
     color: #424242;
     font-size: 24px;
@@ -302,7 +303,7 @@ span {
     width: 100%;
 }
 
-.IncomeSharing-Journey-container-list-desc{
+.IncomeSharing-Journey-container-list-desc {
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -315,9 +316,9 @@ span {
 
 .IncomeSharingJourney_desc_container {
     display: flex;
-    box-shadow: 0 0 20px rgba(0,0,0,.1607843137254902);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1607843137254902);
     border-radius: 10px;
-    background: transparent linear-gradient(101deg,#fff,#f3fcff) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(101deg, #fff, #f3fcff) 0 0 no-repeat padding-box;
     height: 105px;
     margin: 10px 0;
 }
@@ -349,7 +350,7 @@ span {
     height: 100%;
 }
 
-.programHighlight-New{
+.programHighlight-New {
     max-width: 1280px;
     margin: 40px auto 0;
 }
@@ -367,7 +368,8 @@ span {
     margin-bottom: 10px;
 }
 
-.ProgramHighlightsNew__heading_subtext, .ProgramHighlightsNew__heading_text {
+.ProgramHighlightsNew__heading_subtext,
+.ProgramHighlightsNew__heading_text {
     letter-spacing: 0;
     color: #3e4041;
     width: 60%;
@@ -379,7 +381,7 @@ span {
     font-size: 16px;
 }
 
-.programHighlight-New-cards{
+.programHighlight-New-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -388,7 +390,7 @@ span {
 .ProgramHighlightsNew__highlights_point_container {
     width: 350px;
     height: 255px;
-    box-shadow: 0 0 20px rgba(0,0,0,.1607843137254902);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1607843137254902);
     border: 0.5px solid #c2c2c2;
     border-radius: 10px;
     padding: 20px;
@@ -423,7 +425,8 @@ span {
     color: #858585;
     font-size: 16px;
 }
-.incomeSharing-sylabus-main{
+
+.incomeSharing-sylabus-main {
     padding: 30px 10px 40px;
     background: #fff;
 }
@@ -454,7 +457,7 @@ span {
     width: 40%;
     text-align: center;
     margin: 0 auto;
-    color: rgba(106,127,134,.9294117647058824);
+    color: rgba(106, 127, 134, .9294117647058824);
 }
 
 .IncomeSharingSyllabus {
@@ -482,7 +485,7 @@ span {
     height: 60px;
     bottom: 0;
     left: 50%;
-    border-left: 0.25px solid hsla(0,0%,43.9%,.2);
+    border-left: 0.25px solid hsla(0, 0%, 43.9%, .2);
     transform: translate(-50%);
 }
 
@@ -501,7 +504,7 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    border: 0.25px solid hsla(0,0%,43.9%,.2);
+    border: 0.25px solid hsla(0, 0%, 43.9%, .2);
     border-left: 8px solid #f78077;
 }
 
@@ -591,11 +594,11 @@ span {
 
 
 
-.upcommingBatch{
+.upcommingBatch {
     background: #fdf0d7;
 }
 
-.upcommingBatch-main{
+.upcommingBatch-main {
     margin: 0 auto;
     max-width: 1286px;
     display: flex;
@@ -631,7 +634,7 @@ span {
     width: 100%;
 }
 
-.StudentTestimonials{
+.StudentTestimonials {
     max-width: 1251px;
     margin: 125px auto 100px
 }
@@ -662,10 +665,12 @@ span {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
-.StudentTestimonials-main{
+.StudentTestimonials-main {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     position: relative;
+    justify-content: center;
 }
 
 .slick-current {
@@ -679,7 +684,7 @@ span {
 
 .Student__testimonials-placed-people-container-card {
     background: #fff 0 0 no-repeat padding-box;
-    box-shadow: 0 16px 32px rgba(0,0,0,.0784313725490196);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, .0784313725490196);
     padding: 30px;
     flex: 0 0 70%;
     margin: 10px;
@@ -698,12 +703,13 @@ span {
     width: 90px;
     margin-right: 30px;
 }
+
 .slick-slide img {
     display: block;
 }
 
 .Student__testimonials-placed-people-container-card-top-name {
-    color: rgba(10,45,71,.9294117647058824);
+    color: rgba(10, 45, 71, .9294117647058824);
     font-size: 18px;
 }
 
@@ -722,7 +728,7 @@ span {
 
 .Student__testimonials-placed-people-container-card-bottom-text {
     font-size: 15px;
-    color: rgba(106,127,134,.9294117647058824);
+    color: rgba(106, 127, 134, .9294117647058824);
     margin-top: 20px;
 }
 
@@ -731,7 +737,7 @@ span {
 } */
 
 
-.student-placed-main{
+.student-placed-main {
     padding: 80px 0;
     max-width: 1088px;
     margin: 0 auto;
@@ -753,22 +759,19 @@ span {
     margin: 7px auto 90px;
 }
 
-.studentplaced-company{
+.studentplaced-company {
     display: flex;
     text-align: center;
 }
 
-.studentplaced-company-container{
+.studentplaced-company-container {
     flex-wrap: wrap;
 }
 
 .StudentsPlaced__main-companies-container-box {
-    -webkit-box-shadow: 0 10px 35px rgba(4,4,4,.0784313725490196);
-    box-shadow: 0 10px 35px rgba(4,4,4,.0784313725490196);
+    box-shadow: 0 10px 35px rgba(4, 4, 4, .0784313725490196);
     border-radius: 6px;
     margin: 15px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -777,21 +780,18 @@ span {
     width: 100%;
 }
 
-.studentplaced-company-container,.StudentsPlaced__main-companies-container-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.studentplaced-company-container,
+.StudentsPlaced__main-companies-container-box {
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
 }
 
-.prepmentors{
+.prepmentors {
     background: #fff;
     min-height: 50px;
 }
 
-.prepmentors-main{
+.prepmentors-main {
     padding: 80px 0;
     max-width: 1280px;
     margin: 0 auto;
@@ -812,9 +812,9 @@ span {
     width: 50%;
 }
 
-.prepmentors-main-container{
+.prepmentors-main-container {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -827,8 +827,7 @@ span {
     position: relative;
     border-radius: 10px;
     border-radius: 6px;
-    -webkit-box-shadow: 0 3px 36px rgba(0,0,0,.1607843137254902);
-    box-shadow: 0 3px 36px rgba(0,0,0,.1607843137254902);
+    box-shadow: 0 3px 36px rgba(0, 0, 0, .1607843137254902);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -836,14 +835,8 @@ span {
 }
 
 .PrepMentors__main--container-card-image {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     position: relative;
 }
@@ -917,11 +910,11 @@ span {
     padding: 8px;
 }
 
-.paymentPlan{
+.paymentPlan {
     background: #fdf0d7;
 }
 
-.paymentPlan-main{
+.paymentPlan-main {
     padding: 80px 0;
     max-width: 1150px;
     margin: 0 auto;
@@ -943,7 +936,7 @@ span {
 }
 
 
-.paymentPlan-main-container{
+.paymentPlan-main-container {
     /* display: flex; */
     justify-content: center;
     align-items: center;
@@ -953,7 +946,7 @@ span {
     width: 50%;
     padding-bottom: 20px;
     background: #d6f4ff 0 0 no-repeat padding-box;
-    box-shadow: 0 0 10px hsla(0,0%,55.3%,.1607843137254902);
+    box-shadow: 0 0 10px hsla(0, 0%, 55.3%, .1607843137254902);
     border-radius: 17px;
     padding-left: 5%;
     position: relative;
@@ -992,7 +985,8 @@ span {
     font-weight: 600;
 }
 
-.PaymentPlans__main-container-right-break, .PaymentPlans__main-container-right-break-refund {
+.PaymentPlans__main-container-right-break,
+.PaymentPlans__main-container-right-break-refund {
     color: #686463;
     width: 80%;
     margin: 18px 0 2px;
@@ -1044,7 +1038,7 @@ span {
 .PaymentPlans__main--container-card-left-second--btn {
     color: #f7f7f7;
     background: #01a5ec 0 0 no-repeat padding-box;
-    box-shadow: 0 3px 6px rgba(0,0,0,.1607843137254902);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .1607843137254902);
     border-radius: 5px;
     border: none;
     width: 200px;
@@ -1125,6 +1119,7 @@ span {
     width: 100%;
     margin-left: 30px;
 }
+
 .TestDetails__main--container-card-right {
     width: 80%;
     display: flex;
@@ -1174,6 +1169,7 @@ span {
     font-weight: 600;
     cursor: pointer;
 }
+
 .IncomeSharingMetrics__main {
     max-width: 1280px;
     margin: 0 auto;
@@ -1213,7 +1209,7 @@ span {
     margin-top: -5px;
 }
 
-.incomeSharing-main{
+.incomeSharing-main {
     padding: 25px 0;
     max-width: 1280px;
     margin: 0 auto;
@@ -1253,6 +1249,7 @@ span {
     text-align: center;
     cursor: pointer;
 }
+
 .IncomeSharingFaqs__main-middle-content-tab {
     background: #f5f1ff;
     margin: 20px;
@@ -1260,7 +1257,7 @@ span {
     width: 200px;
     text-align: center;
     cursor: pointer;
-    
+
 }
 
 .IncomeSharingFaqs__main-middle-content-tab--text {
@@ -1276,14 +1273,14 @@ span {
     cursor: pointer;
 }
 
-.questionlinoine{
-    box-shadow: 0 4px 4px rgba(0,0,0,.10196078431372549);
+.questionlinoine {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .10196078431372549);
     border-radius: 8px;
     padding: 20px 40px;
 }
 
 .IncomeSharingFaqs-panel:not(:last-child) {
-    border-bottom: 1px solid rgba(0,0,0,.10196078431372549);
+    border-bottom: 1px solid rgba(0, 0, 0, .10196078431372549);
 }
 
 .IncomeSharingFaqs-panel {
@@ -1301,10 +1298,11 @@ button.IncomeSharingFaqs-panel__header {
     border-radius: 0;
     font-weight: 500;
     font-size: 18px;
-    font-family: Poppins,sans-serif;
+    font-family: Poppins, sans-serif;
     display: flex;
     justify-content: space-around;
 }
+
 .IncomeSharingFaqs-panel__header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1326,7 +1324,7 @@ button.IncomeSharingFaqs-panel__header {
     width: 1.25rem;
     height: 1.25rem;
     margin-left: 60%;
-   
+
 }
 
 
@@ -1336,7 +1334,8 @@ button.IncomeSharingFaqs-panel__header {
     border-left: var(--panel-border);
 }
 
-.IncomeSharingFaqs-panel__body, .IncomeSharingFaqs-panel__header {
+.IncomeSharingFaqs-panel__body,
+.IncomeSharingFaqs-panel__header {
     padding: 10px 25px;
 }
 
@@ -1347,23 +1346,355 @@ button.IncomeSharingFaqs-panel__header {
 }
 
 
+@media screen and (min-width: 300px) and (max-width: 600px) {
 
 
-@media screen and (min-width: 600px) and (max-width: 1050px){
-    .StudentTestimonials-main {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        position: relative;
-        margin-left: 25%;
+    .IncomeSharingHeader {
+        background: #fdf0d7;
+        padding-bottom: 5px;
+        box-sizing: border-box;
     }
 
     .IncomeSharingHeader-main {
-        margin: 0 auto;
-        max-width: 1286px;
-        display: flex;
-        flex-direction: row-reverse;
-        background-color: rgb(253, 240, 215);
+        padding: 0;
+        display: block;
+        flex-direction: column-reverse;
+        background: none;
+        background-image: none!important;
     }
+
+    .IncomeSharingHeader-main{
+        display: block;
+    }
+
+    .IncomeSharingHeader-main__right {
+        height: 270px;
+        width: 100%;
+        background: none;
+    }
+
+    .IncomeSharingHeader-main__right--img {
+        display: block;
+    }
+
+    .IncomeSharingHeader-main__left {
+        padding: 0 20px;
+        margin: 50px 0;
+        width: 100%;
+    }
+
+    .IncomeSharingHeader-main__left--heading {
+        font-size: 24px;
+    }
+
+    .IncomeSharingHeader-main__left--text {
+        width: 90%;
+    }
+
+    .IncomeSharingHeader-main__left-list-item--text {
+        font-size: 14px;
+    }
+
+    .IncomeSharingHeader-main__left-buttons {
+        flex-direction: column;
+    }
+
+    .IncomeSharingHeader-main__left-buttons--button-enroll {
+        margin-bottom: 20px;
+        width: 75%;
+    }
+
+    .IncomeSharingHeader-main__left-buttons--button-knowmore {
+        width: 75%;
+    }
+
+
+    .NewBatch-main{
+        flex-direction: column;
+    }
+
+    .NewBatch-main-left{
+        width: auto;
+    }
+
+    .NewBatch__main_left_heading_text {
+        font-size: 20px;
+    }
+
+    .NewBatch__main_left_date_text {
+        font-size: 16px;
+    }
+    
+
+    .NewBatch__main_right_point_outer_counter{
+        flex-direction: column;
+        margin-left: 30px;
+       
+    }
+
+    .NewBatch-main-right{
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    
+
+    .NewBatch__main_right_point_outer_counter:not(:last-child):after {
+        display: none;
+    }
+
+    .NewBatch__main_right_point_outer_counter:not(:last-child) {
+        width: auto;
+    }
+
+    .NewBatch__main_right_point_outer_counter {
+        flex-direction: column;
+    }
+
+    .NewBatch__main_right_point_text_container {
+        margin-left: 20px;
+        position: relative;
+        top: -3px;
+        align-items: baseline;
+    }
+
+    .NewBatch__main_right_point_container{
+        display: flex;
+    }
+
+    .NewBatch__main_right_point_container {
+        flex-direction: row;
+    }
+
+    .NewBatch__main_right_point_container_connector_line_vertical {
+        height: 100px;
+        width: 2px;
+        background: transparent linear-gradient(90deg,#00a5ec,#99e0ff) 0 0 no-repeat padding-box;
+        position: relative;
+        left: 28px;
+    }
+
+    .ProgramHighlightsNew__heading_text{
+        font-size: 24px;
+        width: 100%;
+    }
+    .IncomeSharingSyllabus__main-top--text{
+        width: 100%;
+    }
+
+    .IncomeSharingSyllabus__box--text {
+        font-size: 16px;
+    }
+
+    .IncomeSharingSyllabus__course-top-main {
+        padding: 0;
+    }
+
+    .IncomeSharingSyllabus__course-top-main--text {
+        font-size: 15px;
+    }
+
+    .IncomeSharingSyllabus__course-content {
+        padding: 10px 5px;
+    }
+
+    .IncomeSharingSyllabus__topic-main--container-list--item {
+        padding: 8px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .upcommingBatch-main{
+        display: block;
+    }
+
+    .UpcomingBatches__main-left{
+        text-align: center;
+        padding: 25px;
+    }
+
+    .UpcomingBatches__main-left--text {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .UpcomingBatches__main-left--btn {
+        margin-top: 20px;
+    }
+
+    .UpcomingBatches__main-right {
+        padding: 25px 10px;
+    }
+
+    .StudentsPlaced__main--heading{
+        font-size: 24px;
+    }
+
+    .StudentsPlaced__main--subheading{
+        width: 100%;
+    }
+
+    .PaymentPlans__main {
+        padding: 40px 0;
+    }
+
+    .PaymentPlans__main--heading {
+        font-size: 30px;
+    }
+
+    .PaymentPlans__main--subheading {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 18px;
+        width: 80%;
+    }
+
+    .PaymentPlans__main-container {
+        width: 94%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .PaymentPlans__main-container-right {
+        width: 75%;
+        padding-left: 10%;
+    }
+
+    .PaymentPlans__main-container-left-heading {
+        font-size: 18px;
+    }
+
+    .PaymentPlans__main-container-left-book, .PaymentPlans__main-container-right-amount, .PaymentPlans__main-container-right-amount-actual, .PaymentPlans__main-container-right-amount-discount, .PaymentPlans__main-container-right-calculation-price, .PaymentPlans__main-container-right-emi, .PaymentPlans__main-container-right-pay {
+        font-size: 16px;
+    }
+
+    .PaymentPlans__main-container-right-calculation-months, .PaymentPlans__main-container-right-detail-title {
+        font-size: 14px;
+    }
+
+    .PaymentPlans__main-container-right-detail-unplace {
+        font-size: 12px;
+    }
+
+    .PaymentPlans__main-container-right-calculation {
+        font-size: 14px;
+    }
+
+    .PaymentPlans__main--container-card-left-second--btn {
+        margin-right: 0;
+    }
+    .PaymentPlans__main--guidelines-container {
+        margin: 20px 0;
+    }
+
+    .PaymentPlans__main--guidelines-container--text {
+        font-size: 15px;
+    }
+    .PaymentPlans__main--guidelines-container--text span {
+        font-size: 15px;
+    }
+
+    .PrepMentors__main--subheading {
+        margin-bottom: 5px;
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .TestDetails__main--container-card {
+        flex-direction: column;
+    }
+
+    .TestDetails__main--container-card-left {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .TestDetails__main--container-card-left-second--text {
+        display: block;
+        color: #424242;
+        font-size: 24px;
+        margin: 15px 0;
+    }
+
+    .TestDetails__main--container-card-left-second--subtext {
+        display: block;
+        font-size: 14px;
+        margin: 15px auto;
+    }
+
+    .TestDetails__main--container-card-left-first--img {
+        margin-left: 0;
+    }
+
+    .TestDetails__main--container-card-right {
+        width: 100%;
+    }
+
+    .TestDetails__main--container-card-right--text {
+        display: none;
+    }
+
+    .TestDetails__main--container-card-right--subtext {
+        display: none;
+    }
+
+    .TestDetails__main--container-card-right-box {
+        justify-content: center;
+    }
+
+    .TestDetails__main--container-card-right-box--text {
+        font-size: 24px;
+    }
+
+    .TestDetails__main--container-card-right-button {
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .TestDetails__main--container-card-right-button--btn {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .IncomeSharingMetrics__main-container {
+        padding: 20px;
+    }
+
+    .IncomeSharingMetrics__main-container-item {
+        align-items: center;
+    }
+
+    .IncomeSharingMetrics__main-container-item--img {
+        height: 25px;
+        width: 25px;
+    }
+
+    button.IncomeSharingFaqs-panel__header {
+        font-size: 16px;
+    }
+    .IncomeSharingFaqs-panel__header-icon svg {
+        height: 14px;
+    }
+
 }
 
+
+@media screen and (min-width: 600px) and (max-width: 1200px){
+    
+    .IncomeSharingHeader {
+        background: #fdf0d7;
+    }
+
+    .IncomeSharingHeader-main__right{
+        display: none;
+    }
+
+    .IncomeSharingHeader-main__left {
+        padding: 0 20px;
+        margin: 50px 0;
+        width: 100%;
+    }
+
+}

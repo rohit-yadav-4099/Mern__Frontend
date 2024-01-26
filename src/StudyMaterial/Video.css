@@ -71,7 +71,6 @@
     margin: 0 auto;
     padding-bottom: 30px;
     display: flex;
-    -webkit-box-pack: center;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -124,6 +123,14 @@
 
 @media screen and (min-width: 300px) and (max-width: 600px){
 
+    .Video-container-left-top{
+        font-size: 24px;
+    }
+
+    .Video-container-left{
+        width: 90%;
+    }
+
     .Video-container{
         min-height: 300px;
         max-width: 1251px;
@@ -142,8 +149,21 @@
 
 @media screen and (min-width: 600px) and (max-width: 1200px){
     .Video-container{
-        min-height: 300px;
-        max-width: 1251px;
-        flex-direction: column-reverse
+        flex-direction: column-reverse;
+        padding: 20px;
     }
+
+    .Video-container-left{
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .Video-container-left-top{
+        font-size: 24px;
+    }
+
+    .Video-container-right-image{
+        width: 100%;
+    }
+
 }

@@ -935,7 +935,7 @@
 .Popular-blog-Main-blog {
     display: flex;
     justify-content: center;
-    /* flex-wrap: wrap; */
+    background-color: #fdf0d7;
 }
 
 .PopularBlogs__main-container-card {
@@ -1262,6 +1262,7 @@
 
     .course-type-main-container {
         justify-content: center;
+        margin-bottom: 50em;
     }
 
     .course-type-cards {
@@ -1270,7 +1271,7 @@
 
     .course-type-cards-arrow-image {
         right: -25px;
-        bottom: 40px;
+        bottom: 8em;
     }
 
     .Home-jurney-main {
@@ -1279,6 +1280,7 @@
 
     .Home-jurney-main-left {
         width: 80%;
+        align-self: center;
     }
 
     .Home-jurney-main-left-heading {
@@ -1315,6 +1317,14 @@
     .Home-jurney-main-right-box-right-bottom {
         background-size: 180px;
     }
+
+
+    /* ############# */
+    .CourseandhomeJurney {
+        display: block;
+    }
+
+    /* ################### */
 
     .know-detail-main {
         padding-left: 20px;
@@ -1429,7 +1439,7 @@
         margin-bottom: 80px;
     }
 
-    .Community-main-container{
+    .Community-main-container {
         display: block;
         margin-bottom: 5vh;
 
@@ -1450,36 +1460,331 @@
         bottom: 18px;
     }
 
-    .GetCallback-main{
+    .GetCallback-main {
         padding: 50px 0;
     }
 
-    .GetCallback-main-container{
+    .GetCallback-main-container {
         flex-direction: column;
-    margin: 20px;
-    align-items: center;
+        margin: 20px;
+        align-items: center;
     }
 
-    .GetCallback-main-container-left{
+    .GetCallback-main-container-left {
         width: 100%;
     }
 
-    .GetCallBack__main-container-left--subheading{
+    .GetCallBack__main-container-left--subheading {
         width: 90%;
     }
 
-    .GetCallBack__main-container-left-image{
+    .GetCallBack__main-container-left-image {
         margin-top: 20px;
     }
 
-    .getCallBack-main-container-right{
+    .getCallBack-main-container-right {
         width: 100%;
     }
 
-    .Popular-blog-Main-blog{
+    .Popular-blog-Main-blog {
         display: block;
         /* justify-content: center; */
         margin-left: 7vh;
+    }
+
+}
+
+/* #################### */
+
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    .Home-main {
+        /* display: block; */
+        flex-direction: column-reverse;
+    }
+
+    .Home-main-left {
+        width: 90%;
+        padding: 0 20px;
+        margin: 20px 0;
+    }
+
+    .Home-main-left-heading {
+        font-size: 21px;
+    }
+
+    .Home-main-left-subheading {
+        font-size: 21px;
+    }
+
+    .Home-main-left-list-item--text {
+        font-size: 21px;
+    }
+
+    .Home-main-left-buttons--button-enroll {
+        font-size: 21px;
+    }
+
+    .Home-achivement-container {
+        justify-content: space-around;
+    }
+
+    .CodingJourney__main-right--img {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        opacity: .1;
+        position: absolute;
+        left: 0;
+    }
+
+    .Coding-Journey-main-left-img {
+        display: none;
+    }
+
+    .Coding-Journey-main {
+        justify-content: center;
+    }
+
+
+    .Coding-Journey-main-right {
+        padding: 20px 10px;
+        width: 90%;
+        margin-right: 15vh;
+        text-align: center;
+    }
+
+    .Coding-Journey-main-right-heading {
+        font-size: 24px;
+    }
+
+    .Coding-Journey-main-right-subheading {
+        width: 100%;
+        margin: 20px auto 40px;
+        text-align: left;
+    }
+
+    .Coding-Journey-main-right-container {
+        width: 95%;
+    }
+
+    .Coding-Journey-main-right-container-card-one-left {
+        width: 75%;
+    }
+
+    .Coding-Journey-main-right-container-card-one-left-heading {
+        font-size: 16px;
+    }
+
+    .Coding-Journey-main-right-container-card-one-left-box {
+        width: 170px;
+    }
+
+    .Coding-Journey-main-right-container-card-one-left-box-text {
+        margin-left: 0;
+    }
+
+    .Coding-Journey-main-right-container-card-one-right {
+        width: 65%;
+        left: 60%;
+    }
+
+    .Coding-Journey-main-right-container-card-one-right-icon {
+        height: 40px;
+    }
+
+    .Coding-Journey-main-right-container-card-two-left {
+        left: 0;
+    }
+
+    .Coding-Journey-main-right-container-card-two-left-icon {
+        height: 40px;
+    }
+
+    .Coding-Journey-main-right-container-card-two-right-heading {
+        font-size: 16px;
+    }
+
+    .Coding-Journey-main-right-container-card-two-right-box {
+        width: 170px;
+    }
+
+    .Coding-Journey-main-right-container-card-two-right-box-img {
+        margin-left: -30px;
+    }
+
+    .Coding-Journey-main-right-container-card-two-right-box-text {
+        margin-left: 0;
+    }
+
+    .Coding-Journey-main-right-container-card-three {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .Coding-Journey-main-right-container-card-three-img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .course-type-main-heading {
+        font-size: 25px;
+
+    }
+
+    .course-type-main-container {
+        justify-content: space-around;
+        margin-bottom: 20vh;
+
+    }
+
+    .course-type-cards {
+        flex: 0 0 16em
+    }
+
+
+    .Home-jurney-main {
+        flex-direction: column-reverse;
+    }
+
+    .Home-jurney-main-left {
+        width: 65%;
+        align-self: center;
+    }
+
+    .Home-jurney-main-left-heading {
+        display: none;
+    }
+
+    .Home-jurney-main-left-container-card {
+        width: 100%;
+    }
+
+    .Home-jurney-main-left-container-card-text {
+        font-size: 16px;
+    }
+
+    .Home-jurney-main-left-container-btn {
+        font-size: 16px;
+    }
+
+    .Home-jurney-main-right-heading {
+        text-align: left;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #3e4041;
+    }
+
+    .Home-jurney-main-right-box {
+        justify-content: center;
+    }
+
+    .Home-jurney-main-right-box-right-bottom {
+        background-size: 180px;
+    }
+
+
+    /* ############# */
+    .CourseandhomeJurney {
+        display: block;
+    }
+
+    /* ################### */
+
+    .know-detail-main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .know-detail-main-top {
+        flex-direction: column;
+    }
+
+    .know-detail-main-top-left {
+        width: 100%;
+    }
+
+    .know-detail-main-top-right {
+        padding: 0 50px;
+        width: 100%;
+    }
+
+    .know-detail-main-top-right-heading {
+        font-size: 30px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .know-detail-main-top-right-container-box {
+        text-align: center;
+    }
+
+    .know-detail-main-top-right-container-box-text {
+        font-size: 25px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .know-detail-main-top-right-container-box {
+        text-align: center;
+    }
+
+    .know-detail-main-top-right-container-box-text {
+        font-size: 25px;
+    }
+
+    .CBMBanner-main {
+        margin: 80px 20px 15px;
+    }
+
+    .CBMBanner_info-title {
+        font-size: 24px;
+    }
+
+    .CBMBanner_info-text {
+        font-size: 18px;
+    }
+
+    .Community-main {
+        padding-bottom: 0;
+    }
+
+    .Community__main--subheading {
+        width: 80%;
+    }
+
+    .Community__main-container-card {
+        max-width: 300px;
+    }
+
+    .GetCallback-main {
+        padding: 50px 0;
+    }
+
+    .GetCallback-main-container {
+        flex-direction: column;
+        margin: 20px;
+        align-items: center;
+    }
+
+    .GetCallback-main-container-left {
+        width: 100%;
+    }
+
+    .GetCallBack__main-container-left-image {
+        margin-top: 20px;
+    }
+
+    .getCallBack-main-container-right {
+        width: 100%;
+    }
+
+    .Popular-blog-Main-blog {
+        flex-wrap: wrap;
     }
 
 }

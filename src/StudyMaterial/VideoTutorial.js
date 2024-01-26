@@ -23,7 +23,7 @@ const VideoTutorial = () => {
                     <h1 className="Video-container-left-top">Prepbytes Video Library</h1>
                     <p className="Video-container-left-bottom">Increase your knowledge with PrepBytes free videos. PrepBytes video library is a repository of more than 250 videos containing videos on Competitive Programming , Language Fundamentals - C, C++, Java, Data Structures and Algorithms, Aptitude, Operating System, Interview Questions and much more all at one place. </p>
                 </div>
-                <img class="Video-container-right-image" src="\VideoImage\video_lib_illustration.png" />
+                <img className="Video-container-right-image" src="\VideoImage\video_lib_illustration.png" />
             </div>
 
             <div className="video-containerTwo">

@@ -139,6 +139,7 @@ const Home = () => {
 
                 </section>
             </div>
+            <div className="CourseandhomeJurney">
 
             <div className="course-type">
                 <div className="course-type-main">
@@ -285,7 +286,7 @@ const Home = () => {
                 </div>
 
             </div>
-
+            </div>
             <div>
                 <div className="know-detail">
                     <div className="know-detail-main">

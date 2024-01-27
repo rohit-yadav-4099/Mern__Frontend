@@ -20,6 +20,7 @@ import ReactCompo from "../Project/React";
 import NodeCompo from "../Project/Node";
 import MongoCompo from "../Project/Mongo";
 import AddMyCourse from "../Redux/MyCourse";
+import Project from "../Project/Project";
 
 
 const Navbar = () => {
@@ -82,6 +83,8 @@ const Navbar = () => {
                 <Route path="/mongo-project" element={<MongoCompo/>}/>
 
                 <Route path="/mycourse" element={<AddMyCourse/>}/>
+
+                <Route path="/projects" element={<Project/>}/>
 
             </Routes>
 

@@ -8,7 +8,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
     const auth = localStorage.getItem("token");
     const Navi = useNavigate();
-    const {isAuthenticated, user} = useAuth0()
+    const { isAuthenticated, user } = useAuth0()
     const [isLoggedIn, setLoggedIn] = useState(false);
     const [email, setEmail] = useState(' ')
 
@@ -19,7 +19,7 @@ const Header = () => {
     const handleLogin = (userEmail) => {
         setLoggedIn(true);
         setEmail(userEmail);
-      };
+    };
 
     const logoutfunc = () => {
         localStorage.clear();
@@ -32,9 +32,9 @@ const Header = () => {
                 <div>
                     {/* logo */}
                     <NavLink to="/">
-                    <img src='\image\logoPrepBytes.svg' alt='logo'
-                        className='h-[75px]'
-                    /></NavLink>
+                        <img src='\image\logoPrepBytes.svg' alt='logo'
+                            className='h-[75px]'
+                        /></NavLink>
                 </div>
                 <div className='w-7/14 flex-col items-end top-1 visible md:flex tabheader'>
                     {auth ? null :
@@ -49,18 +49,6 @@ const Header = () => {
                             </div>
                         )
                     }
-                    {/* login/sign */}
-                    {/* <div className='space-x-4 mr-8'>
-                        <button className='border-2 border-[#f941a9] px-2 rounded-md text-[#f941a9] hover:text-black'>
-                            <Link to={'/login'}>Login</Link>
-                        </button>
-                        <button className='bg-[#f941a9] border-2 border-[#f941a9] text-white px-1 rounded-md hover:text-black'>
-                            <Link to={'/register'}>Sign up</Link>
-                        </button>
-                    </div> */}
-
-
-                    {/* dropdown */}
                     <div className='flex space-x-4'>
                         <div className="group inline-block">
                             <button className=" bg-white rounded-sm flex items-center min-w-32">
@@ -176,15 +164,42 @@ const Header = () => {
                                 </svg>
                             </span>
                             <ul className='space-y-6'>
+                               
+                                {auth ? (
+                                    <div>
+
+
+                                        <li className="rounded-sm px-3 py-1 hover:text-blue-600 hover:font-semibold">
+                                            <NavLink to="/mycourse">
+                                                <p className='mydashboard'>My Dashboard</p>
+                                            </NavLink>
+                                        </li>
+
+
+                                    </div>
+                                ) : null
+                                }
                                 <li><NavLink to="/prepbytes-expert-coder/master-competitive-programming">Master Competitive Programming</NavLink></li>
                                 <li><NavLink to="/development-programs/online-full-stack-developer-mern-certification-program">Full Stack Program</NavLink></li>
                                 <li><NavLink to="/mock-tests">Mock Tests</NavLink></li>
                                 <li><NavLink to="/preparation-videos">Video Tutorial</NavLink></li>
                                 <li><NavLink to="/elevation-academy/mern-stack-web-development-career">Elevation Academy</NavLink></li>
-                                <li>Project</li>
-                                <li>
+                                <li><NavLink to="/projects">Project</NavLink></li>
+
+                                {auth ? (
+                                     <li className="rounded-sm relative px-3 py-1 hover:text-blue-600 hover:font-semibold">
+                                     <NavLink to="/"><button onClick={logoutfunc} className='logout'>Logout</button></NavLink>
+                                 </li>
+                                   
+                                ) : (
+                                    <li>
                                     <NavLink to={'/register'}>Login/SignUp</NavLink>
                                 </li>
+                                   
+                                )
+                                }
+
+
                             </ul>
                         </div>
                     )}

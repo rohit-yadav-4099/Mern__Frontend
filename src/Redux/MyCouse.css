@@ -179,3 +179,64 @@ span {
     text-decoration: none;
     border: none;
 }
+
+
+/* *******************************************
+********************************************
+********************************************* */
+
+@media screen and (min-width: 600px) and (max-width: 1200px){
+    .sidebar{
+        width: 10%;
+    }
+
+    .Profile_nav-list-detail{
+        display: none;
+    }
+
+    .Profile_nav_selected{
+        width: auto;
+    }
+
+    .Mycourse {
+        width: 90%;
+        background-color: #f0f3f4;
+    }
+
+    .mycourse-heading {
+        margin: 30px 3vh auto 3vh;
+        border-bottom: 1px solid rgb(168, 166, 166);
+        color: #00a5ec;
+        font-weight: 400;
+    }
+}
+
+
+
+
+@media screen and (min-width: 300px) and (max-width: 600px){
+    .sidebar{
+        width: 10%;
+    }
+
+    .Profile_nav-list-icon {
+        margin-left: 0px;
+    }
+
+    .Profile_nav-list-detail{
+        display: none;
+    }
+
+    .Profile_nav_selected{
+        width: auto;
+    }
+
+    .Mycourse {
+        width: 90%;
+        background-color: #f0f3f4;
+    }
+
+    .mycourse-heading {
+        margin: 30px 2vh auto 2vh;
+    }
+}

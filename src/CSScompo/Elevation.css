@@ -1345,6 +1345,10 @@ button.IncomeSharingFaqs-panel__header {
     color: #858585;
 }
 
+.IncomeSharingJourney__container{
+    display: none;
+}
+
 
 @media screen and (min-width: 300px) and (max-width: 600px) {
 
@@ -1473,6 +1477,109 @@ button.IncomeSharingFaqs-panel__header {
         position: relative;
         left: 28px;
     }
+
+
+    /* ****************** */
+
+    .IncomeSharing-Journey-container{
+        display: none;
+    }
+
+
+    .IncomeSharingJourney__container {
+        padding: 0;
+        display: block;
+    }
+
+    .IncomeSharingJourney_title_container_mobile_glow {
+        animation: glowing 5s infinite, border 5s infinite;
+    }
+
+    .IncomeSharingJourney__heading_container_mobile {
+        background-color: #fff;
+        padding: 20px;
+    }
+
+
+    .IncomeSharingJourney__heading_mobile {
+        color: #424242;
+        letter-spacing: 0;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .IncomeSharingJourney__list_container_mobile {
+        padding: 50px 20px 30px;
+    }
+
+    .IncomeSharingJourney_title_container_mobile {
+        width: 100%;
+        background: #fff 0 0 no-repeat padding-box;
+        border: 0.5px solid #c2c2c2;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .IncomeSharingJourney_title_number_mobile {
+        width: 55px;
+        height: 50px;
+        box-shadow: 0 0 20px rgba(0,0,0,.1607843137254902);
+        border-radius: 10px;
+        color: #424242;
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -27px;
+    }
+
+    .IncomeSharingJourney_title_mobile {
+        letter-spacing: 0;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        padding: 0 15px;
+        top: -20px;
+    }
+
+    .IncomeSharingJourney_desc_container_mobile {
+        background: transparent linear-gradient(118deg,#fff,#f3fcff) 0 0 no-repeat padding-box;
+        box-shadow: 0 0 20px rgba(0,0,0,.1607843137254902);
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+
+    .IncomeSharingJourney_desc_mobile {
+        letter-spacing: 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: #424242;
+        width: 100%;
+        padding: 15px 20px;
+        max-height: 110px;
+        overflow-y: scroll;
+    }
+
+    .IncomeSharingJourney_desc_img_container_mobile {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .IncomeSharingJourney_desc_img_mobile {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* ********************** */
 
     .ProgramHighlightsNew__heading_text{
         font-size: 24px;

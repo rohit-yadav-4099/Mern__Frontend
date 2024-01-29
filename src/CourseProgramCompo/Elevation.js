@@ -184,6 +184,96 @@ const ElevationAcademy = () => {
 
             </div>
 
+            <div className="IncomeSharingJourney__container" style={{ backgroundImage: "url(&quot;&quot;)" }}>
+                <div className="IncomeSharingJourney__heading_container_mobile">
+                    <h1 className="IncomeSharingJourney__heading_mobile">How will you reach to your dream Job?</h1>
+                </div>
+                <div className="IncomeSharingJourney__list_container_mobile" style={{ backgroundImage: "url(&quot;&quot;)" }}>
+                    <div className="IncomeSharingJourney_title_container_mobile ">
+                        <span className="IncomeSharingJourney_title_number_mobile" style={{ backgroundColor: "rgb(255, 251, 248)", border: "1px dashed rgb(255, 158, 82)" }}>1</span>
+                        <span className="IncomeSharingJourney_title_mobile" style={{ color: "rgb(255, 158, 82)" }}>Application &amp; Shortlisting</span>
+                    </div>
+                    <div className="IncomeSharingJourney_desc_container_mobile">
+                        <div className="IncomeSharingJourney_desc_text_container_mobile">
+                            <span className="IncomeSharingJourney_desc_mobile">Apply, fill the form &amp; wait till we review your application. You will be selected based on the eligibility criteria (2023, 2022 &amp; 2021 passouts)</span>
+                        </div>
+                        <div className="IncomeSharingJourney_desc_img_container_mobile">
+                            <picture style={{ display: "flex" }}>
+                                <source srcset="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Application%2B%2BShortlisting.webp 1x" type="image/webp" />
+                                <source srcset="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Application%2B%2BShortlisting.webpp 1x" type="image/jpeg" />
+                                <img loading="lazy" className="IncomeSharingJourney_desc_img_mobile" src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Application%2B%2BShortlisting.webp" />
+                            </picture>
+                        </div>
+                    </div>
+                    <div className="IncomeSharingJourney_title_container_mobile IncomeSharingJourney_title_container_mobile_glow">
+                        <span className="IncomeSharingJourney_title_number_mobile" style={{ backgroundColor: " rgb(255, 242, 242)", border: "1px dashed rgb(232, 63, 63)" }}>2</span>
+                        <span className="IncomeSharingJourney_title_mobile" style={{color:"rgb(232, 63, 63)"}}>Attend Free Webinar</span>
+                    </div>
+                    <div className="IncomeSharingJourney_desc_container_mobile">
+                        <div className="IncomeSharingJourney_desc_text_container_mobile">
+                            <span className="IncomeSharingJourney_desc_mobile">Go through the free classes and learn the important concepts while understanding how the program unfolds.</span>
+                        </div>
+                        <div className="IncomeSharingJourney_desc_img_container_mobile">
+                            <picture style={{ display: "flex" }}>
+                                <source srcset="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/5%2BDays%2BFree%2BClass.webp 1x" type="image/webp" />
+                                <source srcset="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/5%2BDays%2BFree%2BClass.webp 1x" type="image/jpeg" />
+                                <img loading="lazy" className="IncomeSharingJourney_desc_img_mobile" src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/5%2BDays%2BFree%2BClass.webp" />
+                            </picture>
+                        </div>
+                    </div>
+                    <div className="IncomeSharingJourney_title_container_mobile ">
+                        <span className="IncomeSharingJourney_title_number_mobile" style={{ backgroundColor: "rgb(255, 241, 253)", border: "1px dashed rgb(192, 39, 175)" }}>3</span>
+                        <span class="IncomeSharingJourney_title_mobile" style={{color:"rgb(192, 39, 175)"}}>Batch Commencement</span>
+                    </div>
+                    <div className="IncomeSharingJourney_desc_container_mobile">
+                        <div className="IncomeSharingJourney_desc_text_container_mobile">
+                            <span className="IncomeSharingJourney_desc_mobile">Embark on your journey of success once you receive the offer letter for successful enrolment.</span>
+                        </div>
+                        <div className="IncomeSharingJourney_desc_img_container_mobile">
+                            <picture style={{ display: "flex" }}>
+                                <source srcset="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Complete%2BEnrollment%2B.webp 1x" type="image/webp" />
+                                <source srcset="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Complete%2BEnrollment%2B.webp 1x" type="image/jpeg" />
+                                <img loading="lazy" className="IncomeSharingJourney_desc_img_mobile" src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Complete%2BEnrollment%2B.webp" />
+                            </picture>
+                        </div>
+                    </div>
+                    <div className="IncomeSharingJourney_title_container_mobile ">
+                        <span className="IncomeSharingJourney_title_number_mobile" style={{ backgroundColor: "rgb(226, 246, 255)", border: "1px dashed rgb(32, 142, 189)" }}>4</span>
+                        <span className="IncomeSharingJourney_title_mobile" style={{ color: "rgb(32, 142, 189)" }}>7 Months Program</span>
+                    </div>
+                    <div className="IncomeSharingJourney_desc_container_mobile">
+                        <div className="IncomeSharingJourney_desc_text_container_mobile">
+                            <span className="IncomeSharingJourney_desc_mobile">You have now signed up for a learning-filled journey of 7 months that ends with you being placed in your dream company.</span>
+                        </div>
+                        <div className="IncomeSharingJourney_desc_img_container_mobile">
+                            <picture style={{ display: "flex" }}>
+                                <source srcset="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/4%2BMonths%2BPrograms.webp 1x" type="image/webp" />
+                                <source srcset="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/4%2BMonths%2BPrograms.webp 1x" type="image/jpeg" />
+                                <img loading="lazy" className="IncomeSharingJourney_desc_img_mobile" src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/4%2BMonths%2BPrograms.webp" />
+                            </picture>
+                        </div>
+                    </div>
+                    <div className="IncomeSharingJourney_title_container_mobile ">
+                        <span className="IncomeSharingJourney_title_number_mobile" style={{ backgroundColor: "rgb(231, 255, 240)", border: "1px dashed rgb(31, 194, 92)" }}>5</span>
+                        <span className="IncomeSharingJourney_title_mobile" style={{ color: "rgb(31, 194, 92)" }}>Guaranteed Placement</span>
+                    </div>
+                    <div className="IncomeSharingJourney_desc_container_mobile">
+                        <div className="IncomeSharingJourney_desc_text_container_mobile">
+                            <span className="IncomeSharingJourney_desc_mobile">The program comes with interview opportunities and  a placement guarantee of minimum 5 LPA.</span>
+                        </div>
+                        <div className="IncomeSharingJourney_desc_img_container_mobile">
+                            <picture style={{ display: "flex" }}>
+                                <source srcset="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Interview%2BOpportunities%2B.webp 1x" type="image/webp" />
+                                <source srcset="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Interview%2BOpportunities%2B.webp 1x" type="image/jpeg" />
+                                <img loading="lazy" className="IncomeSharingJourney_desc_img_mobile" src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Interview%2BOpportunities%2B.webp" />
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+             
+
             <div className="programHighlight-New">
                 <div className="ProgramHighlightsNew__heading_container">
                     <p className="ProgramHighlightsNew__heading_text">Why PrepBytes Elevation Academy? </p>
@@ -298,7 +388,7 @@ const ElevationAcademy = () => {
                     {
                         showsix ?
                             <div className="IncomeSharingSyllabusContent__course-content" style={{ maxHeight: "372px" }}>
-                                <div className="IncomeSharingSyllabus__course-content" style={{borderLeftColor:"rgb(101, 187, 229)"}}>
+                                <div className="IncomeSharingSyllabus__course-content" style={{ borderLeftColor: "rgb(101, 187, 229)" }}>
                                     <div className="IncomeSharingSyllabus__topic-main--container">
                                         <p className="IncomeSharingSyllabus__topic-main--container--heading">Javascript Fundamentals &amp; Problem Solving</p>
                                         <ul className="IncomeSharingSyllabus__topic-main--container-list">
@@ -342,7 +432,7 @@ const ElevationAcademy = () => {
                         showsevan ?
 
                             <div className="IncomeSharingSyllabusContent__course-content" style={{ maxHeight: "300px" }}>
-                                <div className="IncomeSharingSyllabus__course-content" style={{borderLeftColor:"rgb(101, 187, 229)"}}>
+                                <div className="IncomeSharingSyllabus__course-content" style={{ borderLeftColor: "rgb(101, 187, 229)" }}>
                                     <div className="IncomeSharingSyllabus__topic-main--container">
                                         <p className="IncomeSharingSyllabus__topic-main--container--heading">Building Websites using JS</p>
                                         <ul className="IncomeSharingSyllabus__topic-main--container-list">
@@ -386,7 +476,7 @@ const ElevationAcademy = () => {
                         showeight ?
 
                             <div className="IncomeSharingSyllabusContent__course-content" style={{ maxHeight: "514px" }}>
-                                <div className="IncomeSharingSyllabus__course-content" style={{borderLeftColor:"rgb(247, 182, 67)"}}>
+                                <div className="IncomeSharingSyllabus__course-content" style={{ borderLeftColor: "rgb(247, 182, 67)" }}>
                                     <div className="IncomeSharingSyllabus__topic-main--container">
                                         <p className="IncomeSharingSyllabus__topic-main--container--heading">React</p>
                                         <ul className="IncomeSharingSyllabus__topic-main--container-list">
@@ -484,7 +574,7 @@ const ElevationAcademy = () => {
                         showten ?
 
                             <div className="IncomeSharingSyllabusContent__course-content" style={{ maxHeight: "300px" }}>
-                                <div className="IncomeSharingSyllabus__course-content" style={{borderLeftColor:"rgb(101, 187, 229)"}}>
+                                <div className="IncomeSharingSyllabus__course-content" style={{ borderLeftColor: "rgb(101, 187, 229)" }}>
                                     <div className="IncomeSharingSyllabus__topic-main--container">
                                         <p className="IncomeSharingSyllabus__topic-main--container--heading">Database</p>
                                         <ul className="IncomeSharingSyllabus__topic-main--container-list">
@@ -525,7 +615,7 @@ const ElevationAcademy = () => {
                         showoneone ?
 
                             <div className="IncomeSharingSyllabusContent__course-content" style={{ maxHeight: "229px" }}>
-                                <div className="IncomeSharingSyllabus__course-content" style={{borderLeftColor:"rgb(247, 182, 67)"}}>
+                                <div className="IncomeSharingSyllabus__course-content" style={{ borderLeftColor: "rgb(247, 182, 67)" }}>
                                     <div className="IncomeSharingSyllabus__topic-main--container">
                                         <p className="IncomeSharingSyllabus__topic-main--container--heading">Code Review &amp; Deployment</p>
                                         <ul className="IncomeSharingSyllabus__topic-main--container-list">
@@ -562,7 +652,7 @@ const ElevationAcademy = () => {
                         showonetwo ?
 
                             <div className="IncomeSharingSyllabusContent__course-content" style={{ maxHeight: "300px" }}>
-                                <div className="IncomeSharingSyllabus__course-content" style={{borderLeftColor:"rgb(247, 182, 67)"}}>
+                                <div className="IncomeSharingSyllabus__course-content" style={{ borderLeftColor: "rgb(247, 182, 67)" }}>
                                     <div className="IncomeSharingSyllabus__topic-main--container">
                                         <p className="IncomeSharingSyllabus__topic-main--container--heading">Interview Preparation &amp; Major Projects</p>
                                         <ul className="IncomeSharingSyllabus__topic-main--container-list">
@@ -605,7 +695,7 @@ const ElevationAcademy = () => {
                         showonethree ?
 
                             <div className="IncomeSharingSyllabusContent__course-content" style={{ maxHeight: "0px" }}>
-                                <div className="IncomeSharingSyllabus__course-content" style={{borderLeftColor:"rgb(101, 187, 229)"}}>
+                                <div className="IncomeSharingSyllabus__course-content" style={{ borderLeftColor: "rgb(101, 187, 229)" }}>
                                     <div className="IncomeSharingSyllabus__topic-main--container">
                                         <p className="IncomeSharingSyllabus__topic-main--container--heading">Interviews Opportunities with companies</p>
                                         <ul className="IncomeSharingSyllabus__topic-main--container-list">

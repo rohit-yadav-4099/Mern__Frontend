@@ -142,7 +142,7 @@ const Home = () => {
             <div className="CourseandhomeJurney">
 
             <div className="course-type">
-                <div className="course-type-main">
+                <div id="course-type-id" className="course-type-main">
                     <p className="course-type-main-heading">I want to</p>
                     <div className="course-type-main-container">
                         {data.filter((item) => item.id === 49).map(
@@ -199,7 +199,7 @@ const Home = () => {
                             (item, index) => {
                                 return (
                                     <div key={index}>
-                                        <NavLink to="/css-project">
+                                        <NavLink to="/projects">
                                             <div className="course-type-cards">
                                                 <div className="course-type-cards-image">
                                                     <img src={item.image} className="course-type-cards-image-img" />

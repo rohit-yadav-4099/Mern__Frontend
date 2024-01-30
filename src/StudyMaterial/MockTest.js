@@ -19,33 +19,56 @@ const MockTest = () => {
         fetchapi()
     })
 
-    const makePayment = async () => {
+    // const makePayment = async () => {
+    //     const stripe = await loadStripe("pk_test_51OQ699SDqC8mEPn5Q8XJZPCPbWDs3QdmS0iRgQP6uGNG3AHBgIIRiBrDhW6gB1QHC3C9GnJdLF7jW4sgEDA8zTJH00W163lIIE");
+
+    //     const body = {
+    //         product:data
+    //     }
+
+    //     const headers = {
+    //         "Content-Type":"application/json"
+    //     }
+    //     {
+    //         const response = await fetch ("http:/localhost:3030/api/create-checkout-session",{
+    //             method:"POST",
+    //             headers:headers,
+    //             body:JSON.stringify(body)
+    //         })
+
+    //         const session = await response.json();
+
+    //         const result = stripe.redirectToCheckout({
+    //             sessionId:session.id
+    //         });
+    //         if( result.error){
+    //             console.log(result.error);
+    //         }
+    //     }
+    // }
+
+    const handleBuy = async () => {
         const stripe = await loadStripe("pk_test_51OQ699SDqC8mEPn5Q8XJZPCPbWDs3QdmS0iRgQP6uGNG3AHBgIIRiBrDhW6gB1QHC3C9GnJdLF7jW4sgEDA8zTJH00W163lIIE");
-
         const body = {
-            product:data
-        }
-
+            products: data,
+        };
         const headers = {
-            "Content-Type":"application/json"
-        }
-        {
-            const response = await fetch ("http:/localhost:3030/api/create-checkout-session",{
-                method:"POST",
-                headers:headers,
-                body:JSON.stringify(body)
-            })
-
-            const session = await response.json();
-
-            const result = stripe.redirectToCheckout({
-                sessionId:session.id
+            "Content-Type": "application/json",
+        };
+        const response = await fetch("http://localhost:3030/api/create-checkout-session",
+            {
+                method: "POST",
+                headers: headers,
+                body: JSON.stringify(body),
             });
-            if( result.error){
-                console.log(result.error);
-            }
+        const session = await response.json();
+        const result = stripe.redirectToCheckout({
+            sessionId: session.id,
+        });
+        if (result.error) {
+            console.log(result.error);
         }
-    }
+    };
 
 
     // const handleBuy = async () => {
@@ -141,8 +164,14 @@ const MockTest = () => {
 
                                                         </div>
                                                     </div>
+                                                    {/* <button className="cardbuybtn" onClick={handleBuy}>
+                                                        Buy Now
+                                                    </button> */}
                                                     <div className='cardbuy'>
-                                                        <button className='cardbuybtn' onClick={makePayment}>buy now</button>
+                                                        {/* <button className='cardbuybtn' onClick={makePayment}>buy now</button> */}
+                                                        <button className="cardbuybtn" onClick={handleBuy}>
+                                                        Buy Now
+                                                    </button>
                                                     </div>
                                                     {/* <button className='cardbuybtn'
                                                         onClick={handleBuy}

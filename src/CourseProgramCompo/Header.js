@@ -8,18 +8,23 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
     const auth = localStorage.getItem("token");
     const Navi = useNavigate();
-    const { isAuthenticated, user } = useAuth0()
-    const [isLoggedIn, setLoggedIn] = useState(false);
-    const [email, setEmail] = useState(' ')
+
+    const name = localStorage.getItem("name")
+    // const email = localStorage.getItem("email")
+
+    const { user, isAuthenticated, loginWithRedirect, logout } = useAuth0();
+    // const { isAuthenticated, user } = useAuth0()
+    // const [isLoggedIn, setLoggedIn] = useState(false);
+    // const [email, setEmail] = useState(' ')
 
     const haldleOpenCloseMEnu = () => {
         setIsOpen(!isOpen)
     }
 
-    const handleLogin = (userEmail) => {
-        setLoggedIn(true);
-        setEmail(userEmail);
-    };
+    // const handleLogin = (userEmail) => {
+    //     setLoggedIn(true);
+    //     setEmail(userEmail);
+    // };
 
     const logoutfunc = () => {
         localStorage.clear();
@@ -125,10 +130,18 @@ const Header = () => {
                             </ul>
                         </div>
                         <div className="group inline-block">
+                            
+                            {
+                                isAuthenticated ? (
+                                    <div>
+                                        <span>Hi {user && user.name}</span>
+                                    </div>
+                                ):null
+                            }
                             {auth ? (
                                 <div>
                                     <button className="outline-none focus:outline-none  bg-white rounded-sm flex items-center min-w-32">
-                                        <span className="pr-1 hiiUser">Hi</span>
+                                        <span className="pr-1 hiiUser">Hi {name}</span>
                                     </button>
                                     <ul className="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top min-w-32">
                                         <li className="rounded-sm px-3 py-1 hover:text-blue-600 hover:font-semibold">

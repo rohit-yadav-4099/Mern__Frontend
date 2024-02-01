@@ -27,28 +27,28 @@ const MockTest = () => {
     })
 
 
-    // const handleBuy = async () => {
-    //     const stripe = await loadStripe("pk_test_51Oeem7SBO2dXKM05Fgfdzzzn87jdEy570GQCEgB7ATutdUpL7ur3HeQc73rMiY51SPDPWqRapm4BsHEChDEEjiJI00QTF7Dvz3");
-    //     const body = {
-    //         products: data,
-    //     };
-    //     const headers = {
-    //         "Content-Type": "application/json",
-    //     };
-    //     const response = await fetch("http://localhost:3030/api/create-checkout-session",
-    //         {
-    //             method: "POST",
-    //             headers: headers,
-    //             body: JSON.stringify(body),
-    //         });
-    //     const session = await response.json();
-    //     const result = stripe.redirectToCheckout({
-    //         sessionId: session.id,
-    //     });
-    //     if (result.error) {
-    //         console.log(result.error);
-    //     }
-    // };
+    const handleBuy = async () => {
+        const stripe = await loadStripe("pk_test_51Oeem7SBO2dXKM05Fgfdzzzn87jdEy570GQCEgB7ATutdUpL7ur3HeQc73rMiY51SPDPWqRapm4BsHEChDEEjiJI00QTF7Dvz3");
+        const body = {
+            products: data,
+        };
+        const headers = {
+            "Content-Type": "application/json",
+        };
+        const response = await fetch("https://mern-szic.onrender.com/api/create-checkout-session",
+            {
+                method: "POST",
+                headers: headers,
+                body: JSON.stringify(body),
+            });
+        const session = await response.json();
+        const result = stripe.redirectToCheckout({
+            sessionId: session.id,
+        });
+        if (result.error) {
+            console.log(result.error);
+        }
+    };
 
 
     // const PayPalButton = paypal.Buttons.driver("react", { React, ReactDOM });
@@ -213,7 +213,7 @@ const MockTest = () => {
                                                     </div>
                                                    
                                                     <div className='cardbuy'>
-                                                    <button className="cardbuybtn">
+                                                    <button className="cardbuybtn" onClick={handleBuy}>
                                                         Buy Now
                                                     </button>
                                                       

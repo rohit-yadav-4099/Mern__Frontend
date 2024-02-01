@@ -123,6 +123,7 @@ const Header = () => {
                             {auth ? (
                                 <div>
                                     <button className="outline-none focus:outline-none  bg-white rounded-sm flex items-center min-w-32">
+                                        <span className="name-circle">{name.slice(0, 1)}</span>
                                         <span className="pr-1 hiiUser">Hi {name}</span>
                                     </button>
                                     <ul className="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top min-w-32">

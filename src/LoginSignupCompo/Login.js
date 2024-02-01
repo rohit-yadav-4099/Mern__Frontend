@@ -30,7 +30,12 @@ const Login = () => {
             .then((res) => {
                 console.log(res)
                 alert(res.data.msg)
-                localStorage.setItem("token", res.data.token)
+                localStorage.setItem("token", res.data.token);
+                localStorage.setItem("name", res.data.name);
+                localStorage.setItem("email", res.data.email);
+
+                console.log(res.data.name);
+                console.log(res.data.email);
                 //   localStorage.setItem("name",res.data.name)
 
                 //   if(token){

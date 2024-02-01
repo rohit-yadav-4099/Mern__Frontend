@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import '../CSScompo/Header.css';
-import { useAuth0 } from '@auth0/auth0-react';
 
 const Header = () => {
 
@@ -10,21 +9,11 @@ const Header = () => {
     const Navi = useNavigate();
 
     const name = localStorage.getItem("name")
-    // const email = localStorage.getItem("email")
-
-    const { user, isAuthenticated, loginWithRedirect, logout } = useAuth0();
-    // const { isAuthenticated, user } = useAuth0()
-    // const [isLoggedIn, setLoggedIn] = useState(false);
-    // const [email, setEmail] = useState(' ')
+    const email = localStorage.getItem("email")
 
     const haldleOpenCloseMEnu = () => {
         setIsOpen(!isOpen)
     }
-
-    // const handleLogin = (userEmail) => {
-    //     setLoggedIn(true);
-    //     setEmail(userEmail);
-    // };
 
     const logoutfunc = () => {
         localStorage.clear();
@@ -131,13 +120,6 @@ const Header = () => {
                         </div>
                         <div className="group inline-block">
                             
-                            {
-                                isAuthenticated ? (
-                                    <div>
-                                        <span>Hi {user && user.name}</span>
-                                    </div>
-                                ):null
-                            }
                             {auth ? (
                                 <div>
                                     <button className="outline-none focus:outline-none  bg-white rounded-sm flex items-center min-w-32">
@@ -180,7 +162,7 @@ const Header = () => {
                                
                                 {auth ? (
                                     <div>
-
+                                        <li> <span className="pr-1 hiiUser">{name}</span></li>
 
                                         <li className="rounded-sm px-3 py-1 hover:text-blue-600 hover:font-semibold">
                                             <NavLink to="/mycourse">
@@ -211,7 +193,6 @@ const Header = () => {
                                    
                                 )
                                 }
-
 
                             </ul>
                         </div>

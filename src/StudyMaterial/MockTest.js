@@ -2,7 +2,14 @@ import React, { useEffect, useState } from 'react'
 import './MockTest.css';
 import { useDispatch } from 'react-redux';
 import { addtocourse } from '../Redux/Slice';
+import axios from 'axios';
 import { loadStripe } from '@stripe/stripe-js';
+
+// import { PayPalButtons } from "@paypal/react-paypal-js";
+
+// import ReactDOM from "react-dom"
+// import paypal from "paypal-rest-sdk"
+// const PayPalButton = paypal.Buttons.driver("react", { React, ReactDOM });
 
 const MockTest = () => {
     const [data, setData] = useState([])
@@ -19,67 +26,16 @@ const MockTest = () => {
         fetchapi()
     })
 
-    // const makePayment = async () => {
-    //     const stripe = await loadStripe("pk_test_51OQ699SDqC8mEPn5Q8XJZPCPbWDs3QdmS0iRgQP6uGNG3AHBgIIRiBrDhW6gB1QHC3C9GnJdLF7jW4sgEDA8zTJH00W163lIIE");
-
-    //     const body = {
-    //         product:data
-    //     }
-
-    //     const headers = {
-    //         "Content-Type":"application/json"
-    //     }
-    //     {
-    //         const response = await fetch ("http:/localhost:3030/api/create-checkout-session",{
-    //             method:"POST",
-    //             headers:headers,
-    //             body:JSON.stringify(body)
-    //         })
-
-    //         const session = await response.json();
-
-    //         const result = stripe.redirectToCheckout({
-    //             sessionId:session.id
-    //         });
-    //         if( result.error){
-    //             console.log(result.error);
-    //         }
-    //     }
-    // }
-
-    const handleBuy = async () => {
-        const stripe = await loadStripe("pk_test_51OQ699SDqC8mEPn5Q8XJZPCPbWDs3QdmS0iRgQP6uGNG3AHBgIIRiBrDhW6gB1QHC3C9GnJdLF7jW4sgEDA8zTJH00W163lIIE");
-        const body = {
-            products: data,
-        };
-        const headers = {
-            "Content-Type": "application/json",
-        };
-        const response = await fetch("https://mern-szic.onrender.com/api/create-checkout-session",
-            {
-                method: "POST",
-                headers: headers,
-                body: JSON.stringify(body),
-            });
-        const session = await response.json();
-        const result = stripe.redirectToCheckout({
-            sessionId: session.id,
-        });
-        if (result.error) {
-            console.log(result.error);
-        }
-    };
-
 
     // const handleBuy = async () => {
-    //     const stripe = await loadStripe("pk_test_51OQ699SDqC8mEPn5Q8XJZPCPbWDs3QdmS0iRgQP6uGNG3AHBgIIRiBrDhW6gB1QHC3C9GnJdLF7jW4sgEDA8zTJH00W163lIIE");
+    //     const stripe = await loadStripe("pk_test_51Oeem7SBO2dXKM05Fgfdzzzn87jdEy570GQCEgB7ATutdUpL7ur3HeQc73rMiY51SPDPWqRapm4BsHEChDEEjiJI00QTF7Dvz3");
     //     const body = {
     //         products: data,
     //     };
     //     const headers = {
     //         "Content-Type": "application/json",
     //     };
-    //     const response = await fetch("https://mern-szic.onrender.com/api/create-checkout-session",
+    //     const response = await fetch("http://localhost:3030/api/create-checkout-session",
     //         {
     //             method: "POST",
     //             headers: headers,
@@ -93,6 +49,93 @@ const MockTest = () => {
     //         console.log(result.error);
     //     }
     // };
+
+
+    // const PayPalButton = paypal.Buttons.driver("react", { React, ReactDOM });
+   
+    //   const createOrder = (data) => {
+    //     // Order is created on the server and the order id is returned
+    //     return fetch("http://localhost:3030/api/orders", {
+    //       method: "POST",
+    //        headers: {
+    //         "Content-Type": "application/json",
+    //       },
+    //       // use the "body" param to optionally pass additional order information
+    //       // like product skus and quantities
+    //       body: JSON.stringify({
+    //         cart: [
+    //           {
+    //             sku: "unique_id",
+    //             quantity: data.quantity,
+    //           },
+    //         ],
+    //       }),
+    //     })
+    //     .then((response) => response.json())
+    //     .then((order) => order.id);
+    //   };
+    //   const onApprove = (data) => {
+    //      // Order is captured on the server and the response is returned to the browser
+    //      return fetch("http://localhost:3030/api/orders", {
+    //       method: "POST",
+    //        headers: {
+    //         "Content-Type": "application/json",
+    //       },
+    //       body: JSON.stringify({
+    //         orderID: data.orderID
+    //       })
+    //     })
+    //     .then((response) => response.json());
+    //   };
+    //   return (
+    //     <PayPalButton
+    //       createOrder={(data) => createOrder(data)}
+    //       onApprove={(data) => onApprove(data)}
+    //     />
+    //   );
+    
+    
+
+    // const Payment = async () => {
+    //     const stripe = await loadStripe(
+    //       "pk_test_51OFfDcSFuYPQ8NkkiTz5ftHV4vxynOQ1qBrVphWeG7zUdAdr0biKAWFhLRGZfedGDI96o3QL1qhPfv6M8J5nkwrr00E5cXKqKc"
+    //     );
+    
+    //     const body = {
+    //       products: data,
+    //     };
+    
+    //     const headers = {
+    //       "Content-Type": "application/json",
+    //     };
+    
+    //     const response = await fetch(
+    //       "http://localhost:3030/api/create-checkout-session",
+    //       {
+    //         method: "POST",
+    //         headers: headers,
+    //         body: JSON.stringify(body),
+    //       }
+    //     );
+    
+    //     await axios.post(
+    //       "http://localhost:3030/api/addlearn",
+    //       paymetcart
+    //     );
+    
+    //     await axios.delete("http://localhost:3030/api/delete");
+    
+    //     const session = await response.json();
+    //     const result = stripe.redirectToCheckout({
+    //       sessionId: session.id,
+    //     });
+    
+    //     if (result.error) {
+    //       console.log(result.error);
+    //     }
+    //   };
+
+
     return (
         <div>
             <div>
@@ -163,15 +206,17 @@ const MockTest = () => {
                                                             <p className='durationheading'>{item.durationheading}</p>
 
                                                         </div>
+
+                                                    </div><br/>
+                                                    <div>
+                                                        <p>Rs {item.price}</p>
                                                     </div>
-                                                    {/* <button className="cardbuybtn" onClick={handleBuy}>
-                                                        Buy Now
-                                                    </button> */}
+                                                   
                                                     <div className='cardbuy'>
-                                                        {/* <button className='cardbuybtn' onClick={makePayment}>buy now</button> */}
-                                                        <button className="cardbuybtn" onClick={handleBuy}>
+                                                    <button className="cardbuybtn">
                                                         Buy Now
                                                     </button>
+                                                      
                                                     </div>
                                                     {/* <button className='cardbuybtn'
                                                         onClick={handleBuy}
@@ -214,6 +259,7 @@ const MockTest = () => {
                                                         <img src={item.image} className='topic-wise-card-image-img' alt='image' />
                                                     </div>
                                                     <p className='topic-wise-card-name'>{item.name}</p>
+                                                    <p>Rs. {item.price}</p>
                                                     <div className='topic-wise-card-btn'>
                                                         <button className='topic-wise-card-buybtn'
                                                             onClick={() =>
@@ -248,6 +294,7 @@ const MockTest = () => {
                                                         <img src={item.image} className='practicemock-testlist-company-card-image-img' alt='image' />
 
                                                     </div>
+                                                    <p>Rs. {item.price}</p>
                                                     <div className='practicemock-testlist-company-card-btn'>
                                                         <button className='practicemock-testlist-company-card-buybtn'
                                                             onClick={() =>

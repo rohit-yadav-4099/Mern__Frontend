@@ -57,6 +57,7 @@ const Register = () => {
                     alert(res.data.msg);
                     setData(res.data);
                     localStorage.setItem("token", res.data.token);
+                    localStorage.setItem("email", res.data.email);
                     console.log(res.data.token);
                     if (res.data.msg === "user already registered") {
                         Navi("/register");

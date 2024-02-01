@@ -852,7 +852,6 @@ const ElevationAcademy = () => {
                                 <button className="PaymentPlans__main--container-card-left-second--btn">Register</button>
                             </div>
 
-
                         </div>
 
 

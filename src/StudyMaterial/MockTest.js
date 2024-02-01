@@ -7,8 +7,8 @@ import { loadStripe } from '@stripe/stripe-js';
 
 // import { PayPalButtons } from "@paypal/react-paypal-js";
 
-// import ReactDOM from "react-dom"
-// import paypal from "paypal-rest-sdk"
+import ReactDOM from "react-dom"
+import paypal from "paypal-rest-sdk"
 // const PayPalButton = paypal.Buttons.driver("react", { React, ReactDOM });
 
 const MockTest = () => {
@@ -27,72 +27,72 @@ const MockTest = () => {
     })
 
 
-    const handleBuy = async () => {
-        const stripe = await loadStripe("pk_test_51Oeem7SBO2dXKM05Fgfdzzzn87jdEy570GQCEgB7ATutdUpL7ur3HeQc73rMiY51SPDPWqRapm4BsHEChDEEjiJI00QTF7Dvz3");
-        const body = {
-            products: data,
-        };
-        const headers = {
-            "Content-Type": "application/json",
-        };
-        const response = await fetch("https://mern-szic.onrender.com/api/create-checkout-session",
-            {
-                method: "POST",
-                headers: headers,
-                body: JSON.stringify(body),
-            });
-        const session = await response.json();
-        const result = stripe.redirectToCheckout({
-            sessionId: session.id,
-        });
-        if (result.error) {
-            console.log(result.error);
-        }
-    };
+    // const handleBuy = async () => {
+    //     const stripe = await loadStripe("pk_test_51Oeem7SBO2dXKM05Fgfdzzzn87jdEy570GQCEgB7ATutdUpL7ur3HeQc73rMiY51SPDPWqRapm4BsHEChDEEjiJI00QTF7Dvz3");
+    //     const body = {
+    //         products: data,
+    //     };
+    //     const headers = {
+    //         "Content-Type": "application/json",
+    //     };
+    //     const response = await fetch("http://localhost:3030/api/create-checkout-session",
+    //         {
+    //             method: "POST",
+    //             headers: headers,
+    //             body: JSON.stringify(body),
+    //         });
+    //     const session = await response.json();
+    //     const result = stripe.redirectToCheckout({
+    //         sessionId: session.id,
+    //     });
+    //     if (result.error) {
+    //         console.log(result.error);
+    //     }
+    // };
 
 
-    // const PayPalButton = paypal.Buttons.driver("react", { React, ReactDOM });
+    const PayPalButton = paypal.Buttons.driver("react", { React, ReactDOM });
    
-    //   const createOrder = (data) => {
-    //     // Order is created on the server and the order id is returned
-    //     return fetch("http://localhost:3030/api/orders", {
-    //       method: "POST",
-    //        headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //       // use the "body" param to optionally pass additional order information
-    //       // like product skus and quantities
-    //       body: JSON.stringify({
-    //         cart: [
-    //           {
-    //             sku: "unique_id",
-    //             quantity: data.quantity,
-    //           },
-    //         ],
-    //       }),
-    //     })
-    //     .then((response) => response.json())
-    //     .then((order) => order.id);
-    //   };
-    //   const onApprove = (data) => {
-    //      // Order is captured on the server and the response is returned to the browser
-    //      return fetch("http://localhost:3030/api/orders", {
-    //       method: "POST",
-    //        headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //       body: JSON.stringify({
-    //         orderID: data.orderID
-    //       })
-    //     })
-    //     .then((response) => response.json());
-    //   };
-    //   return (
-    //     <PayPalButton
-    //       createOrder={(data) => createOrder(data)}
-    //       onApprove={(data) => onApprove(data)}
-    //     />
-    //   );
+      const createOrder = (data) => {
+        // Order is created on the server and the order id is returned
+        return fetch("http://localhost:3030/api/orders", {
+          method: "POST",
+           headers: {
+            "Content-Type": "application/json",
+          },
+          // use the "body" param to optionally pass additional order information
+          // like product skus and quantities
+          body: JSON.stringify({
+            cart: [
+              {
+                sku: "unique_id",
+                quantity: data.quantity,
+              },
+            ],
+          }),
+        })
+        .then((response) => response.json())
+        .then((order) => order.id);
+      };
+      const onApprove = (data) => {
+         // Order is captured on the server and the response is returned to the browser
+         return fetch("http://localhost:3030/api/orders", {
+          method: "POST",
+           headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            orderID: data.orderID
+          })
+        })
+        .then((response) => response.json());
+      };
+      return (
+        <PayPalButton
+          createOrder={(data) => createOrder(data)}
+          onApprove={(data) => onApprove(data)}
+        />
+      );
     
     
 
@@ -213,7 +213,7 @@ const MockTest = () => {
                                                     </div>
                                                    
                                                     <div className='cardbuy'>
-                                                    <button className="cardbuybtn" onClick={handleBuy}>
+                                                    <button className="cardbuybtn">
                                                         Buy Now
                                                     </button>
                                                       

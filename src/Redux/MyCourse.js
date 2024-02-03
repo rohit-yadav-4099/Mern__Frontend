@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import './MyCouse.css';
 import "../StudyMaterial/MockTest.css"
@@ -6,7 +6,22 @@ import "../StudyMaterial/MockTest.css"
 const AddMyCourse = () => {
     const countcourse = useSelector((state) => state.Course.course)
     // const dispatch = useDispatch();
-    const data = useSelector((state) => state.Course.course);
+    // const data = useSelector((state) => state.Course.course);
+
+    const [data, setData] = useState([])
+    console.log(data)
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        async function fetchapi() {
+            const videoData = await fetch("http://localhost:3030/bought")
+            console.log(videoData);
+            const res = await videoData.json()
+            setData(res)
+            console.log(res);
+        }
+        fetchapi()
+    }, []);
 
     return (
         <>

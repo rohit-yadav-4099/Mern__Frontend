@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react'
 import './MockTest.css';
 import { useDispatch } from 'react-redux';
 import { addtocourse } from '../Redux/Slice';
-// import axios from 'axios';
-// import { loadStripe } from '@stripe/stripe-js';
+import { NavLink } from 'react-router-dom';
+import axios from 'axios';
+import { loadStripe } from '@stripe/stripe-js';
 
-// import { PayPalButtons } from "@paypal/react-paypal-js";
+// import { PayPalButtons } from "@paypal/react-paypal-js";z
 
 // import ReactDOM from "react-dom"
 // import paypal from "paypal-rest-sdk"
@@ -24,35 +25,14 @@ const MockTest = () => {
             console.log(res);
         }
         fetchapi()
-    })
+    }, []);
 
 
-    // const handleBuy = async () => {
-    //     const stripe = await loadStripe("pk_test_51Oeem7SBO2dXKM05Fgfdzzzn87jdEy570GQCEgB7ATutdUpL7ur3HeQc73rMiY51SPDPWqRapm4BsHEChDEEjiJI00QTF7Dvz3");
-    //     const body = {
-    //         products: data,
-    //     };
-    //     const headers = {
-    //         "Content-Type": "application/json",
-    //     };
-    //     const response = await fetch("http://localhost:3030/api/create-checkout-session",
-    //         {
-    //             method: "POST",
-    //             headers: headers,
-    //             body: JSON.stringify(body),
-    //         });
-    //     const session = await response.json();
-    //     const result = stripe.redirectToCheckout({
-    //         sessionId: session.id,
-    //     });
-    //     if (result.error) {
-    //         console.log(result.error);
-    //     }
-    // };
+
 
 
     // const PayPalButton = paypal.Buttons.driver("react", { React, ReactDOM });
-   
+
     //   const createOrder = (data) => {
     //     // Order is created on the server and the order id is returned
     //     return fetch("http://localhost:3030/api/orders", {
@@ -93,47 +73,57 @@ const MockTest = () => {
     //       onApprove={(data) => onApprove(data)}
     //     />
     //   );
-    
-    
 
-    // const Payment = async () => {
-    //     const stripe = await loadStripe(
-    //       "pk_test_51OFfDcSFuYPQ8NkkiTz5ftHV4vxynOQ1qBrVphWeG7zUdAdr0biKAWFhLRGZfedGDI96o3QL1qhPfv6M8J5nkwrr00E5cXKqKc"
-    //     );
-    
-    //     const body = {
-    //       products: data,
-    //     };
-    
-    //     const headers = {
-    //       "Content-Type": "application/json",
-    //     };
-    
-    //     const response = await fetch(
-    //       "http://localhost:3030/api/create-checkout-session",
-    //       {
-    //         method: "POST",
-    //         headers: headers,
-    //         body: JSON.stringify(body),
-    //       }
-    //     );
-    
-    //     await axios.post(
-    //       "http://localhost:3030/api/addlearn",
-    //       paymetcart
-    //     );
-    
-    //     await axios.delete("http://localhost:3030/api/delete");
-    
-    //     const session = await response.json();
-    //     const result = stripe.redirectToCheckout({
-    //       sessionId: session.id,
-    //     });
-    
-    //     if (result.error) {
-    //       console.log(result.error);
-    //     }
-    //   };
+    const checkitem = (id) => {
+        for (let i = 0; i < data.length; i++) {
+            if (data[i].id === id) {
+                data[i]['useremail'] = localStorage.getItem("selfdetails")
+                return [data[i]]
+
+            }
+        }
+
+    }
+    const dopayment = async (id) => {
+        const result = await checkitem(id)
+
+
+
+        const stripe = await loadStripe("pk_test_51Oeem7SBO2dXKM05Fgfdzzzn87jdEy570GQCEgB7ATutdUpL7ur3HeQc73rMiY51SPDPWqRapm4BsHEChDEEjiJI00QTF7Dvz3")
+        const body = {
+            products: result
+        }
+        const headers = {
+            "content-Type": "application/json"
+        }
+        try {
+
+            const response = await fetch("http://localhost:3030/createcheckout", {
+                method: "POST",
+                headers: headers,
+                body: JSON.stringify(body),
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
+            const session = await response.json();
+            console.log(session);
+
+            const result = await stripe.redirectToCheckout({
+                sessionId: session.id,
+            });
+
+
+            if (result.error) {
+                console.log(result.error);
+            }
+        } catch (error) {
+            console.error("Fetch error:", error);
+        }
+
+    }
 
 
     return (
@@ -162,18 +152,18 @@ const MockTest = () => {
                             <div className='featured-mock-test-cards'>
                                 {data.filter((item) => item.id >= 7 && item.id <= 18).map(
                                     (item, index) => {
-                                        const {
-                                            id = item.id,
-                                            name = item.name,
-                                            image = item.image,
-                                            date = item.date,
-                                            dateheading = item.dateheading,
-                                            participants = item.participants,
-                                            participantsheading = item.participantsheading,
-                                            duration = item.duration,
-                                            durationheading = item.durationheading
+                                        // const {
+                                        //     id = item.id,
+                                        //     name = item.name,
+                                        //     image = item.image,
+                                        //     date = item.date,
+                                        //     dateheading = item.dateheading,
+                                        //     participants = item.participants,
+                                        //     participantsheading = item.participantsheading,
+                                        //     duration = item.duration,
+                                        //     durationheading = item.durationheading
 
-                                        } = item;
+                                        // } = item;
                                         return (
                                             <div key={index}>
                                                 <div className='mockCards'>
@@ -207,24 +197,26 @@ const MockTest = () => {
 
                                                         </div>
 
-                                                    </div><br/>
+                                                    </div><br />
                                                     <div>
                                                         <p>Rs {item.price}</p>
                                                     </div>
-                                                   
+
                                                     <div className='cardbuy'>
-                                                    <button className="cardbuybtn">
-                                                        Buy Now
-                                                    </button>
-                                                      
+                                                         <button className="cardbuybtn" onClick={()=>dopayment(item.id)}>
+                                                        Buy now
+                                                    </button> 
+                                                        {/* <NavLink to="/sucess">
+
+                                                            <button className='cardbuybtn'
+                                                                onClick={() =>
+                                                                    dispatch(addtocourse({ id, name, image, date, dateheading, participants, participantsheading, duration, durationheading }))}
+                                                            >
+                                                                Buy Now
+                                                            </button>
+                                                        </NavLink> */}
                                                     </div>
-                                                    {/* <button className='cardbuybtn'
-                                                        onClick={handleBuy}
-                                                    {() => 
-                                                        dispatch(addtocourse({id, name,image, date, dateheading, participants, participantsheading, duration, durationheading}))}
-                                                    >
-                                                        Buy Now
-                                                    </button> */}
+
 
                                                 </div>
                                             </div>

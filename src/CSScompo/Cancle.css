@@ -1,0 +1,84 @@
+
+.paymentCancleContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 12em;
+    
+}
+
+.paymentCancleContainer img{
+    width: 300px;
+    height: auto;
+    align-self: center;
+    margin-top: 10%;
+}
+
+.paymentCancleContainer button{
+    border: 2px solid #fff;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #03A6EC;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* .success-page_container{
+    background-color: #e9e5e5;
+
+} */
+
+.success-page_container_main{
+    text-align: center;
+    margin-left: 35%;
+    width: 450px;
+    height: 280px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 3px 2px 5px #908d8d;
+    margin-top: 8%;
+    margin-bottom: 11em;
+}
+
+.paymentsuccessContainer {
+    width: 100%;
+    background-color: #03A6EC;
+    height: 10vh;
+}
+
+.success-page_container_main img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    align-self: center;
+    margin-left: 45%;
+}
+
+.paymentSuccesstext{
+width: 100%;
+height: 70%;
+margin-top: 20px;
+}
+
+.paymentSuccesstext h1{
+    font-size: 21px;
+    font-weight: 500;
+    
+}
+
+.paymentSuccesstext h4{
+    font-size: 16px;
+    margin-top: 5px;
+    
+}
+
+.paymentSuccesstext button{
+    margin-top: 25px;
+    background-color: orangered;
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+}

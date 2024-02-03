@@ -21,7 +21,7 @@ import NodeCompo from "../Project/Node";
 import MongoCompo from "../Project/Mongo";
 import AddMyCourse from "../Redux/MyCourse";
 import Project from "../Project/Project";
-import Sucess from "../CourseProgramCompo/Sucess";
+import Success from "../CourseProgramCompo/Sucess";
 import  Cancel from "../CourseProgramCompo/Cancel";
 
 
@@ -88,7 +88,7 @@ const Navbar = () => {
 
                 <Route path="/projects" element={<Project/>}/>
 
-                <Route path="/sucess" element={<Sucess/>}/>
+                <Route path="/success" element={<Success/>}/>
                 <Route path="/cancel" element={<Cancel/>}/>
 
             </Routes>

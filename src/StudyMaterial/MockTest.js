@@ -203,9 +203,9 @@ const MockTest = () => {
                                                     </div>
 
                                                     <div className='cardbuy'>
-                                                         <button className="cardbuybtn" onClick={()=>dopayment(item.id)}>
-                                                        Buy now
-                                                    </button> 
+                                                        <button className="cardbuybtn" onClick={() => dopayment(item.id)}>
+                                                            Buy now
+                                                        </button>
                                                         {/* <NavLink to="/sucess">
 
                                                             <button className='cardbuybtn'
@@ -239,11 +239,11 @@ const MockTest = () => {
                             <div className='practice-mock-Testlist-container-topicwise'>
                                 {data.filter((item) => item.id >= 19 && item.id <= 27).map(
                                     (item, index) => {
-                                        const {
-                                            id = item.id,
-                                            name = item.name,
-                                            image = item.image,
-                                        } = item;
+                                        // const {
+                                        //     id = item.id,
+                                        //     name = item.name,
+                                        //     image = item.image,
+                                        // } = item;
                                         return (
                                             <div key={index}>
                                                 <div className='topic-wise-card'>
@@ -253,9 +253,13 @@ const MockTest = () => {
                                                     <p className='topic-wise-card-name'>{item.name}</p>
                                                     <p>Rs. {item.price}</p>
                                                     <div className='topic-wise-card-btn'>
-                                                        <button className='topic-wise-card-buybtn'
+
+                                                        <button className="cardbuybtn" onClick={() => dopayment(item.id)}>
+                                                            Buy now
+                                                        </button>
+                                                        {/* <button className='topic-wise-card-buybtn'
                                                             onClick={() =>
-                                                                dispatch(addtocourse({ id, name, image }))}>Buy Now</button>
+                                                                dispatch(addtocourse({ id, name, image }))}>Buy Now</button> */}
 
                                                     </div>
 
@@ -275,10 +279,10 @@ const MockTest = () => {
                             <div className='practicemock-testlist-container-card-company'>
                                 {data.filter((item) => item.id >= 28 && item.id <= 37).map(
                                     (item, index) => {
-                                        const {
-                                            id = item.id,
-                                            image = item.image,
-                                        } = item;
+                                        // const {
+                                        //     id = item.id,
+                                        //     image = item.image,
+                                        // } = item;
                                         return (
                                             <div key={index}>
                                                 <div className='practicemock-testlist-company-card'>
@@ -288,9 +292,13 @@ const MockTest = () => {
                                                     </div>
                                                     <p>Rs. {item.price}</p>
                                                     <div className='practicemock-testlist-company-card-btn'>
-                                                        <button className='practicemock-testlist-company-card-buybtn'
+
+                                                        <button className="cardbuybtn" onClick={() => dopayment(item.id)}>
+                                                            Buy now
+                                                        </button>
+                                                        {/* <button className='practicemock-testlist-company-card-buybtn'
                                                             onClick={() =>
-                                                                dispatch(addtocourse({ id, image }))}>Buy Now</button>
+                                                                dispatch(addtocourse({ id, image }))}>Buy Now</button> */}
 
                                                     </div>
 

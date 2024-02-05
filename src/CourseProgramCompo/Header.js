@@ -20,8 +20,17 @@ const Header = () => {
         Navi("/register");
     };
 
+    // const handleLogout = () => {
+    //     localStorage.removeItem('token')
+    //     setData([])
+    //     localStorage.removeItem('selfname')
+    //     setLocalName(null);
+    //     navigate('/dashboard')
+
+    // };
+
     return (
-        <header className='w-full shadow-md sticky z-10'>
+        <header className='w-full shadow-md sticky z-10 maydashboard'>
             <div className='w-10/12 h-[75px] flex mx-auto justify-between items-center'>
                 <div>
                     {/* logo */}
@@ -123,7 +132,7 @@ const Header = () => {
                             {auth ? (
                                 <div>
                                     <button className="outline-none focus:outline-none  bg-white rounded-sm flex items-center min-w-32">
-                                        <span className="name-circle">{name.slice(0, 1)}</span>
+                                        <span className="name-circle">{name?.[0]?.toUpperCase()}</span>
                                         <span className="pr-1 hiiUser">Hi {name}</span>
                                     </button>
                                     <ul className="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top min-w-32">

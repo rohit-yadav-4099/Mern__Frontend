@@ -151,7 +151,7 @@ const MockTest = () => {
 
                             <div className='featured-mock-test-cards'>
                                 {data.filter((item) => item.id >= 7 && item.id <= 18).map(
-                                    (item, index) => {
+                                    (item) => {
                                         // const {
                                         //     id = item.id,
                                         //     name = item.name,
@@ -165,7 +165,7 @@ const MockTest = () => {
 
                                         // } = item;
                                         return (
-                                            <div key={index}>
+                                            <div key={item.id}>
                                                 <div className='mockCards'>
                                                     <div className='mockCards-top'>
                                                         <img src='\VideoImage\infoicon.svg' className='mockCards-top-infoicon'></img>

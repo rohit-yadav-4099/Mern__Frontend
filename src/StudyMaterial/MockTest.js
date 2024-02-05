@@ -3,8 +3,8 @@ import './MockTest.css';
 import { useDispatch } from 'react-redux';
 import { addtocourse } from '../Redux/Slice';
 import { NavLink } from 'react-router-dom';
-import axios from 'axios';
-import { loadStripe } from '@stripe/stripe-js';
+// import axios from 'axios';
+// import { loadStripe } from '@stripe/stripe-js';
 
 // import { PayPalButtons } from "@paypal/react-paypal-js";z
 
@@ -25,105 +25,59 @@ const MockTest = () => {
             console.log(res);
         }
         fetchapi()
-    }, []);
+    });
+
+
+    // const checkitem = (id) => {
+    //     for (let i = 0; i < data.length; i++) {
+    //         if (data[i].id === id) {
+    //             data[i]['useremail'] = localStorage.getItem("selfdetails")
+    //             return [data[i]]
+
+    //         }
+    //     }
+
+    // }
+    // const dopayment = async (id) => {
+    //     const result = await checkitem(id)
 
 
 
+    //     const stripe = await loadStripe("pk_test_51Oeem7SBO2dXKM05Fgfdzzzn87jdEy570GQCEgB7ATutdUpL7ur3HeQc73rMiY51SPDPWqRapm4BsHEChDEEjiJI00QTF7Dvz3")
+    //     const body = {
+    //         products: result
+    //     }
+    //     const headers = {
+    //         "content-Type": "application/json"
+    //     }
+    //     try {
+
+    //         const response = await fetch("https://mern-szic.onrender.com/createcheckout", {
+    //             method: "POST",
+    //             headers: headers,
+    //             body: JSON.stringify(body),
+    //         });
+
+    //         if (!response.ok) {
+    //             throw new Error(`HTTP error! Status: ${response.status}`);
+    //         }
+
+    //         const session = await response.json();
+    //         console.log(session);
+
+    //         const result = await stripe.redirectToCheckout({
+    //             sessionId: session.id,
+    //         });
 
 
-    // const PayPalButton = paypal.Buttons.driver("react", { React, ReactDOM });
+    //         if (result.error) {
+    //             console.log(result.error);
+    //         }
+    //     } catch (error) {
+    //         console.error("Fetch error:", error);
+    //     }
 
-    //   const createOrder = (data) => {
-    //     // Order is created on the server and the order id is returned
-    //     return fetch("http://localhost:3030/api/orders", {
-    //       method: "POST",
-    //        headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //       // use the "body" param to optionally pass additional order information
-    //       // like product skus and quantities
-    //       body: JSON.stringify({
-    //         cart: [
-    //           {
-    //             sku: "unique_id",
-    //             quantity: data.quantity,
-    //           },
-    //         ],
-    //       }),
-    //     })
-    //     .then((response) => response.json())
-    //     .then((order) => order.id);
-    //   };
-    //   const onApprove = (data) => {
-    //      // Order is captured on the server and the response is returned to the browser
-    //      return fetch("http://localhost:3030/api/orders", {
-    //       method: "POST",
-    //        headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //       body: JSON.stringify({
-    //         orderID: data.orderID
-    //       })
-    //     })
-    //     .then((response) => response.json());
-    //   };
-    //   return (
-    //     <PayPalButton
-    //       createOrder={(data) => createOrder(data)}
-    //       onApprove={(data) => onApprove(data)}
-    //     />
-    //   );
-
-    const checkitem = (id) => {
-        for (let i = 0; i < data.length; i++) {
-            if (data[i].id === id) {
-                data[i]['useremail'] = localStorage.getItem("selfdetails")
-                return [data[i]]
-
-            }
-        }
-
-    }
-    const dopayment = async (id) => {
-        const result = await checkitem(id)
-
-
-
-        const stripe = await loadStripe("pk_test_51Oeem7SBO2dXKM05Fgfdzzzn87jdEy570GQCEgB7ATutdUpL7ur3HeQc73rMiY51SPDPWqRapm4BsHEChDEEjiJI00QTF7Dvz3")
-        const body = {
-            products: result
-        }
-        const headers = {
-            "content-Type": "application/json"
-        }
-        try {
-
-            const response = await fetch("https://mern-szic.onrender.com/createcheckout", {
-                method: "POST",
-                headers: headers,
-                body: JSON.stringify(body),
-            });
-
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-
-            const session = await response.json();
-            console.log(session);
-
-            const result = await stripe.redirectToCheckout({
-                sessionId: session.id,
-            });
-
-
-            if (result.error) {
-                console.log(result.error);
-            }
-        } catch (error) {
-            console.error("Fetch error:", error);
-        }
-
-    }
+    // }
 
 
     return (
@@ -152,18 +106,18 @@ const MockTest = () => {
                             <div className='featured-mock-test-cards'>
                                 {data.filter((item) => item.id >= 7 && item.id <= 18).map(
                                     (item) => {
-                                        // const {
-                                        //     id = item.id,
-                                        //     name = item.name,
-                                        //     image = item.image,
-                                        //     date = item.date,
-                                        //     dateheading = item.dateheading,
-                                        //     participants = item.participants,
-                                        //     participantsheading = item.participantsheading,
-                                        //     duration = item.duration,
-                                        //     durationheading = item.durationheading
+                                        const {
+                                            id = item.id,
+                                            name = item.name,
+                                            image = item.image,
+                                            date = item.date,
+                                            dateheading = item.dateheading,
+                                            participants = item.participants,
+                                            participantsheading = item.participantsheading,
+                                            duration = item.duration,
+                                            durationheading = item.durationheading
 
-                                        // } = item;
+                                        } = item;
                                         return (
                                             <div key={item.id}>
                                                 <div className='mockCards'>
@@ -203,10 +157,10 @@ const MockTest = () => {
                                                     </div>
 
                                                     <div className='cardbuy'>
-                                                        <button className="cardbuybtn" onClick={() => dopayment(item.id)}>
+                                                        {/* <button className="cardbuybtn" onClick={() => dopayment(item.id)}>
                                                             Buy now
-                                                        </button>
-                                                        {/* <NavLink to="/sucess">
+                                                        </button> */}
+                                                        {/* <NavLink to="/sucess"> */}
 
                                                             <button className='cardbuybtn'
                                                                 onClick={() =>
@@ -214,7 +168,7 @@ const MockTest = () => {
                                                             >
                                                                 Buy Now
                                                             </button>
-                                                        </NavLink> */}
+                                                        {/* </NavLink> */}
                                                     </div>
 
 
@@ -239,11 +193,11 @@ const MockTest = () => {
                             <div className='practice-mock-Testlist-container-topicwise'>
                                 {data.filter((item) => item.id >= 19 && item.id <= 27).map(
                                     (item, index) => {
-                                        // const {
-                                        //     id = item.id,
-                                        //     name = item.name,
-                                        //     image = item.image,
-                                        // } = item;
+                                        const {
+                                            id = item.id,
+                                            name = item.name,
+                                            image = item.image,
+                                        } = item;
                                         return (
                                             <div key={index}>
                                                 <div className='topic-wise-card'>
@@ -254,12 +208,12 @@ const MockTest = () => {
                                                     <p>Rs. {item.price}</p>
                                                     <div className='topic-wise-card-btn'>
 
-                                                        <button className="cardbuybtn" onClick={() => dopayment(item.id)}>
+                                                        {/* <button className="cardbuybtn" onClick={() => dopayment(item.id)}>
                                                             Buy now
-                                                        </button>
-                                                        {/* <button className='topic-wise-card-buybtn'
+                                                        </button> */}
+                                                        <button className='topic-wise-card-buybtn'
                                                             onClick={() =>
-                                                                dispatch(addtocourse({ id, name, image }))}>Buy Now</button> */}
+                                                                dispatch(addtocourse({ id, name, image }))}>Buy Now</button>
 
                                                     </div>
 
@@ -279,28 +233,26 @@ const MockTest = () => {
                             <div className='practicemock-testlist-container-card-company'>
                                 {data.filter((item) => item.id >= 28 && item.id <= 37).map(
                                     (item, index) => {
-                                        // const {
-                                        //     id = item.id,
-                                        //     image = item.image,
-                                        // } = item;
+                                        const {
+                                            id = item.id,
+                                            image = item.image,
+                                        } = item;
                                         return (
                                             <div key={index}>
                                                 <div className='practicemock-testlist-company-card'>
                                                     <div className='practicemock-testlist-company-card-image'>
                                                         <img src={item.image} className='practicemock-testlist-company-card-image-img' alt='image' />
-                                                        
-
                                                     </div>
                                                     <p>Rs. {item.price}</p>
                                                     <p style={{color:"#fff"}}>{item.name}</p>
                                                     <div className='practicemock-testlist-company-card-btn'>
 
-                                                        <button className="cardbuybtn" onClick={() => dopayment(item.id)}>
+                                                        {/* <button className="cardbuybtn" onClick={() => dopayment(item.id)}>
                                                             Buy now
-                                                        </button>
-                                                        {/* <button className='practicemock-testlist-company-card-buybtn'
+                                                        </button> */}
+                                                        <button className='practicemock-testlist-company-card-buybtn'
                                                             onClick={() =>
-                                                                dispatch(addtocourse({ id, image }))}>Buy Now</button> */}
+                                                                dispatch(addtocourse({ id, image }))}>Buy Now</button>
 
                                                     </div>
 

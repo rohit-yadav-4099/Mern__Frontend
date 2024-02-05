@@ -1,46 +1,46 @@
-import React, { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React from "react";
+import { useSelector } from "react-redux";
 import './MyCouse.css';
 import "../StudyMaterial/MockTest.css"
-import { useNavigate, NavLink } from "react-router-dom";
+// import { useNavigate, NavLink } from "react-router-dom";
 
 const AddMyCourse = () => {
     const countcourse = useSelector((state) => state.Course.course)
     // const dispatch = useDispatch();
-    // const data = useSelector((state) => state.Course.course);
+    const data = useSelector((state) => state.Course.course);
 
-    const [data, setData] = useState([])
-    console.log(data)
+    // const [data, setData] = useState([])
+    // console.log(data)
 
 
     // const dispatch = useDispatch()
 
-    const navigate = useNavigate()
-    const [firstHandle, setFirstHandle] = useState(false);
-    const [localName, setLocalName] = useState(localStorage.getItem('selfname'));
-    let token = localStorage.getItem('token')
+    // const navigate = useNavigate()
+    // const [firstHandle, setFirstHandle] = useState(false);
+    // const [localName, setLocalName] = useState(localStorage.getItem('selfname'));
+    // let token = localStorage.getItem('token')
 
 
 
-    const handleLogout = () => {
-        localStorage.removeItem('token')
-        setData([])
-        localStorage.removeItem('selfname')
-        setLocalName(null);
-        navigate('/dashboard')
+    // const handleLogout = () => {
+    //     localStorage.removeItem('token')
+    //     setData([])
+    //     localStorage.removeItem('selfname')
+    //     setLocalName(null);
+    //     navigate('/dashboard')
 
-    };
+    // };
 
-    useEffect(() => {
-        async function fetchapi() {
-            const buyData = await fetch("http://localhost:3030/bought")
-            console.log(buyData);
-            const res = await buyData.json()
-            setData(res)
-            console.log(res);
-        }
-        fetchapi()
-    }, []);
+    // useEffect(() => {
+    //     async function fetchapi() {
+    //         const buyData = await fetch("http://localhost:3030/bought")
+    //         console.log(buyData);
+    //         const res = await buyData.json()
+    //         setData(res)
+    //         console.log(res);
+    //     }
+    //     fetchapi()
+    // }, []);
 
     return (
         <>
@@ -70,19 +70,16 @@ const AddMyCourse = () => {
                 </div>
 
                 <div className="Mycourse">
-                    { token?
                     <div className="mycourse-heading">
                         <span>Courses({countcourse.length})</span>
+                    </div>
 
-                    </div> :null}
-                    {
-                        token?
-                   
                     <div className="container-course">
 
-                        {data.map(item => {
+                        {data &&
+                            data.filter((item) => item.id >= 7 && item.id <= 18).map((item, index) => {
                                 return (
-                                    <div>
+                                    <div key={index}>
                                         <div className="imgae_container cards">
                                             <div className='mockCards-top'>
                                                 <img src='\VideoImage\infoicon.svg' className='mockCards-top-infoicon'></img>
@@ -127,9 +124,10 @@ const AddMyCourse = () => {
                             })}
 
 
-                        {data.map(item => {
+                        {data &&
+                            data.filter((item) => item.id >= 19 && item.id <= 27).map((item, index) => {
                                 return (
-                                    <div>
+                                    <div key={index}>
                                         <div className='topic-wise-card'>
                                             <div className='topic-wise-card-image'>
                                                 <img src={item.image} className='topic-wise-card-image-img' alt='image' />
@@ -147,13 +145,11 @@ const AddMyCourse = () => {
                             })}
 
 
-
-
-
-                        {data.map(item => {
+                        {data &&
+                            data.filter((item) => item.id >= 28 && item.id <= 37).map((item, index) => {
                                 return (
 
-                                    <div>
+                                    <div key={index}>
                                         <div className='practicemock-testlist-company-card'>
                                             <div className='practicemock-testlist-company-card-image'>
                                                 <img src={item.image} className='practicemock-testlist-company-card-image-img' alt='image' />
@@ -171,7 +167,7 @@ const AddMyCourse = () => {
                             })}
 
                     </div>
-                        :null }
+
                 </div>
             </div>
         </>

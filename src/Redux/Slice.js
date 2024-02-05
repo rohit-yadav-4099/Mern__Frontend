@@ -13,12 +13,13 @@ const AddMyCourse = createSlice({
             if (existingItem) {
 
                 existingItem.quantity += 1;
-                // existingItem.total = existingItem.price * existingItem.quantity;
+                existingItem.total = existingItem.price * existingItem.quantity;
             } else {
 
                 state.course.push({
                     ...action.payload,
-                    quantity: 1
+                    quantity: 1,
+                    total: action.payload.price,
                 });
             }
         },

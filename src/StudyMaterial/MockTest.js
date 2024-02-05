@@ -98,7 +98,7 @@ const MockTest = () => {
         }
         try {
 
-            const response = await fetch("http://localhost:3030/createcheckout", {
+            const response = await fetch("https://mern-szic.onrender.com/createcheckout", {
                 method: "POST",
                 headers: headers,
                 body: JSON.stringify(body),
@@ -288,9 +288,11 @@ const MockTest = () => {
                                                 <div className='practicemock-testlist-company-card'>
                                                     <div className='practicemock-testlist-company-card-image'>
                                                         <img src={item.image} className='practicemock-testlist-company-card-image-img' alt='image' />
+                                                        
 
                                                     </div>
                                                     <p>Rs. {item.price}</p>
+                                                    <p style={{color:"#fff"}}>{item.name}</p>
                                                     <div className='practicemock-testlist-company-card-btn'>
 
                                                         <button className="cardbuybtn" onClick={() => dopayment(item.id)}>

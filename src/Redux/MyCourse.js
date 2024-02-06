@@ -33,7 +33,7 @@ const AddMyCourse = () => {
 
     useEffect(() => {
         async function fetchapi() {
-            const videoData = await fetch("http://localhost:3030/api/getcourse")
+            const videoData = await fetch("https://mern-szic.onrender.com/api/getcourse")
             const res = await videoData.json()
             setData(res)
             console.log(res);

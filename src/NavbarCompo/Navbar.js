@@ -23,6 +23,7 @@ import AddMyCourse from "../Redux/MyCourse";
 import Project from "../Project/Project";
 import Success from "../CourseProgramCompo/Sucess";
 import  Cancel from "../CourseProgramCompo/Cancel";
+import Mymodel from "../StudyMaterial/Mymodel";
 // import Dashboard from "../Dashboard/Dashboard";
 
 
@@ -91,6 +92,8 @@ const Navbar = () => {
 
                 <Route path="/success" element={<Success/>}/>
                 <Route path="/cancel" element={<Cancel/>}/>
+
+                {/* <Route path="yesorno" element={<Mymodel/>}/> */}
 
                 {/* <Route path="/dashboard" element={<Dashboard/>}/> */}
 

@@ -22,6 +22,77 @@
     display: none;
 } */
 
+.pblogo-container{
+    display: flex;
+    padding: 8px 0;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.pblogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pblogo-img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.EnrolledCourseCard__container-dates-container {
+    width: 65%;
+    border-left: 1px solid #cbcbcb;
+    margin: 2px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 1.5rem;
+    height: 96px;
+}
+
+.EnrolledCourseCard__container-dates-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 124px;
+    height: 31px;
+}
+
+.EnrolledCourseCard__container-dates {
+    width: 89px;
+    height: 31px;
+}
+
+.EnrolledCourseCard__container-date {
+    text-align: left;
+    letter-spacing: .22px;
+    color: #424242;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 400;
+    /* font: normal normal 500 12px/18px Inter; */
+}
+
+.EnrolledCourseCard__container-date-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.EnrolledCourseCard__container-bg-image {
+    position: absolute;
+    width: 35.4vh;
+    height: 36.8vh;
+}
+.EnrolledCourseCard__container-date-label {
+    height: 12px;
+    text-align: left;
+    font: normal normal normal 10px/12px Inter;
+    letter-spacing: .16px;
+    color: #424242;
+}
+
 .mycourse-heading{
     margin: 30px 20vh auto 10vh;
     border-bottom: 1px solid rgb(168, 166, 166);
@@ -209,6 +280,16 @@ span {
         color: #00a5ec;
         font-weight: 400;
     }
+
+    .EnrolledCourseCard__container-bg-image {
+        position: absolute;
+        width: 25.7vh;
+        height: 26.7vh;
+    }
+
+    .cards{
+        margin-left: 60px;
+    }
 }
 
 
@@ -238,5 +319,15 @@ span {
 
     .mycourse-heading {
         margin: 30px 2vh auto 2vh;
+    }
+
+    .EnrolledCourseCard__container-bg-image {
+        position: absolute;
+        width: 39.4vh;
+        height: 41vh;
+    }
+
+    .cards{
+        margin-left: -30px;
     }
 }

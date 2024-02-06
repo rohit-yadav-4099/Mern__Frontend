@@ -3,8 +3,8 @@ import './MockTest.css';
 import { useDispatch } from 'react-redux';
 import { addtocourse } from '../Redux/Slice';
 import { NavLink } from 'react-router-dom';
-// import axios from 'axios';
-// import { loadStripe } from '@stripe/stripe-js';
+import axios from 'axios';
+import { loadStripe } from '@stripe/stripe-js';
 
 // import { PayPalButtons } from "@paypal/react-paypal-js";z
 
@@ -17,6 +17,10 @@ const MockTest = () => {
     console.log(data)
     const dispatch = useDispatch()
 
+    const [cart, setCart] = useState([])
+
+    const [showDialog, setShowDialog] = useState(false)
+
     useEffect(() => {
         async function fetchapi() {
             const videoData = await fetch("https://mern-szic.onrender.com/api/getData")
@@ -25,8 +29,92 @@ const MockTest = () => {
             console.log(res);
         }
         fetchapi()
-    });
+    }, []);
 
+    // const handlePostData = async (data) => {
+    //     setShowDialog(true);
+    // };
+
+    // const handleYesClick = async (data) => {
+    //     try {
+    //          axios.post("http://localhost:3030/api/savecourse",data);
+    //         console.log("successfully added", data);
+    //         setShowDialog(false);
+    //         alert("Data posted successfully");
+    //     } catch (error) {
+    //         console.error("Error posting data", error);
+    //         alert("An error occurred while posting data");
+    //     }
+    // };
+
+    // const handleNoClick = () => {
+    //     setShowDialog(false);
+    //     alert("Action canceled")
+    // };
+
+      useEffect(() => {
+    axios
+      .get("https://mern-backend-o0hb.onrender.com/api/addgetcart")
+      .then((res) => setCart(res.data))
+      .catch((err) => console.log(err));
+  }, [cart]);
+
+    const handleClick = async(item) => {
+        const FindItem = cart && cart.find((item) => item.id === item.id);
+        console.log(FindItem);
+        if(FindItem){
+            alert("Add to cart");
+        } else {
+            console.log(item.id);
+            await axios.post("http://localhost:3030/api/addcourse", item);
+            alert("item has been successfully added")
+        }
+    };
+
+
+
+    // const PayPalButton = paypal.Buttons.driver("react", { React, ReactDOM });
+
+    //   const createOrder = (data) => {
+    //     // Order is created on the server and the order id is returned
+    //     return fetch("http://localhost:3030/api/orders", {
+    //       method: "POST",
+    //        headers: {
+    //         "Content-Type": "application/json",
+    //       },
+    //       // use the "body" param to optionally pass additional order information
+    //       // like product skus and quantities
+    //       body: JSON.stringify({
+    //         cart: [
+    //           {
+    //             sku: "unique_id",
+    //             quantity: data.quantity,
+    //           },
+    //         ],
+    //       }),
+    //     })
+    //     .then((response) => response.json())
+    //     .then((order) => order.id);
+    //   };
+    //   const onApprove = (data) => {
+    //      // Order is captured on the server and the response is returned to the browser
+    //      return fetch("http://localhost:3030/api/orders", {
+    //       method: "POST",
+    //        headers: {
+    //         "Content-Type": "application/json",
+    //       },
+    //       body: JSON.stringify({
+    //         orderID: data.orderID
+    //       })
+    //     })
+    //     .then((response) => response.json());
+    //   };
+    //   return (
+    //     <PayPalButton
+    //       createOrder={(data) => createOrder(data)}
+    //       onApprove={(data) => onApprove(data)}
+    //     />
+    //   );
 
     // const checkitem = (id) => {
     //     for (let i = 0; i < data.length; i++) {
@@ -104,20 +192,8 @@ const MockTest = () => {
                             <p className='featured-mock-test-main-Container-inner-heading'>PAST MOCK TESTS</p>
 
                             <div className='featured-mock-test-cards'>
-                                {data.filter((item) => item.id >= 7 && item.id <= 18).map(
-                                    (item) => {
-                                        const {
-                                            id = item.id,
-                                            name = item.name,
-                                            image = item.image,
-                                            date = item.date,
-                                            dateheading = item.dateheading,
-                                            participants = item.participants,
-                                            participantsheading = item.participantsheading,
-                                            duration = item.duration,
-                                            durationheading = item.durationheading
-
-                                        } = item;
+                                {data.filter((item) => item.id >= 7 && item.id <= 18).map
+                                ( item => {
                                         return (
                                             <div key={item.id}>
                                                 <div className='mockCards'>
@@ -157,18 +233,9 @@ const MockTest = () => {
                                                     </div>
 
                                                     <div className='cardbuy'>
-                                                        {/* <button className="cardbuybtn" onClick={() => dopayment(item.id)}>
+                                                        <button className="cardbuybtn" onClick={() => handleClick(item)}>
                                                             Buy now
-                                                        </button> */}
-                                                        {/* <NavLink to="/sucess"> */}
-
-                                                            <button className='cardbuybtn'
-                                                                onClick={() =>
-                                                                    dispatch(addtocourse({ id, name, image, date, dateheading, participants, participantsheading, duration, durationheading }))}
-                                                            >
-                                                                Buy Now
-                                                            </button>
-                                                        {/* </NavLink> */}
+                                                        </button>
                                                     </div>
 
 
@@ -193,11 +260,6 @@ const MockTest = () => {
                             <div className='practice-mock-Testlist-container-topicwise'>
                                 {data.filter((item) => item.id >= 19 && item.id <= 27).map(
                                     (item, index) => {
-                                        const {
-                                            id = item.id,
-                                            name = item.name,
-                                            image = item.image,
-                                        } = item;
                                         return (
                                             <div key={index}>
                                                 <div className='topic-wise-card'>
@@ -207,14 +269,9 @@ const MockTest = () => {
                                                     <p className='topic-wise-card-name'>{item.name}</p>
                                                     <p>Rs. {item.price}</p>
                                                     <div className='topic-wise-card-btn'>
-
-                                                        {/* <button className="cardbuybtn" onClick={() => dopayment(item.id)}>
+                                                    <button className="cardbuybtn" onClick={() => handleClick(item)}>
                                                             Buy now
-                                                        </button> */}
-                                                        <button className='topic-wise-card-buybtn'
-                                                            onClick={() =>
-                                                                dispatch(addtocourse({ id, name, image }))}>Buy Now</button>
-
+                                                        </button>
                                                     </div>
 
                                                 </div>
@@ -233,27 +290,20 @@ const MockTest = () => {
                             <div className='practicemock-testlist-container-card-company'>
                                 {data.filter((item) => item.id >= 28 && item.id <= 37).map(
                                     (item, index) => {
-                                        const {
-                                            id = item.id,
-                                            image = item.image,
-                                        } = item;
                                         return (
                                             <div key={index}>
                                                 <div className='practicemock-testlist-company-card'>
                                                     <div className='practicemock-testlist-company-card-image'>
                                                         <img src={item.image} className='practicemock-testlist-company-card-image-img' alt='image' />
+
+
                                                     </div>
                                                     <p>Rs. {item.price}</p>
-                                                    <p style={{color:"#fff"}}>{item.name}</p>
+                                                    <p style={{ color: "#fff" }}>{item.name}</p>
                                                     <div className='practicemock-testlist-company-card-btn'>
-
-                                                        {/* <button className="cardbuybtn" onClick={() => dopayment(item.id)}>
+                                                    <button className="cardbuybtn" onClick={() => handleClick(item)}>
                                                             Buy now
-                                                        </button> */}
-                                                        <button className='practicemock-testlist-company-card-buybtn'
-                                                            onClick={() =>
-                                                                dispatch(addtocourse({ id, image }))}>Buy Now</button>
-
+                                                        </button>
                                                     </div>
 
                                                 </div>

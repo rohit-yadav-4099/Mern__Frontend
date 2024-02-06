@@ -54,22 +54,25 @@ const MockTest = () => {
 
       useEffect(() => {
     axios
-      .get("https://mern-szic.onrender.com/api/addgetcart")
+      .get("https://mern-szic.onrender.com/api/getcourse")
       .then((res) => setCart(res.data))
       .catch((err) => console.log(err));
-  }, [cart]);
+  }, []);
 
     const handleClick = async(item) => {
-        const FindItem = cart && cart.find((item) => item.id === item.id);
+        const FindItem = cart && cart.find((data) => data.id === item.id);
         console.log(FindItem);
         if(FindItem){
-            alert("Already Buy");
+            alert("Add to cart");
         } else {
             console.log(item.id);
-            await axios.post("https://mern-szic.onrender.com/api/addcourse", item);
-            alert("Course has been successfully Buy")
+             axios.post("https://mern-szic.onrender.com/api/addcourse", item)
+            .then((res)=>{console.log(res.data)});
+            alert("item has been successfully added")
         }
     };
+
+
 
     // const PayPalButton = paypal.Buttons.driver("react", { React, ReactDOM });
 
@@ -164,6 +167,7 @@ const MockTest = () => {
     //     }
 
     // }
+
 
     return (
         <div>

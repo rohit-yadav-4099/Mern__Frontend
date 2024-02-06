@@ -60,7 +60,7 @@ const MockTest = () => {
   }, []);
 
     const handleClick = async(item) => {
-        const FindItem = cart && cart.find((data) => data.id === item.id);
+        const FindItem = cart.find((data) => data.id === item.id && data.email === localStorage.getItem("email"));
         console.log(FindItem);
         if(FindItem){
             alert("This Course already Buy");

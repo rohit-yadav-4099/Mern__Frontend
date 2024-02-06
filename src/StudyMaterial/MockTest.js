@@ -63,15 +63,13 @@ const MockTest = () => {
         const FindItem = cart && cart.find((item) => item.id === item.id);
         console.log(FindItem);
         if(FindItem){
-            alert("Add to cart");
+            alert("Already Buy");
         } else {
             console.log(item.id);
             await axios.post("https://mern-szic.onrender.com/api/addcourse", item);
-            alert("item has been successfully added")
+            alert("Course has been successfully Buy")
         }
     };
-
-
 
     // const PayPalButton = paypal.Buttons.driver("react", { React, ReactDOM });
 
@@ -166,7 +164,6 @@ const MockTest = () => {
     //     }
 
     // }
-
 
     return (
         <div>

@@ -54,7 +54,7 @@ const MockTest = () => {
 
       useEffect(() => {
     axios
-      .get("https://mern-backend-o0hb.onrender.com/api/addgetcart")
+      .get("https://mern-szic.onrender.com/api/addgetcart")
       .then((res) => setCart(res.data))
       .catch((err) => console.log(err));
   }, [cart]);
@@ -66,7 +66,7 @@ const MockTest = () => {
             alert("Add to cart");
         } else {
             console.log(item.id);
-            await axios.post("http://localhost:3030/api/addcourse", item);
+            await axios.post("https://mern-szic.onrender.com/api/addcourse", item);
             alert("item has been successfully added")
         }
     };

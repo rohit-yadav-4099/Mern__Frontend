@@ -65,7 +65,9 @@ const MockTest = () => {
         if(FindItem){
             alert("This Course already Buy");
         } else {
-            console.log(item.id);
+            item.email = localStorage.getItem("email")
+            console.log(item);
+         
              axios.post("https://mern-szic.onrender.com/api/addcourse", item)
             .then((res)=>{console.log(res.data)});
             alert("Course has been successfully Buy")

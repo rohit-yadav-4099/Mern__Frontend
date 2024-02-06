@@ -35,7 +35,7 @@ const AddMyCourse = () => {
         async function fetchapi() {
             const videoData = await fetch("https://mern-szic.onrender.com/api/getcourse")
             const res = await videoData.json()
-            setData(res)
+            setData(res.filter(item=>item.email === localStorage.getItem("email")))
             console.log(res);
         }
         fetchapi()
